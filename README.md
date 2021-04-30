@@ -1,0 +1,1 @@
+C:/PL/Steam/steamapps/common/Stellaris_Mods/README.md
