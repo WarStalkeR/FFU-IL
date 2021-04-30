@@ -1,0 +1,20 @@
+objectTypes = {
+    pdxparticle = {
+        name = "ffu_il_pdw_hit_01_particle"
+        #type = "ffu_il_pdw_hit_01_effect"
+        type = "planetary_bombardment"
+        scale = 2.0
+    }
+    pdxparticle = {
+        name = "ffu_il_pdw_miss_01_particle"
+        #type = "ffu_il_pdw_miss_01_effect"
+		type = "planetary_bombardment"
+        scale = 1.0
+    }
+	pdxparticle = {
+        name = "ffu_il_ship_explosion_particle"
+        #type = "ffu_il_ship_explosion_effect"
+		type = "planetary_bombardment"
+        scale = 5.0
+    }
+}
