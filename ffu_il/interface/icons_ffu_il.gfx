@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_sizes"
+		textureFile = "gfx/interface/icons/ship_parts/ship_sizes.dds"
+		noOfFrames = 23
+	}
+	spriteType = {
+		name = "GFX_ship_sizes_top"
+		textureFile = "gfx/interface/icons/ship_parts/ship_sizes_top.dds"
+		noOfFrames = 23
+	}
+	spriteType = {
+		name = "GFX_ship_sizes_top_damaged"
+		textureFile = "gfx/interface/icons/ship_parts/ship_sizes_top_damaged.dds"
+		noOfFrames = 23
+	}
+}

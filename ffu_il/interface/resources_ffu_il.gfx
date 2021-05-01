@@ -1,0 +1,275 @@
+spriteTypes = {
+	### FFU:IL CUSTOM RESOURCES ICONS
+	spriteType = {
+		name = "GFX_text_sr_light_gases"
+		texturefile = "gfx/interface/icons/resources/sr_light_gases.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_light_gases"
+		texturefile = "gfx/interface/icons/resources/sr_light_gases.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_light_gases_grey"
+		texturefile = "gfx/interface/icons/resources/sr_light_gases_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_light_gases_large"
+		texturefile = "gfx/interface/icons/resources/sr_light_gases_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_natural_liquids"
+		texturefile = "gfx/interface/icons/resources/sr_natural_liquids.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_natural_liquids"
+		texturefile = "gfx/interface/icons/resources/sr_natural_liquids.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_natural_liquids_grey"
+		texturefile = "gfx/interface/icons/resources/sr_natural_liquids_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_natural_liquids_large"
+		texturefile = "gfx/interface/icons/resources/sr_natural_liquids_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_garanthium"
+		texturefile = "gfx/interface/icons/resources/sr_garanthium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_garanthium"
+		texturefile = "gfx/interface/icons/resources/sr_garanthium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_garanthium_grey"
+		texturefile = "gfx/interface/icons/resources/sr_garanthium_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_garanthium_large"
+		texturefile = "gfx/interface/icons/resources/sr_garanthium_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_lythuric"
+		texturefile = "gfx/interface/icons/resources/sr_lythuric.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_lythuric"
+		texturefile = "gfx/interface/icons/resources/sr_lythuric.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_lythuric_grey"
+		texturefile = "gfx/interface/icons/resources/sr_lythuric_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_lythuric_large"
+		texturefile = "gfx/interface/icons/resources/sr_lythuric_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_engos"
+		texturefile = "gfx/interface/icons/resources/sr_engos.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_engos"
+		texturefile = "gfx/interface/icons/resources/sr_engos.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_engos_grey"
+		texturefile = "gfx/interface/icons/resources/sr_engos_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_engos_large"
+		texturefile = "gfx/interface/icons/resources/sr_engos_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_teldar"
+		texturefile = "gfx/interface/icons/resources/sr_teldar.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_teldar"
+		texturefile = "gfx/interface/icons/resources/sr_teldar.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_teldar_grey"
+		texturefile = "gfx/interface/icons/resources/sr_teldar_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_teldar_large"
+		texturefile = "gfx/interface/icons/resources/sr_teldar_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_pitharan"
+		texturefile = "gfx/interface/icons/resources/sr_pitharan.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_pitharan"
+		texturefile = "gfx/interface/icons/resources/sr_pitharan.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_pitharan_grey"
+		texturefile = "gfx/interface/icons/resources/sr_pitharan_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_pitharan_large"
+		texturefile = "gfx/interface/icons/resources/sr_pitharan_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_orillium"
+		texturefile = "gfx/interface/icons/resources/sr_orillium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_orillium"
+		texturefile = "gfx/interface/icons/resources/sr_orillium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_orillium_grey"
+		texturefile = "gfx/interface/icons/resources/sr_orillium_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_orillium_large"
+		texturefile = "gfx/interface/icons/resources/sr_orillium_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_neutronium"
+		texturefile = "gfx/interface/icons/resources/sr_neutronium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_neutronium"
+		texturefile = "gfx/interface/icons/resources/sr_neutronium.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_neutronium_grey"
+		texturefile = "gfx/interface/icons/resources/sr_neutronium_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_neutronium_large"
+		texturefile = "gfx/interface/icons/resources/sr_neutronium_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_living_metal"
+		texturefile = "gfx/interface/icons/resources/sr_living_metal.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_living_metal"
+		texturefile = "gfx/interface/icons/resources/sr_living_metal.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_living_metal_grey"
+		texturefile = "gfx/interface/icons/resources/sr_living_metal_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_living_metal_large"
+		texturefile = "gfx/interface/icons/resources/sr_living_metal_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_dark_matter"
+		texturefile = "gfx/interface/icons/resources/sr_dark_matter.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_dark_matter"
+		texturefile = "gfx/interface/icons/resources/sr_dark_matter.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_dark_matter_grey"
+		texturefile = "gfx/interface/icons/resources/sr_dark_matter_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_dark_matter_large"
+		texturefile = "gfx/interface/icons/resources/sr_dark_matter_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_betharian"
+		texturefile = "gfx/interface/icons/resources/sr_betharian.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_betharian"
+		texturefile = "gfx/interface/icons/resources/sr_betharian.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_betharian_grey"
+		texturefile = "gfx/interface/icons/resources/sr_betharian_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_betharian_large"
+		texturefile = "gfx/interface/icons/resources/sr_betharian_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_alien_pets"
+		texturefile = "gfx/interface/icons/resources/sr_alien_pets.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_alien_pets"
+		texturefile = "gfx/interface/icons/resources/sr_alien_pets.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_alien_pets_grey"
+		texturefile = "gfx/interface/icons/resources/sr_alien_pets_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_alien_pets_large"
+		texturefile = "gfx/interface/icons/resources/sr_alien_pets_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_satramene"
+		texturefile = "gfx/interface/icons/resources/sr_satramene.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_satramene"
+		texturefile = "gfx/interface/icons/resources/sr_satramene.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_satramene_grey"
+		texturefile = "gfx/interface/icons/resources/sr_satramene_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_satramene_large"
+		texturefile = "gfx/interface/icons/resources/sr_satramene_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sr_zro"
+		texturefile = "gfx/interface/icons/resources/sr_zro.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_zro"
+		texturefile = "gfx/interface/icons/resources/sr_zro.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_zro_grey"
+		texturefile = "gfx/interface/icons/resources/sr_zro_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_sr_zro_large"
+		texturefile = "gfx/interface/icons/resources/sr_zro_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_riggan_spice"
+		texturefile = "gfx/interface/icons/resources/riggan_spice.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_riggan_spice"
+		texturefile = "gfx/interface/icons/resources/riggan_spice.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_riggan_spice_grey"
+		texturefile = "gfx/interface/icons/resources/riggan_spice_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_riggan_spice_large"
+		texturefile = "gfx/interface/icons/resources/riggan_spice_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_luxury_goods"
+		texturefile = "gfx/interface/icons/resources/luxury_goods.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_luxury_goods"
+		texturefile = "gfx/interface/icons/resources/luxury_goods.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_luxury_goods_grey"
+		texturefile = "gfx/interface/icons/resources/luxury_goods_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_luxury_goods_large"
+		texturefile = "gfx/interface/icons/resources/luxury_goods_large.dds"
+	}
+}

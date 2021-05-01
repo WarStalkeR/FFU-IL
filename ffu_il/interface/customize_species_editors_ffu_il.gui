@@ -1,0 +1,162 @@
+guiTypes = {
+	containerWindowType = {
+		name = "species_traits_editor"
+		containerWindowType = {
+			name = "details"
+			size = { width = 410 height = 220 }
+			position = { x = 12 y = 130 }
+			background = {
+				name = "leader_frame"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+			}
+			instantTextBoxType = {
+				name = "trait_name"
+				font = "malgun_goth_24"
+				position = { x = 10 y = 5 }
+				maxWidth = 330 #mod
+				text =	 ""
+				format = left
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "trait_description"
+				font = "cg_16b"
+				position = { x = 10 y = 29 } #mod
+				maxWidth = 395
+				text = ""
+				format = left
+				text_color_code = "L"
+			}
+		}
+	}
+	containerWindowType = {
+		name = "planet_class_editor"
+		containerWindowType = {
+			name = "3d_icons"
+			size = { width = 100 height = 100 }
+			position = { x = 40 y = 0 }
+			@planet_1_x = 426
+			@planet_2_x = 353
+			@planet_3_x = 310
+			@planet_4_x = 324
+			@planet_5_x = 382
+			@planet_6_x = 469
+			@planet_7_x = 527
+			@planet_8_x = 541
+			@planet_9_x = 498
+			@planet_1_y = 32
+			@planet_2_y = 57
+			@planet_3_y = 133
+			@planet_4_y = 208
+			@planet_5_y = 258
+			@planet_6_y = 258
+			@planet_7_y = 208
+			@planet_8_y = 133
+			@planet_9_y = 57
+			containerWindowType = {
+				name = "setting_bg_box1"
+				position = { x = 326 y = 28 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_ffu_il_climate_sector_wet"
+					}
+			}
+			containerWindowType = {
+				name = "setting_bg_box2"
+				position = { x = 304 y = 108 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_ffu_il_climate_sector_hot"
+					}
+			}
+			containerWindowType = {
+				name = "setting_bg_box3"
+				position = { x = 465 y = 108 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_ffu_il_climate_sector_cold"
+					}
+			}
+			buttonType = {
+				name = "pc_desert"
+				position = { x = @planet_4_x y = @planet_4_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {		
+				name = "pc_ocean"
+				position = { x = @planet_9_x y = @planet_9_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_arctic"
+				position = { x = @planet_8_x y = @planet_8_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_arid"
+				position = { x = @planet_5_x y = @planet_5_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_continental"
+				position = { x = @planet_1_x y = @planet_1_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_alpine"
+				position = { x = @planet_7_x y = @planet_7_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_savannah"
+				position = { x = @planet_3_x y = @planet_3_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_tropical"
+				position = { x = @planet_2_x y = @planet_2_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			buttonType = {
+				name = "pc_tundra"
+				position = { x = @planet_6_x y = @planet_6_y }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = 100 y = 100 }
+				scale = 0.8
+			}
+			containerWindowType = {
+				name = "selected"
+				position = { x = 520 y = 40 }
+				size = { width = 110 height = 110 }
+				background = {
+					name = "selected_bg"
+					spriteType = "GFX_invisible"
+					alwaysTransparent = yes
+				}
+				iconType = {
+					name = "selection_planet"
+					quadTextureSprite = "GFX_selection_planet"
+					position = { x = -2 y = -2 }
+					alwaysTransparent = yes
+					scale = 0.81
+				}
+			}
+		}
+	}
+}

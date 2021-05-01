@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_counter_1"
+		textureFile = "gfx/interface/system/icon_ffu_il_frigate.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_counter_2"
+		textureFile = "gfx/interface/system/icon_ffu_il_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_counter_4"
+		textureFile = "gfx/interface/system/icon_ffu_il_cruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_counter_8"
+		textureFile = "gfx/interface/system/icon_ffu_il_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_counter_16"
+		textureFile = "gfx/interface/system/icon_ffu_il_titan.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_counter_32"
+		textureFile = "gfx/interface/system/icon_ffu_il_colossus.dds"
+	}
+	#spriteType = {
+	#	name = "GFX_ship_counter_1"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_corvette.dds" #1x Classic Corvette
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_2"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_frigate.dds" #1x Classic Destroyer
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_3"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_destroyer.dds" #1x Classic Cruiser
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_4"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_cruiser.dds" #1x Classic Cruiser + 2x Classic Corvettes
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_6"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_battlecruiser.dds" #1x Classic Battleship
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_8"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_battleship.dds" #1x Classic Battleship + 2x Classic Destroyer
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_12"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_dreadnought.dds" #1x Classic Titan
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_16"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_titan.dds" #2x Classic Titan + Classic Colony Ship
+	#}
+	#spriteType = {
+	#	name = "GFX_ship_counter_32"
+	#	textureFile = "gfx/interface/system/icon_ffu_il_colossus.dds" #1x Classic Colossus
+	#}
+}

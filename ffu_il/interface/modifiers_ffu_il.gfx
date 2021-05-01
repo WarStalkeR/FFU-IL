@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_modifier_frames"
+		texturefile = "gfx/interface/icons/planet_modifiers/modifier_frames.dds"
+		noOfFrames = 18
+	}
+}

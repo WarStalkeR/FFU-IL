@@ -1,0 +1,12 @@
+spriteTypes = {
+	progressbarType = {
+		name = "GFX_planetview_health"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_planetview_health_full.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_planetview_health_empty.dds"
+		size = { x = 38 y = 189 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+}
