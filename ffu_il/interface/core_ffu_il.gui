@@ -1,11 +1,11 @@
 guiTypes = {
-	textboxType={
+	textboxType = {
 		name = "ToolTip"
 		textureFile = "gfx/interface/tiles/tooltip.dds"
 		font = "cg_16b"
-		borderSize = { x = 20 y = 15 }
-		position = { x = 560 y = 10 }
-		maxWidth = 425
+		borderSize = { x = 20 y = 15 } #mod
+		position = { x = 560 y = 10 } #mod
+		maxWidth = 425 #mod
 		maxHeight = 256
 	}
 }

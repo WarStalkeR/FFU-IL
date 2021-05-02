@@ -1,0 +1,452 @@
+#this file is reloadable with the filewatcher only
+   
+colors = {
+		#####################
+		### MODDED COLORS ###
+		#####################
+		
+		black_01 = { flag = hsv { 0.00 0.00 0.02 } map = hsv { 0.00 0.00 0.02 } ship = hsv { 0.00 0.00 0.62 } use_as_border_color = no }
+		black_02 = { flag = hsv { 0.00 0.00 0.10 } map = hsv { 0.00 0.00 0.10 } ship = hsv { 0.00 0.00 0.70 } use_as_border_color = no }
+		black_03 = { flag = hsv { 0.00 0.00 0.18 } map = hsv { 0.00 0.00 0.18 } ship = hsv { 0.00 0.00 0.78 } use_as_border_color = no }
+		black_04 = { flag = hsv { 0.00 0.00 0.26 } map = hsv { 0.00 0.00 0.26 } ship = hsv { 0.00 0.00 0.86 } use_as_border_color = no }
+		black_05 = { flag = hsv { 0.00 0.00 0.34 } map = hsv { 0.00 0.00 0.34 } ship = hsv { 0.00 0.00 0.94 } use_as_border_color = no }
+		black_06 = { flag = hsv { 0.00 0.00 0.42 } map = hsv { 0.00 0.00 0.42 } ship = hsv { 0.00 0.00 1.02 } use_as_border_color = no }
+		black_07 = { flag = hsv { 0.00 0.00 0.50 } map = hsv { 0.00 0.00 0.50 } ship = hsv { 0.00 0.00 1.10 } use_as_border_color = no }
+		black_08 = { flag = hsv { 0.00 0.00 0.58 } map = hsv { 0.00 0.00 0.58 } ship = hsv { 0.00 0.00 1.18 } use_as_border_color = no }
+		black_09 = { flag = hsv { 0.00 0.00 0.66 } map = hsv { 0.00 0.00 0.66 } ship = hsv { 0.00 0.00 1.26 } use_as_border_color = no }
+		black_10 = { flag = hsv { 0.00 0.00 0.74 } map = hsv { 0.00 0.00 0.74 } ship = hsv { 0.00 0.00 1.34 } use_as_border_color = no }
+		black_11 = { flag = hsv { 0.00 0.00 0.82 } map = hsv { 0.00 0.00 0.82 } ship = hsv { 0.00 0.00 1.42 } use_as_border_color = no }
+		black_12 = { flag = hsv { 0.00 0.00 0.90 } map = hsv { 0.00 0.00 0.90 } ship = hsv { 0.00 0.00 1.50 } use_as_border_color = no }
+		black_13 = { flag = hsv { 0.00 0.00 0.98 } map = hsv { 0.00 0.00 0.98 } ship = hsv { 0.00 0.00 1.58 } use_as_border_color = no }
+		
+		red_01 = { flag = hsv { 0.00 0.75 0.50 } map = hsv { 0.00 0.75 0.45 } ship = hsv { 0.00 0.75 0.85 } }
+		red_02 = { flag = hsv { 0.00 0.75 0.40 } map = hsv { 0.00 0.75 0.35 } ship = hsv { 0.00 0.75 0.75 } }
+		red_03 = { flag = hsv { 0.00 0.75 0.30 } map = hsv { 0.00 0.75 0.25 } ship = hsv { 0.00 0.75 0.65 } }
+		red_04 = { flag = hsv { 0.00 0.75 0.20 } map = hsv { 0.00 0.75 0.15 } ship = hsv { 0.00 0.75 0.55 } }
+		red_05 = { flag = hsv { 0.00 1.00 0.20 } map = hsv { 0.00 1.00 0.15 } ship = hsv { 0.00 1.00 0.55 } }
+		red_06 = { flag = hsv { 0.00 1.00 0.40 } map = hsv { 0.00 1.00 0.35 } ship = hsv { 0.00 1.00 0.75 } }
+		red_07 = { flag = hsv { 0.00 1.00 0.60 } map = hsv { 0.00 1.00 0.55 } ship = hsv { 0.00 1.00 0.95 } }
+		red_08 = { flag = hsv { 0.00 1.00 0.80 } map = hsv { 0.00 1.00 0.75 } ship = hsv { 0.00 1.00 1.15 } }
+		red_09 = { flag = hsv { 0.00 1.00 1.00 } map = hsv { 0.00 1.00 0.95 } ship = hsv { 0.00 1.00 1.35 } }
+		red_10 = { flag = hsv { 0.00 0.80 1.00 } map = hsv { 0.00 0.80 0.95 } ship = hsv { 0.00 0.80 1.35 } }
+		red_11 = { flag = hsv { 0.00 0.60 1.00 } map = hsv { 0.00 0.60 0.95 } ship = hsv { 0.00 0.60 1.35 } }
+		red_12 = { flag = hsv { 0.00 0.40 1.00 } map = hsv { 0.00 0.40 0.95 } ship = hsv { 0.00 0.40 1.35 } }
+		crimson	= { flag = hsv { 0.97 0.91 0.86 } map = hsv { 0.97 0.91 0.75 } ship = hsv { 0.97 0.91 1.3 } }
+				
+		orange_01 = { flag = hsv { 0.07 0.75 0.50 } map = hsv { 0.07 0.75 0.45 } ship = hsv { 0.07 0.75 0.85 } }
+		orange_02 = { flag = hsv { 0.07 0.75 0.40 } map = hsv { 0.07 0.75 0.35 } ship = hsv { 0.07 0.75 0.75 } }
+		orange_03 = { flag = hsv { 0.07 0.75 0.30 } map = hsv { 0.07 0.75 0.25 } ship = hsv { 0.07 0.75 0.65 } }
+		orange_04 = { flag = hsv { 0.07 0.75 0.20 } map = hsv { 0.07 0.75 0.15 } ship = hsv { 0.07 0.75 0.55 } }
+		orange_05 = { flag = hsv { 0.07 1.00 0.20 } map = hsv { 0.07 1.00 0.15 } ship = hsv { 0.07 1.00 0.55 } }
+		orange_06 = { flag = hsv { 0.07 1.00 0.40 } map = hsv { 0.07 1.00 0.35 } ship = hsv { 0.07 1.00 0.75 } }
+		orange_07 = { flag = hsv { 0.07 1.00 0.60 } map = hsv { 0.07 1.00 0.55 } ship = hsv { 0.07 1.00 0.95 } }
+		orange_08 = { flag = hsv { 0.07 1.00 0.80 } map = hsv { 0.07 1.00 0.75 } ship = hsv { 0.07 1.00 1.15 } }
+		orange_09 = { flag = hsv { 0.07 1.00 1.00 } map = hsv { 0.07 1.00 0.95 } ship = hsv { 0.07 1.00 1.35 } }
+		orange_10 = { flag = hsv { 0.07 0.80 1.00 } map = hsv { 0.07 0.80 0.95 } ship = hsv { 0.07 0.80 1.35 } }
+		orange_11 = { flag = hsv { 0.07 0.60 1.00 } map = hsv { 0.07 0.60 0.95 } ship = hsv { 0.07 0.60 1.35 } }
+		orange_12 = { flag = hsv { 0.07 0.40 1.00 } map = hsv { 0.07 0.40 0.95 } ship = hsv { 0.07 0.40 1.35 } }
+		bright_orange = { flag = hsv { 0.1 0.96 0.9 } map = hsv { 0.1 0.96 0.75 } ship = hsv { 0.1 0.96 1.3 } }
+		
+		yellow_01 = { flag = hsv { 0.14 0.75 0.50 } map = hsv { 0.14 0.75 0.45 } ship = hsv { 0.14 0.75 0.85 } }
+		yellow_02 = { flag = hsv { 0.14 0.75 0.40 } map = hsv { 0.14 0.75 0.35 } ship = hsv { 0.14 0.75 0.75 } }
+		yellow_03 = { flag = hsv { 0.14 0.75 0.30 } map = hsv { 0.14 0.75 0.25 } ship = hsv { 0.14 0.75 0.65 } }
+		yellow_04 = { flag = hsv { 0.14 0.75 0.20 } map = hsv { 0.14 0.75 0.15 } ship = hsv { 0.14 0.75 0.55 } }
+		yellow_05 = { flag = hsv { 0.14 1.00 0.20 } map = hsv { 0.14 1.00 0.15 } ship = hsv { 0.14 1.00 0.55 } }
+		yellow_06 = { flag = hsv { 0.14 1.00 0.40 } map = hsv { 0.14 1.00 0.35 } ship = hsv { 0.14 1.00 0.75 } }
+		yellow_07 = { flag = hsv { 0.14 1.00 0.60 } map = hsv { 0.14 1.00 0.55 } ship = hsv { 0.14 1.00 0.95 } }
+		yellow_08 = { flag = hsv { 0.14 1.00 0.80 } map = hsv { 0.14 1.00 0.75 } ship = hsv { 0.14 1.00 1.15 } }
+		yellow_09 = { flag = hsv { 0.14 1.00 1.00 } map = hsv { 0.14 1.00 0.95 } ship = hsv { 0.14 1.00 1.35 } }
+		yellow_10 = { flag = hsv { 0.14 0.80 1.00 } map = hsv { 0.14 0.80 0.95 } ship = hsv { 0.14 0.80 1.35 } }
+		yellow_11 = { flag = hsv { 0.14 0.60 1.00 } map = hsv { 0.14 0.60 0.95 } ship = hsv { 0.14 0.60 1.35 } }
+		yellow_12 = { flag = hsv { 0.14 0.40 1.00 } map = hsv { 0.14 0.40 0.95 } ship = hsv { 0.14 0.40 1.35 } }
+		peach = { flag = hsv { 0.08 0.46 0.9 } map = hsv { 0.08 0.46 0.65 } ship = hsv { 0.08 0.46 1.1 } }
+		
+		green_01 = { flag = hsv { 0.33 0.75 0.50 } map = hsv { 0.33 0.75 0.45 } ship = hsv { 0.33 0.75 0.85 } }
+		green_02 = { flag = hsv { 0.33 0.75 0.40 } map = hsv { 0.33 0.75 0.35 } ship = hsv { 0.33 0.75 0.75 } }
+		green_03 = { flag = hsv { 0.33 0.75 0.30 } map = hsv { 0.33 0.75 0.25 } ship = hsv { 0.33 0.75 0.65 } }
+		green_04 = { flag = hsv { 0.33 0.75 0.20 } map = hsv { 0.33 0.75 0.15 } ship = hsv { 0.33 0.75 0.55 } }
+		green_05 = { flag = hsv { 0.33 1.00 0.20 } map = hsv { 0.33 1.00 0.15 } ship = hsv { 0.33 1.00 0.55 } }
+		green_06 = { flag = hsv { 0.33 1.00 0.40 } map = hsv { 0.33 1.00 0.35 } ship = hsv { 0.33 1.00 0.75 } }
+		green_07 = { flag = hsv { 0.33 1.00 0.60 } map = hsv { 0.33 1.00 0.55 } ship = hsv { 0.33 1.00 0.95 } }
+		green_08 = { flag = hsv { 0.33 1.00 0.80 } map = hsv { 0.33 1.00 0.75 } ship = hsv { 0.33 1.00 1.15 } }
+		green_09 = { flag = hsv { 0.33 1.00 1.00 } map = hsv { 0.33 1.00 0.95 } ship = hsv { 0.33 1.00 1.35 } }
+		green_10 = { flag = hsv { 0.33 0.80 1.00 } map = hsv { 0.33 0.80 0.95 } ship = hsv { 0.33 0.80 1.35 } }
+		green_11 = { flag = hsv { 0.33 0.60 1.00 } map = hsv { 0.33 0.60 0.95 } ship = hsv { 0.33 0.60 1.35 } }
+		green_12 = { flag = hsv { 0.33 0.40 1.00 } map = hsv { 0.33 0.40 0.95 } ship = hsv { 0.33 0.40 1.35 } }
+		lime_green = { flag = hsv { 0.26 0.86 0.75 } map = hsv { 0.26 0.86 0.55 } ship = hsv { 0.26 0.86 1.1 } }
+		
+		teal_01 = { flag = hsv { 0.44 0.75 0.50 } map = hsv { 0.44 0.75 0.45 } ship = hsv { 0.44 0.75 0.85 } }
+		teal_02 = { flag = hsv { 0.44 0.75 0.40 } map = hsv { 0.44 0.75 0.35 } ship = hsv { 0.44 0.75 0.75 } }
+		teal_03 = { flag = hsv { 0.44 0.75 0.30 } map = hsv { 0.44 0.75 0.25 } ship = hsv { 0.44 0.75 0.65 } }
+		teal_04 = { flag = hsv { 0.44 0.75 0.20 } map = hsv { 0.44 0.75 0.15 } ship = hsv { 0.44 0.75 0.55 } }
+		teal_05 = { flag = hsv { 0.44 1.00 0.20 } map = hsv { 0.44 1.00 0.15 } ship = hsv { 0.44 1.00 0.55 } }
+		teal_06 = { flag = hsv { 0.44 1.00 0.40 } map = hsv { 0.44 1.00 0.35 } ship = hsv { 0.44 1.00 0.75 } }
+		teal_07 = { flag = hsv { 0.44 1.00 0.60 } map = hsv { 0.44 1.00 0.55 } ship = hsv { 0.44 1.00 0.95 } }
+		teal_08 = { flag = hsv { 0.44 1.00 0.80 } map = hsv { 0.44 1.00 0.75 } ship = hsv { 0.44 1.00 1.15 } }
+		teal_09 = { flag = hsv { 0.44 1.00 1.00 } map = hsv { 0.44 1.00 0.95 } ship = hsv { 0.44 1.00 1.35 } }
+		teal_10 = { flag = hsv { 0.44 0.80 1.00 } map = hsv { 0.44 0.80 0.95 } ship = hsv { 0.44 0.80 1.35 } }
+		teal_11 = { flag = hsv { 0.44 0.60 1.00 } map = hsv { 0.44 0.60 0.95 } ship = hsv { 0.44 0.60 1.35 } }
+		teal_12 = { flag = hsv { 0.44 0.40 1.00 } map = hsv { 0.44 0.40 0.95 } ship = hsv { 0.44 0.40 1.35 } }
+		ice_blue = { flag = hsv { 0.5 0.3 0.85 } map = hsv { 0.5 0.3 0.55 } ship = hsv { 0.5 0.3 1.1 } }
+		
+		navy_01 = { flag = hsv { 0.58 0.75 0.50 } map = hsv { 0.58 0.75 0.45 } ship = hsv { 0.58 0.75 0.85 } }
+		navy_02 = { flag = hsv { 0.58 0.75 0.40 } map = hsv { 0.58 0.75 0.35 } ship = hsv { 0.58 0.75 0.75 } }
+		navy_03 = { flag = hsv { 0.58 0.75 0.30 } map = hsv { 0.58 0.75 0.25 } ship = hsv { 0.58 0.75 0.65 } }
+		navy_04 = { flag = hsv { 0.58 0.75 0.20 } map = hsv { 0.58 0.75 0.15 } ship = hsv { 0.58 0.75 0.55 } }
+		navy_05 = { flag = hsv { 0.58 1.00 0.20 } map = hsv { 0.58 1.00 0.15 } ship = hsv { 0.58 1.00 0.55 } }
+		navy_06 = { flag = hsv { 0.58 1.00 0.40 } map = hsv { 0.58 1.00 0.35 } ship = hsv { 0.58 1.00 0.75 } }
+		navy_07 = { flag = hsv { 0.58 1.00 0.60 } map = hsv { 0.58 1.00 0.55 } ship = hsv { 0.58 1.00 0.95 } }
+		navy_08 = { flag = hsv { 0.58 1.00 0.80 } map = hsv { 0.58 1.00 0.75 } ship = hsv { 0.58 1.00 1.15 } }
+		navy_09 = { flag = hsv { 0.58 1.00 1.00 } map = hsv { 0.58 1.00 0.95 } ship = hsv { 0.58 1.00 1.35 } }
+		navy_10 = { flag = hsv { 0.58 0.80 1.00 } map = hsv { 0.58 0.80 0.95 } ship = hsv { 0.58 0.80 1.35 } }
+		navy_11 = { flag = hsv { 0.58 0.60 1.00 } map = hsv { 0.58 0.60 0.95 } ship = hsv { 0.58 0.60 1.35 } }
+		navy_12 = { flag = hsv { 0.58 0.40 1.00 } map = hsv { 0.58 0.40 0.95 } ship = hsv { 0.58 0.40 1.35 } }
+		cerulean = { flag = hsv { 0.53 0.6 0.5 } map = hsv { 0.53 0.6 0.5 } ship = hsv { 0.53 0.6 1.1 } }
+		
+		blue_01 = { flag = hsv { 0.67 0.75 0.50 } map = hsv { 0.67 0.75 0.45 } ship = hsv { 0.67 0.75 0.85 } }
+		blue_02 = { flag = hsv { 0.67 0.75 0.40 } map = hsv { 0.67 0.75 0.35 } ship = hsv { 0.67 0.75 0.75 } }
+		blue_03 = { flag = hsv { 0.67 0.75 0.30 } map = hsv { 0.67 0.75 0.25 } ship = hsv { 0.67 0.75 0.65 } }
+		blue_04 = { flag = hsv { 0.67 0.75 0.20 } map = hsv { 0.67 0.75 0.15 } ship = hsv { 0.67 0.75 0.55 } }
+		blue_05 = { flag = hsv { 0.67 1.00 0.20 } map = hsv { 0.67 1.00 0.15 } ship = hsv { 0.67 1.00 0.55 } }
+		blue_06 = { flag = hsv { 0.67 1.00 0.40 } map = hsv { 0.67 1.00 0.35 } ship = hsv { 0.67 1.00 0.75 } }
+		blue_07 = { flag = hsv { 0.67 1.00 0.60 } map = hsv { 0.67 1.00 0.55 } ship = hsv { 0.67 1.00 0.95 } }
+		blue_08 = { flag = hsv { 0.67 1.00 0.80 } map = hsv { 0.67 1.00 0.75 } ship = hsv { 0.67 1.00 1.15 } }
+		blue_09 = { flag = hsv { 0.67 1.00 1.00 } map = hsv { 0.67 1.00 0.95 } ship = hsv { 0.67 1.00 1.35 } }
+		blue_10 = { flag = hsv { 0.67 0.80 1.00 } map = hsv { 0.67 0.80 0.95 } ship = hsv { 0.67 0.80 1.35 } }
+		blue_11 = { flag = hsv { 0.67 0.60 1.00 } map = hsv { 0.67 0.60 0.95 } ship = hsv { 0.67 0.60 1.35 } }
+		blue_12 = { flag = hsv { 0.67 0.40 1.00 } map = hsv { 0.67 0.40 0.95 } ship = hsv { 0.67 0.40 1.35 } }
+		space_cadet = { flag = hsv { 0.63 0.64 0.32 } map = hsv { 0.63 0.64 0.32 } ship = hsv { 0.63 0.64 0.8 } }
+		
+		purple_01 = { flag = hsv { 0.76 0.75 0.50 } map = hsv { 0.76 0.75 0.45 } ship = hsv { 0.76 0.75 0.85 } }
+		purple_02 = { flag = hsv { 0.76 0.75 0.40 } map = hsv { 0.76 0.75 0.35 } ship = hsv { 0.76 0.75 0.75 } }
+		purple_03 = { flag = hsv { 0.76 0.75 0.30 } map = hsv { 0.76 0.75 0.25 } ship = hsv { 0.76 0.75 0.65 } }
+		purple_04 = { flag = hsv { 0.76 0.75 0.20 } map = hsv { 0.76 0.75 0.15 } ship = hsv { 0.76 0.75 0.55 } }
+		purple_05 = { flag = hsv { 0.76 1.00 0.20 } map = hsv { 0.76 1.00 0.15 } ship = hsv { 0.76 1.00 0.55 } }
+		purple_06 = { flag = hsv { 0.76 1.00 0.40 } map = hsv { 0.76 1.00 0.35 } ship = hsv { 0.76 1.00 0.75 } }
+		purple_07 = { flag = hsv { 0.76 1.00 0.60 } map = hsv { 0.76 1.00 0.55 } ship = hsv { 0.76 1.00 0.95 } }
+		purple_08 = { flag = hsv { 0.76 1.00 0.80 } map = hsv { 0.76 1.00 0.75 } ship = hsv { 0.76 1.00 1.15 } }
+		purple_09 = { flag = hsv { 0.76 1.00 1.00 } map = hsv { 0.76 1.00 0.95 } ship = hsv { 0.76 1.00 1.35 } }
+		purple_10 = { flag = hsv { 0.76 0.80 1.00 } map = hsv { 0.76 0.80 0.95 } ship = hsv { 0.76 0.80 1.35 } }
+		purple_11 = { flag = hsv { 0.76 0.60 1.00 } map = hsv { 0.76 0.60 0.95 } ship = hsv { 0.76 0.60 1.35 } }
+		purple_12 = { flag = hsv { 0.76 0.40 1.00 } map = hsv { 0.76 0.40 0.95 } ship = hsv { 0.76 0.40 1.35 } }
+		liberty	= { flag = hsv { 0.66 0.5 0.66 } map = hsv { 0.66 0.5 0.65 } ship = hsv { 0.66 0.5 1.1 } }
+		
+		magneta_01 = { flag = hsv { 0.83 0.75 0.50 } map = hsv { 0.83 0.75 0.45 } ship = hsv { 0.83 0.75 0.85 } }
+		magneta_02 = { flag = hsv { 0.83 0.75 0.40 } map = hsv { 0.83 0.75 0.35 } ship = hsv { 0.83 0.75 0.75 } }
+		magneta_03 = { flag = hsv { 0.83 0.75 0.30 } map = hsv { 0.83 0.75 0.25 } ship = hsv { 0.83 0.75 0.65 } }
+		magneta_04 = { flag = hsv { 0.83 0.75 0.20 } map = hsv { 0.83 0.75 0.15 } ship = hsv { 0.83 0.75 0.55 } }
+		magneta_05 = { flag = hsv { 0.83 1.00 0.20 } map = hsv { 0.83 1.00 0.15 } ship = hsv { 0.83 1.00 0.55 } }
+		magneta_06 = { flag = hsv { 0.83 1.00 0.40 } map = hsv { 0.83 1.00 0.35 } ship = hsv { 0.83 1.00 0.75 } }
+		magneta_07 = { flag = hsv { 0.83 1.00 0.60 } map = hsv { 0.83 1.00 0.55 } ship = hsv { 0.83 1.00 0.95 } }
+		magneta_08 = { flag = hsv { 0.83 1.00 0.80 } map = hsv { 0.83 1.00 0.75 } ship = hsv { 0.83 1.00 1.15 } }
+		magneta_09 = { flag = hsv { 0.83 1.00 1.00 } map = hsv { 0.83 1.00 0.95 } ship = hsv { 0.83 1.00 1.35 } }
+		magneta_10 = { flag = hsv { 0.83 0.80 1.00 } map = hsv { 0.83 0.80 0.95 } ship = hsv { 0.83 0.80 1.35 } }
+		magneta_11 = { flag = hsv { 0.83 0.60 1.00 } map = hsv { 0.83 0.60 0.95 } ship = hsv { 0.83 0.60 1.35 } }
+		magneta_12 = { flag = hsv { 0.83 0.40 1.00 } map = hsv { 0.83 0.40 0.95 } ship = hsv { 0.83 0.40 1.35 } }
+		lilac = { flag = hsv { 0.81 0.28 0.95 }	map = hsv { 0.81 0.28 0.55 } ship = hsv { 0.81 0.28 1.1 } }
+		
+		################################################################################
+		### SOME OF THE 48 COLORS, credits to Genusaus (/profiles/76561198005698548) ###
+		################################################################################
+		
+		dijon			= { flag = hsv { 0.15 0.61 0.85 }	map = hsv { 0.15 0.61 0.65 } 	ship = hsv { 0.15  0.61  1.2 } }
+		amber			= { flag = hsv { 0.11 0.99 0.99 }	map = hsv { 0.11 0.99 0.65 } 	ship = hsv { 0.11  0.99  1.2 } }
+		gold			= { flag = hsv { 0.13 0.74 0.83 }	map = hsv { 0.13 0.74 0.63 } 	ship = hsv { 0.13  0.74  1.2 } }
+		bold_orange 	= { flag = hsv { 0.06 0.89 0.88 }	map = hsv { 0.06 0.89 0.75 } 	ship = hsv { 0.06  0.89  1.3 } }
+		blood_orange 	= { flag = hsv { 0.04 0.99 0.78 }	map = hsv { 0.04 0.99 0.75 } 	ship = hsv { 0.04  0.99  1.3 } }
+		true_red		= { flag = hsv { 0 0.89 0.9 }     	map = hsv { 0 0.89 0.75 } 		ship = hsv { 0     0.89  1.3 } }
+		cardinal		= { flag = hsv { 0.97 0.85 0.77 }	map = hsv { 0.97 0.85 0.73 } 	ship = hsv { 0.97  0.85  1.3 } }
+		auburn			= { flag = hsv { 0 0.75 0.65 }		map = hsv { 0 0.75 0.65 } 		ship = hsv { 0     0.75  1.2 } }
+		fire_brick 		= { flag = hsv { 0 0.74 0.42 }		map = hsv { 0 0.74 0.42 } 		ship = hsv { 0     0.74  1.0 } } 
+		dark_magenta 	= { flag = hsv { 0.93 0.9 0.76 }	map = hsv { 0.93 0.9 0.75 } 	ship = hsv { 0.93  0.9   1.2 } }
+		bubblegum		= { flag = hsv { 0.93 0.48 0.95 }	map = hsv { 0.93 0.48 0.75 } 	ship = hsv { 0.93  0.48  1.2 } }
+		palatinate		= { flag = hsv { 0.86 0.62 0.41 }   map = hsv { 0.86 0.62 0.41 }  	ship = hsv { 0.86  0.62  1.0 } }
+		prussian_blue	= { flag = hsv { 0.68 0.52 0.23 }	map = hsv { 0.68 0.52 0.23 } 	ship = hsv { 0.68  0.52  0.9 } }
+		light_blue		= { flag = hsv { 0.58 0.47 0.86 }	map = hsv { 0.58 0.47 0.55 } 	ship = hsv { 0.58  0.47  1.2 } }
+		liberty			= { flag = hsv { 0.66 0.5 0.66 }	map = hsv { 0.66 0.5 0.65 } 	ship = hsv { 0.66  0.5   1.1 } }
+		light_blue		= { flag = hsv { 0.6 0.6 0.7 }   	map = hsv { 0.6 0.4 0.8 } 		ship = hsv { 0.60  0.5   1.1 } }
+		light_green		= { flag = hsv { 0.35 0.5 0.60 }	map = hsv { 0.32 0.4 0.7 } 		ship = hsv { 0.36  0.6   1.1 } }
+		beige			= { flag = hsv { 0.1 0.4 0.6 }     	map = hsv { 0.075 0.4 0.7 } 	ship = hsv { 0.09  0.5   1.2 } }
+		yellow			= { flag = hsv { 0.11 0.8 0.8 }     map = hsv { 0.10 0.75 0.99 } 	ship = hsv { 0.11  0.75  0.9 } }
+		light_orange 	= { flag = hsv { 0.09 1.0 0.8 }     map = hsv { 0.09 0.8 0.8 } 		ship = hsv { 0.10  0.97  1.1 } }
+		white			= { flag = hsv { 0 0 0.99 }	    	map = hsv { 0.0 0.0 0.75 } 		ship = hsv { 0.0   0.0   1.5 }	use_as_border_color = no }
+		
+		#######################
+		### ORIGINAL COLORS ###
+		#######################
+		
+		dark_brown 	= { flag = hsv { 0.07 0.6 0.23 }	map = hsv { 0.06 0.5 0.35 } 	ship = hsv { 0.05  0.7   0.8  } }		
+		brown 		= { flag = hsv { 0.07 0.6 0.4 }     map = hsv { 0.08 0.5 0.55 } 	ship = hsv { 0.08  0.7   0.7  } }		
+		orange		= { flag = hsv { 0.06 0.9 0.7 }     map = hsv { 0.075 0.8 0.7 } 	ship = hsv { 0.07  0.8   1.2  } }		
+		red_orange	= { flag = hsv { 0.01 0.75 0.7 }    map = hsv { 0.028 0.75 0.7 } 	ship = hsv { 0.015 0.7   0.9  } }		
+		red			= { flag = hsv { 0.0 0.95 0.5 }     map = hsv { 0.99 0.8 0.7 } 		ship = hsv { 0.0   0.95  0.8  } }		
+		burgundy	= { flag = hsv { 0.95 0.8 0.35 }    map = hsv { 0.93 0.6 0.42 } 	ship = hsv { 0.92  0.5   0.6  } }		
+		pink		= { flag = rgb { 130 50 105 }       map = hsv { 0.95 0.35 0.6 }  	ship = hsv { 0.9   0.65  1.1  } }		
+		purple		= { flag = rgb { 100 54 158 }       map = hsv { 0.8 0.4 0.5 } 		ship = hsv { 0.75  0.65  1.2  } }			
+		dark_purple = { flag = rgb { 61 27 96 }         map = hsv { 0.85 0.6 0.35 } 	ship = hsv { 0.76  0.75  1.0  } }		
+		indigo		= { flag = hsv { 0.71 0.85 0.5 }    map = hsv { 0.71 0.85 0.5 }  	ship = hsv { 0.71  0.7   1.0  } }		
+		dark_blue	= { flag = hsv { 0.64 0.85 0.45 }   map = hsv { 0.58 0.7 0.4 } 		ship = hsv { 0.62  0.9   1.2  } }		
+		blue		= { flag = hsv { 0.64 0.7 0.6 }  	map = hsv { 0.6 0.5 0.6 } 		ship = hsv { 0.59  0.8   1.3  } }			
+		turquoise	= { flag = hsv { 0.49 0.6 0.6 }     map = hsv { 0.5 0.7 0.8 } 		ship = hsv { 0.51  0.8   1.1  } }
+		dark_teal	= { flag = hsv { 0.5 0.6 0.3 }      map = hsv { 0.48 0.6 0.42 } 	ship = hsv { 0.49  0.9   0.9 } }
+		teal		= { flag = hsv { 0.42 0.6 0.5  }    map = hsv { 0.43 0.3 0.5  } 	ship = hsv { 0.45  0.7   1.1  } }			
+		green		= { flag = hsv { 0.32 0.6 0.40 }	map = hsv { 0.32 0.4 0.55 } 	ship = hsv { 0.4  0.8    1.1 } }		
+		dark_green	= { flag = hsv { 0.33 0.6 0.27 }    map = hsv { 0.33 0.4 0.3 } 		ship = hsv { 0.42  0.99  0.9 } }	
+		grey		= { flag = hsv { 0.65 0.05 0.35 }   map = hsv { 0.58 0.15 0.6 } 	ship = hsv { 0.62 0.25 1.0 } 	use_as_border_color = no }	
+		dark_grey	= { flag = hsv { 0.65 0.05 0.22 }   map = hsv { 0.6 0.2 0.3 } 		ship = hsv { 0.62 0.2 1.0 } 	use_as_border_color = no }
+		black		= { flag = hsv { 0.5 0.3 0.05 }     map = hsv { 0.7 0.1 0.18 } 		ship = hsv { 0.72 0.2 1.0 } 	use_as_border_color = no }		
+}
+
+		# BLACK
+		randomizable_combo = { orange black orange }
+		randomizable_combo = { black orange orange }
+		randomizable_combo = { red_orange black orange }
+		randomizable_combo = { black red_orange orange }
+		randomizable_combo = { brown black orange }
+		randomizable_combo = { black brown orange }
+		randomizable_combo = { blue black blue }
+		randomizable_combo = { black blue blue }
+		randomizable_combo = { green black green }
+		randomizable_combo = { black green green }
+		randomizable_combo = { dark_green black dark_green }
+		randomizable_combo = { black dark_green dark_green }
+		randomizable_combo = { red black red }
+		randomizable_combo = { black red red }
+		randomizable_combo = { indigo black blue }
+		randomizable_combo = { black indigo blue }
+		randomizable_combo = { dark_blue black blue }
+		randomizable_combo = { black dark_blue blue }
+		randomizable_combo = { blue black blue }
+		randomizable_combo = { black blue blue }
+		randomizable_combo = { teal black teal }
+		randomizable_combo = { black teal teal }
+		randomizable_combo = { dark_teal black dark_teal }
+		randomizable_combo = { black dark_teal dark_teal }
+		randomizable_combo = { burgundy black burgundy }
+		randomizable_combo = { black burgundy black }
+		randomizable_combo = { turquoise black turquoise }
+		randomizable_combo = { black turquoise black }
+		randomizable_combo = { purple black purple }
+		randomizable_combo = { black purple black }
+		randomizable_combo = { dark_purple black dark_purple }
+		randomizable_combo = { black dark_purple black }
+		randomizable_combo = { pink black pink }
+		randomizable_combo = { black pink black }
+		randomizable_combo = { grey black grey }
+		randomizable_combo = { black grey black }
+		randomizable_combo = { dark_grey black grey }
+		randomizable_combo = { black dark_grey black }
+    
+		# DARK GREY
+		randomizable_combo = { orange dark_grey orange }
+		randomizable_combo = { dark_grey orange orange }
+		randomizable_combo = { red_orange dark_grey orange }
+		randomizable_combo = { dark_grey red_orange orange }
+		randomizable_combo = { green dark_grey green }
+		randomizable_combo = { dark_grey green green }
+		randomizable_combo = { red dark_grey red }
+		randomizable_combo = { dark_grey red red }
+		randomizable_combo = { burgundy dark_grey red }
+		randomizable_combo = { dark_grey burgundy red }
+		randomizable_combo = { blue dark_grey blue }
+		randomizable_combo = { dark_grey blue blue }
+		randomizable_combo = { teal dark_grey teal }
+		randomizable_combo = { dark_grey teal teal }
+		randomizable_combo = { turquoise dark_grey turquoise }
+		randomizable_combo = { dark_grey turquoise turquoise }
+		randomizable_combo = { pink dark_grey pink }
+		randomizable_combo = { dark_grey pink pink }
+		randomizable_combo = { grey dark_grey grey }
+		randomizable_combo = { dark_grey grey grey }
+    
+		# DARK PURPLE
+		randomizable_combo = { orange dark_purple black }
+		randomizable_combo = { dark_purple orange black }
+		randomizable_combo = { red_orange dark_purple black }
+		randomizable_combo = { dark_purple red_orange black }
+		randomizable_combo = { purple dark_purple black }
+		randomizable_combo = { dark_purple purple black }
+		randomizable_combo = { pink dark_purple black }
+		randomizable_combo = { dark_purple pink black }
+		randomizable_combo = { red dark_purple black }
+		randomizable_combo = { dark_purple red black }
+		randomizable_combo = { blue dark_purple black }
+		randomizable_combo = { dark_purple blue black }
+		randomizable_combo = { green dark_purple black }
+		randomizable_combo = { dark_purple green black }
+		randomizable_combo = { grey dark_purple black }
+		randomizable_combo = { dark_purple grey black }
+		randomizable_combo = { turquoise dark_purple black }
+		randomizable_combo = { dark_purple turquoise black }
+    
+		# INDIGO
+		randomizable_combo = { orange indigo black }
+		randomizable_combo = { indigo orange black }
+		randomizable_combo = { red_orange indigo black }
+		randomizable_combo = { indigo red_orange black }
+		randomizable_combo = { purple indigo black }
+		randomizable_combo = { indigo purple black }
+		randomizable_combo = { pink indigo black }
+		randomizable_combo = { indigo pink black }
+		randomizable_combo = { red indigo black }
+		randomizable_combo = { indigo red black }
+		randomizable_combo = { blue indigo black }
+		randomizable_combo = { indigo blue black }
+		randomizable_combo = { green indigo black }
+		randomizable_combo = { indigo green black }
+		randomizable_combo = { grey indigo black }
+		randomizable_combo = { indigo grey black }
+		randomizable_combo = { turquoise indigo black }
+		randomizable_combo = { indigo turquoise black }
+		
+		# DARK BLUE
+		randomizable_combo = { orange dark_blue black }
+		randomizable_combo = { dark_blue orange black }
+		randomizable_combo = { red_orange dark_blue black }
+		randomizable_combo = { dark_blue red_orange black }
+		randomizable_combo = { purple dark_blue black }
+		randomizable_combo = { dark_blue purple black }
+		randomizable_combo = { pink dark_blue black }
+		randomizable_combo = { dark_blue pink black }
+		randomizable_combo = { red dark_blue black }
+		randomizable_combo = { dark_blue red black }
+		randomizable_combo = { blue dark_blue black }
+		randomizable_combo = { dark_blue blue black }
+		randomizable_combo = { green dark_blue black }
+		randomizable_combo = { dark_blue green black }
+		randomizable_combo = { grey dark_blue black }
+		randomizable_combo = { dark_blue grey black }
+		randomizable_combo = { teal dark_blue black }
+		randomizable_combo = { dark_blue teal black }
+		randomizable_combo = { dark_teal dark_blue black }
+		randomizable_combo = { dark_blue dark_teal black }
+		randomizable_combo = { turquoise dark_blue black }
+		randomizable_combo = { dark_blue turquoise black }
+    
+		# DARK GREEN
+		randomizable_combo = { orange dark_green black }
+		randomizable_combo = { dark_green orange black }
+		randomizable_combo = { red_orange dark_green black }
+		randomizable_combo = { dark_green red_orange black }
+		randomizable_combo = { brown dark_green black }
+		randomizable_combo = { dark_green brown black }
+		randomizable_combo = { grey dark_green black }
+		randomizable_combo = { dark_green grey black }
+		randomizable_combo = { pink dark_green black }
+		randomizable_combo = { dark_green pink black }
+		randomizable_combo = { teal dark_green black }
+		randomizable_combo = { dark_green teal black }
+		randomizable_combo = { green dark_green black }
+		randomizable_combo = { dark_green green black }
+		randomizable_combo = { turquoise dark_green black }
+		randomizable_combo = { dark_green turquoise black }
+    
+		# DARK TEAL
+		randomizable_combo = { orange dark_teal black }
+		randomizable_combo = { dark_teal orange black }
+		randomizable_combo = { red_orange dark_teal black }
+		randomizable_combo = { dark_teal red_orange black }
+		randomizable_combo = { red dark_teal black }
+		randomizable_combo = { dark_teal red black }
+		randomizable_combo = { burgundy dark_teal black }
+		randomizable_combo = { dark_teal burgundy black }
+		randomizable_combo = { pink dark_teal black }
+		randomizable_combo = { dark_teal pink black }
+		randomizable_combo = { dark_brown dark_teal black }
+		randomizable_combo = { dark_teal dark_brown black }
+		randomizable_combo = { green dark_teal black }
+		randomizable_combo = { dark_teal green black }
+		randomizable_combo = { turquoise dark_teal black }
+		randomizable_combo = { dark_teal turquoise black }
+		randomizable_combo = { teal dark_teal black }
+		randomizable_combo = { dark_teal teal black }
+		randomizable_combo = { grey dark_teal black }
+		randomizable_combo = { dark_teal grey black }
+		
+		# DARK BROWN
+		randomizable_combo = { orange dark_brown black }
+		randomizable_combo = { dark_brown orange black }
+		randomizable_combo = { red_orange dark_brown black }
+		randomizable_combo = { dark_brown red_orange black }
+		randomizable_combo = { brown dark_brown black }
+		randomizable_combo = { dark_brown brown black }
+		randomizable_combo = { blue dark_brown black }
+		randomizable_combo = { dark_brown blue black }
+		randomizable_combo = { turquoise dark_brown black }
+		randomizable_combo = { dark_brown turquoise black }
+		randomizable_combo = { teal dark_brown black }
+		randomizable_combo = { dark_brown teal black }
+		randomizable_combo = { green dark_brown black }
+		randomizable_combo = { dark_brown green black }
+		randomizable_combo = { grey dark_brown black }
+		randomizable_combo = { dark_brown grey black }
+    
+		# RED
+		randomizable_combo = { red brown black }
+		randomizable_combo = { brown red black }
+		randomizable_combo = { red blue black }
+		randomizable_combo = { blue red black }
+		randomizable_combo = { red orange black }
+		randomizable_combo = { orange red black }
+		randomizable_combo = { red red_orange black }
+		randomizable_combo = { red_orange red black }
+		randomizable_combo = { red turquoise black }
+		randomizable_combo = { turquoise red black }
+		randomizable_combo = { red teal black }
+		randomizable_combo = { teal red black }
+		randomizable_combo = { red grey black }
+		randomizable_combo = { grey red black }
+		randomizable_combo = { red pink black }
+		randomizable_combo = { pink red black }
+		randomizable_combo = { red purple black }
+		randomizable_combo = { purple red black }
+		randomizable_combo = { red green black }
+		randomizable_combo = { green red black }
+		
+		# BURGUNDY
+		randomizable_combo = { burgundy brown black }
+		randomizable_combo = { brown burgundy black }
+		randomizable_combo = { burgundy orange black }
+		randomizable_combo = { orange burgundy black }
+		randomizable_combo = { burgundy red_orange black }
+		randomizable_combo = { red_orange burgundy black }
+		randomizable_combo = { burgundy pink black }
+		randomizable_combo = { pink burgundy black }
+		randomizable_combo = { burgundy purple black }
+		randomizable_combo = { purple burgundy black }
+		randomizable_combo = { burgundy teal black }
+		randomizable_combo = { teal burgundy black }
+		randomizable_combo = { burgundy green black }
+		randomizable_combo = { green burgundy black }
+		randomizable_combo = { burgundy grey black }
+		randomizable_combo = { grey burgundy black }
+		
+		# BLUE
+		randomizable_combo = { orange blue black }
+		randomizable_combo = { blue orange black }
+		randomizable_combo = { red_orange blue black }
+		randomizable_combo = { blue red_orange black }
+		randomizable_combo = { pink blue black }
+		randomizable_combo = { blue pink black }
+		randomizable_combo = { purple blue black }
+		randomizable_combo = { blue purple black }
+		randomizable_combo = { teal blue black }
+		randomizable_combo = { blue teal black }
+		randomizable_combo = { grey blue black }
+		randomizable_combo = { blue grey black }
+		
+		# BROWN
+		randomizable_combo = { brown orange black }
+		randomizable_combo = { orange brown black }
+		randomizable_combo = { brown turquoise black }
+		randomizable_combo = { turquoise brown black }
+		randomizable_combo = { brown teal black }
+		randomizable_combo = { teal brown black }
+		
+		# GREEN
+		randomizable_combo = { green orange black }
+		randomizable_combo = { orange green black }
+		randomizable_combo = { green teal black }
+		randomizable_combo = { teal green black }
+    
+    

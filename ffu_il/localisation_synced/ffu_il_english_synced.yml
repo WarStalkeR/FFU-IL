@@ -1,0 +1,12 @@
+﻿l_default:
+ NAME_Automaton: "Automaton"
+ NAME_Automatons: "Automatons"
+ PRESCRIPTED_adjective_ffu_il_idf: "Kadeshi"
+ PRESCRIPTED_species_name_ffu_il_idf: "Kadeshi"
+ PRESCRIPTED_species_plural_ffu_il_idf: "Kadeshi"
+ PRESCRIPTED_species_adjective_ffu_il_idf: "Kadeshian"
+ PRESCRIPTED_ship_prefix_ffu_il_idf: "IDF"
+ PRESCRIPTED_planet_name_ffu_il_idf: "New Jerusalem"
+ PRESCRIPTED_system_name_ffu_il_idf: "Proxima"
+ PRESCRIPTED_ruler_name_ffu_il_idf: "Ashkenazi"
+ PRESCRIPTED_ruler_title_ffu_il_idf: "Supreme Commander"
