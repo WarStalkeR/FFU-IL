@@ -1,0 +1,21 @@
+guiTypes = {
+	################################################################
+	# ASCENSION PERKS ENTRY POSITIONS
+	################################################################
+	positionType = { name = "ap_0"	position = { x = 15 y = 36 } }	 #mod
+	positionType = { name = "ap_1"	position = { x = 73 y = 36 } }	 #mod
+	positionType = { name = "ap_2"	position = { x = 131 y = 36 } }	 #mod
+	positionType = { name = "ap_3"	position = { x = 189 y = 36 } }	 #mod
+	positionType = { name = "ap_4"	position = { x = 44 y = 85 } }	 #mod
+	positionType = { name = "ap_5"	position = { x = 102 y = 85 } }	 #mod
+	positionType = { name = "ap_6"	position = { x = 160 y = 85 } }	 #mod
+	positionType = { name = "ap_7"	position = { x = 218 y = 85 } }	 #mod
+	positionType = { name = "ap_8"	position = { x = 18 y = 134 } }	 #mod
+	positionType = { name = "ap_9"	position = { x = 73 y = 134 } }	 #mod
+	positionType = { name = "ap_10"	position = { x = 131 y = 134 } } #mod
+	positionType = { name = "ap_11"	position = { x = 189 y = 134 } } #mod
+	positionType = { name = "ap_12"	position = { x = 44 y = 183 } }	 #mod
+	positionType = { name = "ap_13"	position = { x = 102 y = 183 } } #mod
+	positionType = { name = "ap_14"	position = { x = 160 y = 183 } } #mod
+	positionType = { name = "ap_15"	position = { x = 218 y = 183 } } #mod
+}

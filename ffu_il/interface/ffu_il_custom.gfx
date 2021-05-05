@@ -1,10 +1,27 @@
 spriteTypes = {
+	### FFU:IL BACKGROUND REFS
+	# GFX_dark_area_cut
+	# GFX_planet_bg_tile_frame
+	# GFX_tiles_frame
+
 	### FFU:IL CUSTOM LOGO
 	spriteType = {
 		name = "GFX_ffu_il_logo"
 		texturefile = "gfx/interface/main/logo_ffu_il_ingame.dds"
 	}
 	
+	### FFU:IL CUSTOM UI ELEMENTS
+	spriteType = {
+		name = "GFX_line_vshort"
+		textureFile = "gfx/interface/planetview/line_vshort.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_transparent_frame"
+		textureFile = "gfx/interface/tiles/black_bg_transparent_frame_tile.dds"
+		borderSize = { x=4 y=4 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
 	### FFU:IL CUSTOM TEXT ICONS
 	spriteType = {
 		name = "GFX_text_large_planet_alpine"
@@ -410,18 +427,18 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_spaceport_module_slot_ffuil"
-		textureFile = "gfx/interface/planetview/spaceport_module_slot_ffuil.dds"
+		name = "GFX_build_slot_ffu_il_free"
+		textureFile = "gfx/interface/planetview/build_slot_ffu_il_free.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_spaceport_module_used_slot_ffuil"
-		textureFile = "gfx/interface/planetview/spaceport_module_used_slot_ffuil.dds"
+		name = "GFX_build_slot_ffu_il_locked"
+		textureFile = "gfx/interface/planetview/build_slot_ffu_il_locked.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_spaceport_module_locked_slot_ffuil"
-		textureFile = "gfx/interface/planetview/spaceport_module_locked_slot_ffuil.dds"
+		name = "GFX_build_slot_ffu_il_occupied"
+		textureFile = "gfx/interface/planetview/build_slot_ffu_il_occupied.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_habitability_icon"
@@ -477,47 +494,51 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_arcology_supply"
-		texturefile = "gfx/interface/icons/districts/district_arcology_civilian_industry.dds"
+		texturefile = "gfx/interface/icons/districts/district_arcology_support.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_arcology_fabric"
-		texturefile = "gfx/interface/icons/districts/district_arcology_arms_industry.dds"
+		texturefile = "gfx/interface/icons/districts/district_arcology_industry.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_arcology_hightech"
-		texturefile = "gfx/interface/icons/districts/district_arcology_leisure.dds"
+		texturefile = "gfx/interface/icons/districts/district_arcology_hightech.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_energy_basic"
-		texturefile = "gfx/interface/icons/districts/district_generator.dds"
+		texturefile = "gfx/interface/icons/districts/district_planet_rur_generator.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_energy_advanced"
-		texturefile = "gfx/interface/icons/districts/district_generator_uncapped.dds"
+		texturefile = "gfx/interface/icons/districts/district_planet_adv_generator.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_mining_basic"
-		texturefile = "gfx/interface/icons/districts/district_mining.dds"
+		texturefile = "gfx/interface/icons/districts/district_planet_rur_mining.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_mining_advanced"
-		texturefile = "gfx/interface/icons/districts/district_mining_uncapped.dds"
+		texturefile = "gfx/interface/icons/districts/district_planet_adv_mining.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_commerce_basic"
-		texturefile = "gfx/interface/icons/districts/district_hab_cultural.dds"
+		texturefile = "gfx/interface/icons/districts/district_habitat_cultural.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_commerce_advanced"
-		texturefile = "gfx/interface/icons/districts/district_hab_commercial.dds"
+		texturefile = "gfx/interface/icons/districts/district_habitat_commercial.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_tech_basic"
-		texturefile = "gfx/interface/icons/districts/district_hab_science.dds"
+		texturefile = "gfx/interface/icons/districts/district_habitat_science.dds"
 	}
 	spriteType = {
 		name = "GFX_ffu_il_branch_tech_advanced"
-		texturefile = "gfx/interface/icons/districts/district_hab_network.dds"
+		texturefile = "gfx/interface/icons/districts/district_habitat_network.dds"
+	}
+	spriteType = {
+		name = "GFX_districts_bg_ffu_il"
+		texturefile = "gfx/interface/icons/districts/districts_back_box_ffu_il.dds"
 	}
 	corneredTileSpriteType = {
 		name = "GFX_glow_tile_orange_no_padding_ffu_il"
@@ -533,7 +554,16 @@ spriteTypes = {
 		colortwo = { 1.0 1.0 1.0 }	
 		textureFile1 = "gfx/interface/progressbars/queue_progressbar.dds"
 		textureFile2 = "gfx/interface/progressbars/queue_progressbar_empty.dds"
-		size = { x = 49 y = 10 }
+		size = { x = 67 y = 10 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	progressbartype = {
+		name = "GFX_queue_progressbar_ffu_il"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/queue_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/queue_progressbar_empty.dds"
+		size = { x = 225 y = 14 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	spriteType = {
@@ -833,7 +863,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_annihilation.dds"
 	}
 	
-	### FFU:IL CUSTOM ORBITAL BOMBARDMENT ICONS
+	### FFU:IL CUSTOM ANIMATED BUTTONS
 	spriteType = {
 		name = "GFX_fleet_order_button_ground_support_fullscale"
 		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_fullscale_action.dds"
@@ -861,6 +891,25 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
 			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_inspect_planet_features_ffu_il"
+		texturefile = "gfx/interface/planetview/inspect_features_ffu_il.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/standard_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/standard_button_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 12.0

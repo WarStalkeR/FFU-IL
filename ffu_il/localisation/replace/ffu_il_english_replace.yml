@@ -9,6 +9,10 @@
  SHIP_MODIFIER:0 "£ship_modifier£ Ship Modifier"
  SPACEPORT_MODIFIER:0 "Spaceport Modifier"
  
+ ### INTERFACE
+ PLANETARY_PRODUCTION:0 "Production"
+ PLANETARY_DEFICIT:0 "Deficit"
+ 
  ### SHIP PARTS
  power_core:0 "$ffu_il_main_reactor_core$"
  power_core_DESC:0 "$ffu_il_main_reactor_core_DESC$"

@@ -362,39 +362,6 @@ guiTypes = {
 			@planet_7_y = 208	#mod
 			@planet_8_y = 133	#mod
 			@planet_9_y = 57	#mod
-			instantTextBoxType = {
-				name = "TYPE_HEADER_01"
-				font = "malgun_goth_24"
-				text = "climate_dry"
-				position = { x = @planet_col1 y = @planet_row0 }
-				maxWidth = 100
-				maxHeight = 20
-				Orientation = "UPPER_LEFT"
-				text_color_code = "E"
-				format = center
-			}
-			instantTextBoxType = {
-				name = "TYPE_HEADER_02"
-				font = "malgun_goth_24"
-				text = "climate_wet"
-				position = { x = @planet_col2 y = @planet_row0 }
-				maxWidth = 100
-				maxHeight = 20
-				Orientation = "UPPER_LEFT"
-				text_color_code = "E"
-				format = center
-			}
-			instantTextBoxType = {
-				name = "TYPE_HEADER_03"
-				font = "malgun_goth_24"
-				text = "climate_cold"
-				position = { x = @planet_col3 y = @planet_row0 }
-				maxWidth = 100
-				maxHeight = 20
-				Orientation = "UPPER_LEFT"
-				text_color_code = "E"
-				format = center
-			}
 			containerWindowType = {										#mod
 				name = "setting_bg_box1"								#mod
 				position = { x = 326 y = 28 }							#mod
