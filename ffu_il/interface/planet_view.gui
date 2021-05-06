@@ -47,7 +47,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_view"
 		orientation = upper_left
-		size = { width = 850 height = 824 } #mod
+		size = { width = 848 height = 824 } #mod
 		moveable = yes
 		position = { x = 300 y = 200 }
 		clipping = no
@@ -59,7 +59,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "planet_view_bg"
-			size = { width = 850 height = 784 } #mod
+			size = { width = 848 height = 784 } #mod
 			position = { x = 0 y = 0 }
 
 			background = {
@@ -107,7 +107,7 @@ guiTypes = {
 		# Header Buttons
 		containerWindowType = {
 			name = "header_actions"
-			position = { x = 658 y = 12 }
+			position = { x = 656 y = 12 } #mod
 			size = { width = 190 height = 40 }
 
 			#background = {
@@ -214,7 +214,7 @@ guiTypes = {
 			buttonType = {
 				name = "flag"
 				quadTextureSprite = "GFX_empire_flag_64"
-				position = { x= 0 y = -5  }
+				position = { x = -1 y = -5  } #mod
 			}
 		}
 
@@ -229,33 +229,25 @@ guiTypes = {
 			#	spriteType = "GFX_dark_area_cut"	#mod
 			#}										#mod
 
-			containerWindowType = {					#mod
-			name = "planet_cls_background_ffu_il"	#mod
-			size = { width = 175 height = 35 } 		#mod
-			position = { x = 0 y = 0 } 				#mod
-			background = {							#mod
-				name = "background"					#mod
-				spriteType = "GFX_dark_area_cut"	#mod
-			}										#mod
-		}											#mod
-		containerWindowType = {						#mod
-			name = "planet_hab_background_ffu_il"	#mod
-			size = { width = 80 height = 35 } 		#mod
-			position = { x = 95 y = 37 } 			#mod
-			background = {							#mod
-				name = "background"					#mod
-				spriteType = "GFX_dark_area_cut"	#mod
-			}										#mod
-		}											#mod
-		containerWindowType = {						#mod
-			name = "planet_size_background_ffu_il"	#mod
-			size = { width = 80 height = 35 } 		#mod
-			position = { x = 95 y = 74 } 			#mod
-			background = {							#mod
-				name = "background"					#mod
-				spriteType = "GFX_dark_area_cut"	#mod
-			}										#mod
-		}											#mod
+			containerWindowType = {						#mod
+				name = "planet_cls_background_ffu_il"	#mod
+				size = { width = 175 height = 35 } 		#mod
+				position = { x = 0 y = 0 } 				#mod
+				background = {							#mod
+					name = "background"					#mod
+					spriteType = "GFX_dark_area_cut"	#mod
+				}										#mod
+			}											#mod
+
+			containerWindowType = {						#mod
+				name = "planet_hab_background_ffu_il"	#mod
+				size = { width = 91 height = 37 } 		#mod
+				position = { x = 193 y = 79 } 			#mod
+				background = {							#mod
+					name = "background"					#mod
+					spriteType = "GFX_tiles_frame"		#mod
+				}										#mod
+			}											#mod
 
 			iconType = {
 				name = "planet_class_icon"
@@ -268,7 +260,7 @@ guiTypes = {
 
 			iconType = {                            #mod
 				name = "planet_hab_icon"            #mod
-				position = { x = 100 y = 42 }       #mod
+				position = { x = 199 y = 85 }       #mod
 				spriteType = "GFX_mod_habitability"	#mod
 				frame = 1                           #mod
 				alwaysTransparent = yes             #mod
@@ -285,15 +277,15 @@ guiTypes = {
 				format = left
 			}
 
-			instantTextBoxType={
+			instantTextBoxType = {
 				name = "habitability"
 				font = "cg_16b"
 				text = "10%"
-				position = { x = 134 y = 47 } #mod
-				maxWidth = 40 #mod
+				position = { x = 235 y = 89 } #mod
+				maxWidth = 43 #mod
 				maxHeight = 20
 				fixedSize = yes
-				format = right
+				format = center #mod
 				alwaysTransparent = yes
 			}
 		}
@@ -337,7 +329,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "colony_type"
 			size = { width = 180 height = 35 }
-			position = { x = 74 y = 70 } #mod
+			position = { x = 71 y = 70 } #mod
 
 			background = {
 				name = "background"
@@ -571,8 +563,8 @@ guiTypes = {
 		# Planet Devastation
 		containerWindowType = {
 			name = "planet_devastation"
-			size = { width = 180 height = 35 }
-			position = { x = 360 y = 110 }
+			size = { width = 70 height = 35 } #mod
+			position = { x = 470 y = 107 } #mod
 
 			background = {
 				name = "background"
@@ -581,20 +573,20 @@ guiTypes = {
 
 			iconType = {
 				name = "devastation_icon"
-				position = { x = 150 y = 3 }
+				position = { x = 40 y = 3 } #mod
 				spriteType = "GFX_planet_devastation"
 				alwaysTransparent = yes
 			}
 
-			instantTextBoxType={
+			instantTextBoxType = {
 				name = "devastation_text"
 				font = "cg_16b"
 				text = "Devastation: 10%"
-				position = { x = 5 y = 10 }
-				maxWidth = 140
+				position = { x = 4 y = 10 } #mod
+				maxWidth = 40 #mod
 				maxHeight = 20
 				fixedSize = yes
-				format = right
+				format = center
 				alwaysTransparent = yes
 			}
 		}
@@ -602,13 +594,18 @@ guiTypes = {
 		# Planet Size
 		containerWindowType = {
 			name = "planet_size"
-			size = { width = 80 height = 34 }
-			position = { x = 452 y = 156 } #mod
+			size = { width = 91 height = 37 } #mod
+			position = { x = 558 y = 190 } #mod
+
+			background = {							#mod
+				name = "background"					#mod
+				spriteType = "GFX_tiles_frame"		#mod
+			}										#mod
 
 			iconType = {
 				name = "planet_size_icon"
 				spriteType = "GFX_ffu_il_planet_size_icon" #mod
-				position = { x = 14 y = -7 }
+				position = { x = 3 y = 6 } #mod
 				scale = 1.0 #mod
 				tooltip_mode_enabled = yes
 			}
@@ -616,12 +613,12 @@ guiTypes = {
 			instantTextBoxType={
 				name = "planet_size"
 				font = "cg_16b"
-				position = { x = 60 y = -2 } #mod
+				position = { x = 44 y = 11 } #mod
 				text = "10"
-				maxWidth = 22 #mod
+				maxWidth = 40 #mod
 				maxHeight = 20
 				fixedSize = yes
-				format = left #mod
+				format = center #mod
 			}
 		}
 
@@ -644,26 +641,25 @@ guiTypes = {
 		# Actions & Planet Info
 		containerWindowType = {
 			name = "planet_actions_window"
-			position = { x = 570 y = 62 }
-			size = { width = 289 height = 170 }
+			position = { x = 546 y = -15 } #mod
+			size = { width = 270 height = 160 } #mod
+			clipping = no
 
-			iconType = {
-			name = "background"
-			spriteType = "GFX_planetview_topright_frame"
-			position = { x = -5 y = 1 }
-			}
+			#iconType = {									#mod
+			#	name = "background"							#mod
+			#	spriteType = "GFX_planetview_topright_frame"#mod
+			#	position = { x = -5 y = 1 }					#mod
+			#}												#mod
 
-
-			containerWindowType = {
-			name = "planet_actions_window"
-			position = { x = 10 y = 11 }
-			size = { width = 125 height = 75 }
-
-				background = {
-					name = "stability_pops_bg"
-					spriteType = "GFX_planetview_topright_bg_small"
-				}
-			}
+			#containerWindowType = {						#mod
+			#name = "planet_actions_window"					#mod
+			#position = { x = 10 y = 11 }					#mod
+			#size = { width = 125 height = 75 }				#mod
+			#background = {									#mod
+			#name = "stability_pops_bg"						#mod
+			#spriteType = "GFX_planetview_topright_bg_small"#mod
+			#}												#mod
+			#}												#mod
 
 			#background = {
 			#	position = { x = 0 y = 0 }
@@ -673,8 +669,8 @@ guiTypes = {
 
 			buttonType = {
 				name = "diplomacy_button"
-				position = { x = 130 y = 0 }
-				spriteType = "GFX_standard_button_116_34"
+				position = { x = 0 y = 70 } #mod
+				spriteType = "GFX_standard_button_91_37" #mod
 				buttonFont = "cg_16b"
 				text = "DIPLOMACY"
 				font = "cg_16b"
@@ -684,8 +680,8 @@ guiTypes = {
 
 			buttonType = {
 				name = "decisions_button"
-				position = { x = 130 y = 0 }
-				spriteType = "GFX_standard_button_116_34"
+				position = { x = 0 y = 70 } #mod
+				spriteType = "GFX_standard_button_91_37" #mod
 				buttonFont = "cg_16b"
 				text = "DECISIONS_TITLE"
 				font = "cg_16b"
@@ -698,8 +694,8 @@ guiTypes = {
 
 			buttonType = {
 				name = "colonize_button"
-				position = { x = 130 y = 40 }
-				spriteType = "GFX_standard_button_116_34"
+				position = { x = 0 y = 111 } #mod
+				spriteType = "GFX_standard_button_91_37" #mod
 				buttonFont = "cg_16b"
 				text = "PLANETVIEW_COLONIZE"
 				font = "cg_16b"
@@ -710,8 +706,8 @@ guiTypes = {
 
 			buttonType = {
 				name = "resettle_button"
-				position = { x = 130 y = 40 }
-				spriteType = "GFX_standard_button_116_34"
+				position = { x = 0 y = 111 } #mod
+				spriteType = "GFX_standard_button_91_37" #mod
 				buttonFont = "cg_16b"
 				text = "POP_ACTION_RESETTLE"
 				font = "cg_16b"
@@ -746,28 +742,28 @@ guiTypes = {
 			# Planet Stability
 			containerWindowType = {
 				name = "planet_stability"
-				size = { width = 120 height = 34 }
-				position = { x = 25 y = 14 }
+				size = { width = 91 height = 37 } #mod
+				position = { x = 202 y = 123 } #mod
 
-				#background = {
-				#	name = "background"
-				#	spriteType = "GFX_dark_area_cut"
-				#}
+				background = {						 #mod
+					name = "background"				 #mod
+					spriteType = "GFX_dark_area_cut" #mod
+				}									 #mod
 
 				iconType = {
 					name = "planet_stability_icon"
 					spriteType = "GFX_stability"
-					position = { x = 15 y = 2 }
+					position = { x = 5 y = 4 } #mod
 					tooltip_mode_enabled = yes
-					scale = 1.15
+					#scale = 1.15 #mod
 				}
 
 				instantTextBoxType={
 					name = "planet_stability_amount"
 					font = "cg_16b"
-					position = { x = 46 y = 8 }
+					position = { x = 35 y = 11 } #mod
 					text = "100"
-					maxWidth = 40
+					maxWidth = 50 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = center
@@ -777,28 +773,28 @@ guiTypes = {
 			# Planet Pops
 			containerWindowType = {
 				name = "planet_pops"
-				size = { width = 120 height = 34 }
-				position = { x = 26 y = 48 }
+				size = { width = 91 height = 37 } #mod
+				position = { x = 202 y = 82 } #mod
 
-				#background = {
-				#	name = "background"
-				#	spriteType = "GFX_dark_area_cut"
-				#}
+				background = {						 #mod
+					name = "background"				 #mod
+					spriteType = "GFX_dark_area_cut" #mod
+				}									 #mod
 
 				iconType = {
 					name = "planet_pops_icon"
 					spriteType = "GFX_pop"
-					position = { x = 15 y = 1 }
-					scale = 1.15
+					position = { x = 5 y = 3 } #mod
+					#scale = 1.15 #mod
 					tooltip_mode_enabled = yes
 				}
 
 				instantTextBoxType={
 					name = "planet_pops_amount"
 					font = "cg_16b"
-					position = { x = 42 y = 8 }
+					position = { x = 35 y = 11 } #mod
 					text = "12"
-					maxWidth = 40
+					maxWidth = 50 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = center
@@ -808,40 +804,40 @@ guiTypes = {
 			### Stability Related Data
 			containerWindowType = {
 				name = "crime_status_window"
-				position = { x = 10 y = 95 }
-				size = { width = 250 height = 74 }
+				size = { width = 250 height = 74 } #mod
+				position = { x = 107 y = 82 } #mod
 
-				background = {
-					position = { x = 0 y = -5}
-					name = "actions_background"
-					spriteType = "GFX_dark_area_cut"
-					alwaysTransparent = yes
-				}
+				#background = {						 #mod
+				#	position = { x = 0 y = -5}		 #mod
+				#	name = "actions_background"		 #mod
+				#	spriteType = "GFX_dark_area_cut" #mod
+				#	alwaysTransparent = yes			 #mod
+				#}									 #mod
 
 				# Planet Crime
 				containerWindowType = {
 					name = "planet_crime"
-					size = { width = 77 height = 34 }
-					position = { x = 10 y = 1 }
+					size = { width = 91 height = 37 } #mod
+					position = { x = 95 y = 82 } #mod
 
-					#background = {
-					#	name = "background"
-					#	spriteType = "GFX_dark_area_cut"
-					#}
+					background = {						 #mod
+						name = "background"				 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
 
 					iconType = {
 						name = "planet_crime_icon"
 						spriteType = "GFX_planet_view_crime"
-						position = { x = 8 y = 2 }
+						position = { x = 6 y = 6 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "planet_crime_amount"
 						font = "cg_16b"
-						position = { x = 32 y = 8 }
+						position = { x = 35 y = 11 } #mod
 						text = "100"
-						maxWidth = 40
+						maxWidth = 50 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -851,27 +847,27 @@ guiTypes = {
 				# Planet Housing
 				containerWindowType = {
 					name = "planet_housing"
-					size = { width = 76 height = 34 }
-					position = { x = 93 y = 1 }
+					size = { width = 91 height = 37 } #mod
+					position = { x = 0 y = 0 } #mod
 
-					#background = {
-					#	name = "background"
-					#	spriteType = "GFX_dark_area_cut"
-					#}
+					background = {						 #mod
+						name = "background"				 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
 
 					iconType = {
 						name = "planet_housing_icon"
 						spriteType = "GFX_planet_view_planet_housing"
-						position = { x = 7 y = 5 }
+						position = { x = 7 y = 6 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "planet_housing_amount"
 						font = "cg_16b"
-						position = { x = 32 y = 8 }
+						position = { x = 35 y = 11 } #mod
 						text = "10"
-						maxWidth = 40
+						maxWidth = 50 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -881,34 +877,34 @@ guiTypes = {
 				# Planet Amenities
 				containerWindowType = {
 					name = "planet_amenities"
-					size = { width = 76 height = 34 }
-					position = { x = 170 y = 1 }
+					size = { width = 91 height = 37 } #mod
+					position = { x = 0 y = 41 } #mod
 
-					#background = {
-					#	name = "background"
-					#	spriteType = "GFX_dark_area_cut"
-					#}
+					background = {						 #mod
+						name = "background"				 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
 
 					iconType = {
 						name = "planet_amenities_icon"
 						spriteType = "GFX_planet_view_planet_amenities"
-						position = { x = 8 y = 5 }
+						position = { x = 8 y = 6 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					iconType = {
 						name = "planet_amenities_no_happiness_icon"
 						spriteType = "GFX_planet_view_planet_amenities_no_happiness"
-						position = { x = 8 y = 5 }
+						position = { x = 8 y = 6 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "planet_amenities_amount"
 						font = "cg_16b"
-						position = { x = 32 y = 9 }
+						position = { x = 35 y = 11 } #mod
 						text = "10"
-						maxWidth = 40
+						maxWidth = 50 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -918,28 +914,28 @@ guiTypes = {
 				# Planet Jobs
 				containerWindowType = {
 					name = "planet_jobs"
-					size = { width = 76 height = 34 }
-					position = { x = 10 y = 31 }
+					size = { width = 91 height = 37 } #mod
+					position = { x = 0 y = 82 } #mod
 
-					#background = {
-					#	name = "background"
-					#	spriteType = "GFX_dark_area_cut"
-					#}
+					background = {						 #mod
+						name = "background"				 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
 
 					iconType = {
 						name = "planet_jobs_icon"
 						spriteType = "GFX_pop_job"
-						position = { x = 7 y = 1 }
-						scale = 1
+						position = { x = 6 y = 4 } #mod
+						#scale = 1.0 #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "planet_jobs_amount"
 						font = "cg_16b"
-						position = { x = 32 y = 8 }
+						position = { x = 35 y = 11 } #mod
 						text = "2"
-						maxWidth = 40
+						maxWidth = 50 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -949,27 +945,27 @@ guiTypes = {
 				# Planet Unemployed
 				containerWindowType = {
 					name = "planet_unemployed"
-					size = { width = 155 height = 34 }
-					position = { x = 93 y = 31 }
+					size = { width = 186 height = 37 } #mod
+					position = { x = 0 y = 123 } #mod
 
-					#background = {
-					#	name = "background"
-					#	spriteType = "GFX_dark_area_cut"
-					#}
+					background = {						 #mod
+						name = "background"				 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
 
 					iconType = {
 						name = "planet_unemployed_icon"
 						spriteType = "GFX_unemployed"
-						position = { x = 4 y = 2 }
+						position = { x = 4 y = 4 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "planet_unemployed_amount"
 						font = "cg_16b"
-						position = { x = 32 y = 8 }
+						position = { x = 35 y = 11 } #mod
 						text = "0"
-						maxWidth = 40
+						maxWidth = 50 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -977,8 +973,8 @@ guiTypes = {
 
 					OverlappingElementsBoxType = {
 						name = "unemployed_stratas"
-						position = { x = 32 y = 2 }
-						size = { x = 120 y = 30 }
+						size = { x = 140 y = 30 } #mod
+						position = { x = 36 y = 4 } #mod
 						format = left
 					}
 				}

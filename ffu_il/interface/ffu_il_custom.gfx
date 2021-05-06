@@ -567,6 +567,26 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	spriteType = {
+		name = "GFX_standard_button_91_37"
+		texturefile = "gfx/interface/buttons/button_91x37_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_91x37_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_91x37_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x = 11 y = 11 }
+	}
+	spriteType = {
 		name = "GFX_standard_button_102_32"
 		texturefile = "gfx/interface/buttons/button_102_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
@@ -614,6 +634,26 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/buttons/button_186_animated_mask.dds"
 			animationtexturefile = "gfx/interface/buttons/button_186_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x = 11 y = 11 }
+	}
+	spriteType = {
+		name = "GFX_standard_button_186_37"
+		texturefile = "gfx/interface/buttons/button_186x37_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_186x37_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_186x37_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0

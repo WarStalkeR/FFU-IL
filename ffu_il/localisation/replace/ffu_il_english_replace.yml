@@ -12,6 +12,7 @@
  ### INTERFACE
  PLANETARY_PRODUCTION:0 "Production"
  PLANETARY_DEFICIT:0 "Deficit"
+ DEVASTATION_TEXT:0 "$PERC|0R%$"
  
  ### SHIP PARTS
  power_core:0 "$ffu_il_main_reactor_core$"
