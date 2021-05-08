@@ -1,8 +1,19 @@
 spriteTypes = {
 	### FFU:IL BACKGROUND REFS
-	# GFX_dark_area_cut
-	# GFX_planet_bg_tile_frame
-	# GFX_tiles_frame
+	#GFX_dark_area_cut
+	#GFX_planet_bg_tile_frame
+	#GFX_tiles_frame
+	#GFX_invisible
+	#iconType = {						 #mod
+	#	name = "title_hex"				 #mod
+	#	quadTextureSprite = "GFX_hex_bg" #mod
+	#	position = { x = -27 y = -18 }	 #mod
+	#}									 #mod
+	#iconType = {							 #mod
+	#	name = "title_line"					 #mod
+	#	quadTextureSprite = "GFX_line_short" #mod
+	#	position = { x = -5 y = 19 }		 #mod
+	#}										 #mod
 
 	### FFU:IL CUSTOM LOGO
 	spriteType = {
@@ -20,6 +31,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/tiles/black_bg_transparent_frame_tile.dds"
 		borderSize = { x=4 y=4 }
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_strata_header_button_ffu_il"
+		textureFile = "gfx/interface/planetview/strata_header_ffu_il.dds"
+		borderSize = { x=5 y=5 }
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_icon_happiness_ffu_il"
+		texturefile = "gfx/interface/planetview/icon_happiness_ffu_il.dds"
+	}
+	spriteType = {
+		name = "GFX_pie_chart_overlay_ffu_il"
+		texturefile = "gfx/interface/planetview/pie_chart_overlay_ffu_il.dds"
 	}
 
 	### FFU:IL CUSTOM TEXT ICONS
@@ -549,12 +574,39 @@ spriteTypes = {
 	
 	### FFU:IL ANIMATED TEXTURES
 	progressbartype = {
-		name = "GFX_building_progressbar_ffu_il"
+		name = "GFX_planet_slot_progressbar_ffu_il"
 		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }	
-		textureFile1 = "gfx/interface/progressbars/queue_progressbar.dds"
-		textureFile2 = "gfx/interface/progressbars/queue_progressbar_empty.dds"
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_planet_slot_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_planet_slot_progressbar_empty.dds"
 		size = { x = 67 y = 10 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	progressbartype = {
+		name = "GFX_growth_progressbar_ffu_il"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_growth_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_growth_progressbar_empty.dds"
+		size = { x = 78 y = 12 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	progressbartype = {
+		name = "GFX_assembly_progressbar_ffu_il"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_assembly_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_assembly_progressbar_empty.dds"
+		size = { x = 78 y = 12 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	progressbartype = {
+		name = "GFX_decline_progressbar_ffu_il"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_decline_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_decline_progressbar_empty.dds"
+		size = { x = 78 y = 12 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	progressbartype = {

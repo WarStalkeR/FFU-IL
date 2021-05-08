@@ -5,3 +5,7 @@ song = {
 song = {
 	name = "eurasiandynasty"
 }
+
+song = {
+	name = "maintheme9_orig"
+}

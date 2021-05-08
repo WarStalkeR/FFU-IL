@@ -4686,7 +4686,8 @@
  SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE:0 "Требует любой формы правления, кроме: §Y$auth_machine_intelligence$§!"
  
  ### NEW MUSIC TRACKS
- maintheme6:0 "FFU:IL Main Theme (Outlive/Main_Theme)"
+ maintheme9:0 "FFU:IL Main Theme (Outlive/Main_Theme)"
+ maintheme9_orig:0 "Nemesis Main Theme"
  advancingforces:0 "FFU:IL IDF Ambient (Earth 2150/ED_Day_2)"
  eurasiandynasty:0 "FFU:IL IDF Anthem (Earth 2150/ED_Day_3)"
  

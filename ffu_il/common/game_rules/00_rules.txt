@@ -1245,7 +1245,7 @@ system_blocks_sensors = {
 # This = system being targeted
 can_enter_system_by_jump = {
 	custom_tooltip = {
-#		success_text = "debug: can jump"
+		#success_text = "debug: can jump"
 		fail_text = cannot_jump_to_system
 
 		# Sealed system
@@ -1578,7 +1578,7 @@ can_build_branch_office_on_planet = {
 	#		root = { is_criminal_syndicate = yes }
 	#		owner = { has_commercial_pact = root }
 	#		owner = { is_in_federation_with = root }
-#
+	#
 	#		# allow branch offices in subsidiaries and vice versa
 	#		root = {
 	#			is_subject = yes

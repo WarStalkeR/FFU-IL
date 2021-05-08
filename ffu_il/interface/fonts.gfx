@@ -18,17 +18,17 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "standard_font"
 		path = "gfx/fonts/common"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont = {
 		name = "null_font"
 		path = "gfx/fonts/common"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont = {
 		name = "large_title_font"
 		path = "gfx/fonts/orbitron_28"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont_override = {
 		name = "large_title_font"
@@ -40,7 +40,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "large_title_font_28"
 		path = "gfx/fonts/orbitron_28"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont_override = {
 		name = "large_title_font_28"
@@ -52,7 +52,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "cg_16b"
 		fontfiles = { "gfx/fonts/cg_16b" }
-		color = 0xffffffff
+		color = 0xffeeeeee
 		cursor_offset = { -3 -5 }
 		selection_offset = { 0 3 }
 	}
@@ -66,12 +66,12 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "hoi_16mbs"
 		path = "gfx/fonts/hoi_16mbs"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont = {
 		name = "malgun_goth_24"
 		path = "gfx/fonts/malgun_goth_24"
-		color = 0xffffffff
+		color = 0xffeeeeee
 		cursor_offset = { -4 -3 }
 		selection_offset = { 0 1 }
 	}
@@ -85,7 +85,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "map_name_border"
 		path = "gfx/fonts/orbitron_28"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont_override = {
 		name = "map_name_border"
@@ -97,7 +97,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "map_name_nebula"
 		path = "gfx/fonts/orbitron_28"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont_override = {
 		name = "map_name_nebula"
@@ -109,7 +109,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "map_name_sector"
 		path = "gfx/fonts/orbitron_28"
-		color = 0xffffffff
+		color = 0xffeeeeee
 	}
 	bitmapfont_override = {
 		name = "map_name_sector"

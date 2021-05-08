@@ -1,0 +1,11 @@
+music = {
+	name = "maintheme9_orig"
+	file = "nemesis_maintheme.ogg"
+	volume = 0.42
+}
+
+music = {
+	name = "maintheme9"
+	file = "outlive.ogg"
+	volume = 0.80
+}
