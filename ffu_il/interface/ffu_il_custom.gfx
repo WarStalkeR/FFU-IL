@@ -2,6 +2,7 @@ spriteTypes = {
 	### FFU:IL BACKGROUND REFS
 	#GFX_dark_area_cut
 	#GFX_planet_bg_tile_frame
+	#GFX_tiles_frame_light
 	#GFX_tiles_frame
 	#GFX_invisible
 	#iconType = {						 #mod
@@ -26,6 +27,14 @@ spriteTypes = {
 		name = "GFX_line_vshort"
 		textureFile = "gfx/interface/planetview/line_vshort.dds"
 	}
+	spriteType = {
+		name = "GFX_line_gshort"
+		textureFile = "gfx/interface/planetview/line_gshort.dds"
+	}
+	spriteType = {
+		name = "GFX_line_oarmy"
+		textureFile = "gfx/interface/planetview/line_oarmy.dds"
+	}
 	corneredTileSpriteType = {
 		name = "GFX_transparent_frame"
 		textureFile = "gfx/interface/tiles/black_bg_transparent_frame_tile.dds"
@@ -45,6 +54,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pie_chart_overlay_ffu_il"
 		texturefile = "gfx/interface/planetview/pie_chart_overlay_ffu_il.dds"
+	}
+	spriteType = {
+		name = "GFX_ffu_ship_in_orbit_3"
+		texturefile = "gfx/event_pictures/ship_in_orbit_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ffu_fleet_from_surface"
+		texturefile = "gfx/event_pictures/fleet_from_surface.dds"
+	}
+	spriteType = {
+		name = "GFX_ffu_ground_combat"
+		texturefile = "gfx/event_pictures/ground_combat.dds"
 	}
 
 	### FFU:IL CUSTOM TEXT ICONS
@@ -618,6 +639,51 @@ spriteTypes = {
 		size = { x = 225 y = 14 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
+	progressbarType = {
+		name = "GFX_experience_bar_gov"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/experience_bar_yellow.dds"
+		textureFile2 = "gfx/interface/progressbars/experience_bar.dds"
+		size = { x = 116 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbarType = {
+		name = "GFX_experience_bar_sci"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/experience_bar_blue.dds"
+		textureFile2 = "gfx/interface/progressbars/experience_bar.dds"
+		size = { x = 116 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbarType = {
+		name = "GFX_experience_bar_adm"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/experience_bar_red.dds"
+		textureFile2 = "gfx/interface/progressbars/experience_bar.dds"
+		size = { x = 116 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbarType = {
+		name = "GFX_experience_bar_gen"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/experience_bar_green.dds"
+		textureFile2 = "gfx/interface/progressbars/experience_bar.dds"
+		size = { x = 116 y = 8 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbarType = {
+		name = "GFX_experience_barw_gen"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/experience_barw_green.dds"
+		textureFile2 = "gfx/interface/progressbars/experience_barw.dds"
+		size = { x = 116 y = 21 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 	spriteType = {
 		name = "GFX_standard_button_91_37"
 		texturefile = "gfx/interface/buttons/button_91x37_animated.dds"
@@ -666,6 +732,26 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/buttons/button_112_animated_mask.dds"
 			animationtexturefile = "gfx/interface/buttons/button_112_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x = 11 y = 11 }
+	}
+	spriteType = {
+		name = "GFX_standard_button_124_34"
+		texturefile = "gfx/interface/buttons/button_124x34_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_124x34_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_124x34_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0
@@ -867,15 +953,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	progressbarType = {
-		name = "GFX_governor_progressbar_ffuil"
-		color = { 1.0 1.0 1.0 }
-		colorTwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/progressbars/happiness_progressbar_green.dds"
-		textureFile2 = "gfx/interface/progressbars/happiness_progressbar_empty.dds"
-		size = { x = 136 y = 8 }
-		effectFile = "gfx/FX/progress.lua"
-	}
-	progressbarType = {
 		name = "GFX_planetview_health"
 		color = { 1.0 1.0 1.0 }
 		colortwo = { 1.0 1.0 1.0 }
@@ -885,10 +962,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 	}
+	progressbarType = {
+		name = "GFX_planetview_health_ffuil"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/ffu_il_planetview_health_full.dds"
+		textureFile2 = "gfx/interface/progressbars/ffu_il_planetview_health_empty.dds"
+		size = { x = 38 y = 205 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
 	spriteType = {
 		name = "GFX_devastation_bar_ffuil"
-		textureFile = "gfx/interface/planetview/planetview_devastation_bar_ffuil.dds"
-		noOfFrames = 19
+		textureFile = "gfx/interface/progressbars/ffu_il_planetview_health_array.dds"
+		noOfFrames = 203
 	}
 	spriteType = {
 		name = "GFX_expansion_dist_lock_default"

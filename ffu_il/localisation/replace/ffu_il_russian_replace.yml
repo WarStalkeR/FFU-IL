@@ -16,6 +16,10 @@
  PLANETARY_PRODUCTION:0 "Производство"
  PLANETARY_DEFICIT:0 "Дефицит"
  DEVASTATION_TEXT:0 "$PERC|0R%$"
+ GARRISON_POWER_INFO:0 "£job_enforcer£ $VALUE|0Y$ £army_power£"
+ GARRISON_ASSAULT_POWER_INFO:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
+ INVADER_POWER_INFO:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
+ ARMY_STRENGTH:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
  
  ### SHIP PARTS
  power_core:0 "$ffu_il_main_reactor_core$"

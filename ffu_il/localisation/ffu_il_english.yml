@@ -253,6 +253,7 @@
  ffu_il_lpc_ringworld_sh:0 "£large_planet_ringworld_sh£"
  ffu_il_lpc_habitat_sh:0 "£large_planet_habitat_sh£"
  ffu_il_lpc_unknown:0 "£large_planet_unknown£"
+ FFU_PLANET_STATUS:0 "Integrity"
  
  ### NEW SPECIAL PROJECTS
  CREATE_NEW_ROBOT_POP:0 "$decision_create_first_robot_pop$"
