@@ -254,6 +254,9 @@
  ffu_il_lpc_habitat_sh:0 "£large_planet_habitat_sh£"
  ffu_il_lpc_unknown:0 "£large_planet_unknown£"
  FFU_PLANET_STATUS:0 "Состояние"
+ FFU_PLANET_COMBAT:0 "Планетарная Битва"
+ FFU_DEFENDER_ARMIES:0 "Защитники"
+ FFU_ATTACKER_ARMIES:0 "Захватчики"
  
  ### NEW SPECIAL PROJECTS
  CREATE_NEW_ROBOT_POP:0 "$decision_create_first_robot_pop$"

@@ -229,25 +229,25 @@ guiTypes = {
 			#	spriteType = "GFX_dark_area_cut"	#mod
 			#}										#mod
 
-			containerWindowType = {						#mod
-				name = "planet_cls_background_ffu_il"	#mod
-				size = { width = 175 height = 35 } 		#mod
-				position = { x = 0 y = 0 } 				#mod
-				background = {							#mod
-					name = "background"					#mod
-					spriteType = "GFX_dark_area_cut"	#mod
-				}										#mod
-			}											#mod
+			containerWindowType = {					 #mod
+				name = "planet_cls_background_ffu"	 #mod
+				size = { width = 175 height = 35 } 	 #mod
+				position = { x = 0 y = 0 } 			 #mod
+				background = {						 #mod
+					name = "background"				 #mod
+					spriteType = "GFX_dark_area_cut" #mod
+				}									 #mod
+			}										 #mod
 
-			containerWindowType = {						#mod
-				name = "planet_hab_background_ffu_il"	#mod
-				size = { width = 91 height = 37 } 		#mod
-				position = { x = 193 y = 79 } 			#mod
-				background = {							#mod
-					name = "background"					#mod
-					spriteType = "GFX_tiles_frame"		#mod
-				}										#mod
-			}											#mod
+			containerWindowType = {					#mod
+				name = "planet_hab_background_ffu"	#mod
+				size = { width = 91 height = 37 } 	#mod
+				position = { x = 193 y = 79 } 		#mod
+				background = {						#mod
+					name = "background"				#mod
+					spriteType = "GFX_tiles_frame"	#mod
+				}									#mod
+			}										#mod
 
 			iconType = {
 				name = "planet_class_icon"
@@ -390,25 +390,25 @@ guiTypes = {
 				position = { x = -5 y = 19 }			#mod
 			}											#mod
 
-			containerWindowType = {						#mod
-				name = "governor_portrait_bbg_ffu_il"	#mod
-				size = { width = 124 height = 146 } 	#mod
-				position = { x = 0 y = 105 } 			#mod
-				background = {							#mod
-					name = "background"					#mod
-					spriteType = "GFX_dark_area_cut"	#mod
-				}										#mod
-			}											#mod
+			containerWindowType = {					 #mod
+				name = "governor_portrait_bbg_ffu"	 #mod
+				size = { width = 124 height = 146 }  #mod
+				position = { x = 0 y = 105 } 		 #mod
+				background = {						 #mod
+					name = "background"				 #mod
+					spriteType = "GFX_dark_area_cut" #mod
+				}									 #mod
+			}										 #mod
 
-			containerWindowType = {						#mod
-				name = "governor_portrait_fbg_ffu_il"	#mod
-				size = { width = 118 height = 140 } 	#mod
-				position = { x = 3 y = 108 } 			#mod
-				background = {							#mod
-					name = "background"					#mod
-					spriteType = "GFX_tiles_frame"		#mod
-				}										#mod
-			}											#mod
+			containerWindowType = {					#mod
+				name = "governor_portrait_fbg_ffu"	#mod
+				size = { width = 118 height = 140 } #mod
+				position = { x = 3 y = 108 } 		#mod
+				background = {						#mod
+					name = "background"				#mod
+					spriteType = "GFX_tiles_frame"	#mod
+				}									#mod
+			}										#mod
 
 			instantTextBoxType = {
 				name = "title_text"
@@ -1452,7 +1452,7 @@ guiTypes = {
 					}
 					
 					containerWindowType = {					#mod
-						name = "build_queue_bg_ffu_il"		#mod
+						name = "build_queue_bg_ffu"			#mod
 						position = { x = 3 y = 34 } 		#mod
 						size = { width = 264 height = 353 } #mod
 						background = {						#mod
@@ -2340,60 +2340,185 @@ guiTypes = {
 		# Armies -------------------- COMBAT SCREEN ------------------------->
 		containerWindowType = {
 			name = "armies_window"
-			size = { width = 500 height = 400 }
+			size = { width = 1000 height = 750 } #mod
 			position = { x = 0 y = 200 }
 
 			containerWindowType = {
 				name = "ground_combat_window"
-				size = { width = 500 height = 400 }
-				position = { x = 0 y = 0 }
+				size = { width = 830 height = 534 } #mod
+				position = { x = 9 y = 41 } #mod
+				clipping = yes #mod
+
+				containerWindowType = {					 #mod
+					name = "ground_combat_back_ffu"		 #mod
+					size = { width = 703 height = 34 }	 #mod
+					position = { x = 0 y = 0 }	 		 #mod
+					clipping = yes 						 #mod
+					background = {						 #mod
+						name = "ground_combat_bg_ffu"	 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
+					iconType = {						 #mod
+						name = "title_hex"				 #mod
+						quadTextureSprite = "GFX_hex_bg" #mod
+						position = { x = -27 y = -18 }	 #mod
+					}									 #mod
+					iconType = {						 #mod
+						name = "title_line"				 #mod
+						quadTextureSprite = "GFX_line"	 #mod
+						position = { x = -5 y = 19 }	 #mod
+					}									 #mod
+				}										 #mod
+
+				instantTextBoxType = {			#mod
+					name = "title_text"			#mod
+					font = "malgun_goth_24"		#mod
+					position = { x = 8 y = 2 }	#mod
+					text = "FFU_PLANET_COMBAT"	#mod
+					maxWidth = 300				#mod
+					maxHeight = 20				#mod
+					fixedSize = yes				#mod
+					format = left				#mod
+					orientation = upper_left	#mod
+				}								#mod
+
+				containerWindowType = {					 #mod
+					name = "planet_def_background_ffu"	 #mod
+					size = { width = 260 height = 497 }	 #mod
+					position = { x = 0 y = 37 } 		 #mod
+					background = {						 #mod
+						name = "planet_def_back_ffu"	 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
+				}										 #mod
+				containerWindowType = {					 #mod
+					name = "planet_inv_background_ffu"	 #mod
+					size = { width = 260 height = 497 }	 #mod
+					position = { x = 443 y = 37 } 		 #mod
+					background = {						 #mod
+						name = "planet_inv_back_ffu"	 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
+				}										 #mod
+				containerWindowType = {					 #mod
+					name = "planet_cbt_background_ffu"	 #mod
+					size = { width = 177 height = 497 }	 #mod
+					position = { x = 263 y = 37 } 		 #mod
+					background = {						 #mod
+						name = "planet_cbt_back_ffu"	 #mod
+						spriteType = "GFX_dark_area_cut" #mod
+					}									 #mod
+				}										 #mod
 
 				# Defender
+				containerWindowType = {					#mod
+					name = "planet_def_info_bo_ffu"		#mod
+					size = { width = 143 height = 46 }	#mod
+					position = { x = 114 y = 40 }		#mod
+					background = {						#mod
+						name = "planet_def_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+				
+				instantTextBoxType = {				#mod
+					name = "defender_battle_ffu"	#mod
+					font = "cg_16b"					#mod
+					text = "FFU_DEFENDER_ARMIES"	#mod
+					position = { x = 119 y = 42 }	#mod
+					maxWidth = 133					#mod
+					maxHeight = 20					#mod
+					fixedSize = yes					#mod
+					format = center					#mod
+					orientation = upper_left		#mod
+					alwaysTransparent = yes			#mod
+				}									#mod
+
 				instantTextBoxType = {
 					name = "defender_power"
 					font = "cg_16b"
 					text = "Defender Power: 15"
-					position = { x = 100 y = 50 }
-					maxWidth = 200
+					position = { x = 119 y = 60 } #mod
+					maxWidth = 130 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = left
+					format = center #mod
 					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
+				containerWindowType = {					#mod
+					name = "planet_def_gen_text_ffu"	#mod
+					size = { width = 108 height = 24 }	#mod
+					position = { x = 3 y = 167 }		#mod
+					background = {						#mod
+						name = "planet_def_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
+				containerWindowType = {							#mod
+					name = "planet_def_dis_text_ffu"			#mod
+					size = { width = 118 height = 30 }			#mod
+					position = { x = -2 y = 189 }				#mod
+					background = {								#mod
+						name = "planet_def_gen_ffu_bg"			#mod
+						spriteType = "GFX_planet_bg_tile_frame"	#mod
+					}											#mod
+				}												#mod
+
+				containerWindowType = {							#mod
+					name = "planet_def_res_text_ffu"			#mod
+					size = { width = 153 height = 30 }			#mod
+					position = { x = 109 y = 84 }				#mod
+					background = {								#mod
+						name = "planet_def_gen_ffu_bg"			#mod
+						spriteType = "GFX_planet_bg_tile_frame"	#mod
+					}											#mod
+				}												#mod
+
+				containerWindowType = {					#mod
+					name = "planet_def_gen_ffu"			#mod
+					size = { width = 108 height = 128 }	#mod
+					position = { x = 3 y = 40 }			#mod
+					background = {						#mod
+						name = "planet_def_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
 				buttonType = {
 					name = "defender_general_border"
-					quadTextureSprite = "GFX_button_light"
-					size = { x = 74 y = 86 }
-					position = { x = 15 y = 45 }
+					quadTextureSprite = "GFX_invisible" #mod
+					size = { x = 108 y = 128 } #mod
+					position = { x = 3 y = 40 } #mod
 					alwaysTransparent = yes
 				}
 
 				containerWindowType = {
 					name = "defender_general"
-					size = { width = 64 height = 76 }
-					position = { x = 20 y = 50 }
+					size = { width = 106 height = 126 } #mod
+					position = { x = 4 y = 41 } #mod
 					clipping = yes
 
 					buttonType = {
 						name = "bg"
 						quadTextureSprite = "GFX_leader_bg_general"
 						position = { x = 0 y = 0 }
-						scale = 0.2
+						scale = 0.3368421 #mod
 					}
 
 					iconType = {
 						name = "portrait"
 						quadTextureSprite = "GFX_portrait_character"
-						position = { x = -40 y = -19 }
-						scale = 0.25
+						position = { x = -61 y = -26 } #mod
+						scale = 0.40 #mod
 					}
 
 					iconType = {
 						name ="skill"
 						spriteType = "GFX_leader_skill"
-						position = { x = 0 y = 0 }
+						position = { x = 2 y = 2 } #mod
 						frame = 5
 					}
 				}
@@ -2402,53 +2527,94 @@ guiTypes = {
 					name = "defender_general_name"
 					font = "cg_16b"
 					text = "PLANETVIEW_NO_GENERAL_TITLE"
-					position = { x = 16 y = 132 }
-					maxWidth = 200
+					position = { x = 7 y = 171 } #mod
+					maxWidth = 100 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = left
+					format = center #mod
 					orientation = upper_left
+					alwaysTransparent = yes
+				}
+
+				iconType = {
+					name = "defender_frontline_divider"
+					quadTextureSprite = "GFX_ffu_vert_line" #mod
+					position = { x = 262 y = 73 } #mod
+					scale = 1.0 #mod
+					alwaysTransparent = yes
+				}
+
+				iconType = {
+					name = "defender_frontline_divider_2" #mod
+					quadTextureSprite = "GFX_ffu_vert_line" #mod
+					position = { x = 335 y = 73 } #mod
+					scale = 1.0 #mod
 					alwaysTransparent = yes
 				}
 
 				gridBoxType = {
 					name = "defender_frontline"
-					size = { width = 70 height = 280 }
-					position = { x = 285 y = 70 }
+					size = { width = 70 height = 385 } #mod
+					position = { x = 269 y = 75 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 2
-					max_slots_vertical = 8
+					max_slots_vertical = 11 #mod
 					add_horizontal = yes
 				}
+				
+				containerWindowType = {					#mod
+					name = "planet_def_res_ffu"			#mod
+					size = { width = 143 height = 423 }	#mod
+					position = { x = 114 y = 108 } 		#mod
+					background = {						#mod
+						name = "planet_def_res_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
 
-				iconType = {
-					name = "defender_frontline_divider"
-					quadTextureSprite = "GFX_vertical_line"
-					position = { x = 275 y = 80 }
-					scale = 0.5
+				instantTextBoxType = {
+					name = "defender_reserves"
+					font = "cg_16b"
+					text = "GROUND_COMBAT_RESERVES"
+					position = { x = 119 y = 90 } #mod
+					maxWidth = 133 #mod
+					maxHeight = 20
+					fixedSize = yes
+					format = center
+					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
 				gridBoxType = {
 					name = "defender_armies"
-					size = { width = 140 height = 280 }
-					position = { x = 130 y = 105 }
+					size = { width = 140 height = 420 } #mod
+					position = { x = 116 y = 110 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 4
-					max_slots_vertical = 8
+					max_slots_vertical = 12 #mod
 					add_horizontal = yes
 				}
 
+				containerWindowType = {					#mod
+					name = "planet_def_dis_ffu"			#mod
+					size = { width = 108 height = 318 }	#mod
+					position = { x = 3 y = 213 } 		#mod
+					background = {						#mod
+						name = "planet_def_dis_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
 				gridBoxType = {
 					name = "defender_disengaged"
-					size = { width = 100 height = 210 }
-					position = { x = 20 y = 170 }
+					size = { width = 105 height = 315 } #mod
+					position = { x = 5 y = 215 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 3
-					max_slots_vertical = 6
+					max_slots_vertical = 9 #mod
 					add_horizontal = yes
 				}
 
@@ -2456,62 +2622,124 @@ guiTypes = {
 					name = "defender_disengaged_text"
 					font = "cg_16b"
 					text = "ARMY_IS_DISENGAGED"
-					position = { x = 20 y = 150 }
-					maxWidth = 100
+					position = { x = 7 y = 195 } #mod
+					maxWidth = 100 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = left
+					format = center #mod
 					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
-
 				# Attacker
+				containerWindowType = {					#mod
+					name = "planet_atk_info_bo_ffu"		#mod
+					size = { width = 143 height = 46 }	#mod
+					position = { x = 446 y = 40 }		#mod
+					background = {						#mod
+						name = "planet_atk_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
+				instantTextBoxType = {				#mod
+					name = "attacker_battle_ffu"	#mod
+					font = "cg_16b"					#mod
+					text = "FFU_ATTACKER_ARMIES"	#mod
+					position = { x = 451 y = 42 }	#mod
+					maxWidth = 133					#mod
+					maxHeight = 20					#mod
+					fixedSize = yes					#mod
+					format = center					#mod
+					orientation = upper_left		#mod
+					alwaysTransparent = yes			#mod
+				}									#mod
+
 				instantTextBoxType = {
 					name = "attacker_power"
 					font = "cg_16b"
 					text = "Attacker Power: 15"
-					position = { x = 420 y = 50 }
-					maxWidth = 200
+					position = { x = 451 y = 60 } #mod
+					maxWidth = 130 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = right
+					format = center #mod
 					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
+				containerWindowType = {					#mod
+					name = "planet_atk_gen_text_ffu"	#mod
+					size = { width = 108 height = 24 }	#mod
+					position = { x = 592 y = 167 }		#mod
+					background = {						#mod
+						name = "planet_atk_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
+				containerWindowType = {							#mod
+					name = "planet_atk_dis_text_ffu"			#mod
+					size = { width = 118 height = 30 }			#mod
+					position = { x = 587 y = 189 }				#mod
+					background = {								#mod
+						name = "planet_atk_gen_ffu_bg"			#mod
+						spriteType = "GFX_planet_bg_tile_frame"	#mod
+					}											#mod
+				}												#mod
+
+				containerWindowType = {							#mod
+					name = "planet_atk_res_text_ffu"			#mod
+					size = { width = 153 height = 30 }			#mod
+					position = { x = 441 y = 84 }				#mod
+					background = {								#mod
+						name = "planet_atk_gen_ffu_bg"			#mod
+						spriteType = "GFX_planet_bg_tile_frame"	#mod
+					}											#mod
+				}												#mod
+
+				containerWindowType = {					#mod
+					name = "planet_atk_gen_ffu"			#mod
+					size = { width = 108 height = 128 }	#mod
+					position = { x = 592 y = 40 }		#mod
+					background = {						#mod
+						name = "planet_atk_gen_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
 				buttonType = {
 					name = "attacker_general_border"
-					quadTextureSprite = "GFX_button_light"
-					size = { x = 74 y = 86 }
-					position = { x = 630 y = 45 }
+					quadTextureSprite = "GFX_invisible" #mod
+					size = { x = 108 y = 128 } #mod
+					position = { x = 592 y = 40 } #mod
 					alwaysTransparent = yes
 				}
 
 				containerWindowType = {
 					name = "attacker_general"
-					size = { width = 64 height = 76 }
-					position = { x = 635 y = 50 }
+					size = { width = 106 height = 126 } #mod
+					position = { x = 593 y = 41 } #mod
 					clipping = yes
 
 					buttonType = {
 						name = "bg"
 						quadTextureSprite = "GFX_leader_bg_general"
 						position = { x = 0 y = 0 }
-						scale = 0.2
+						scale = 0.3368421 #mod
 					}
 
 					iconType = {
 						name = "portrait"
 						quadTextureSprite = "GFX_portrait_character"
-						position = { x = -40 y = -19 }
-						scale = 0.25
+						position = { x = -61 y = -26 } #mod
+						scale = 0.40 #mod
 					}
 
 					iconType = {
 						name ="skill"
 						spriteType = "GFX_leader_skill"
-						position = { x = 0 y = 0 }
+						position = { x = 2 y = 2 } #mod
 						frame = 5
 					}
 				}
@@ -2520,53 +2748,94 @@ guiTypes = {
 					name = "attacker_general_name"
 					font = "cg_16b"
 					text = "PLANETVIEW_NO_GENERAL_TITLE"
-					position = { x = 503 y = 132 }
-					maxWidth = 200
+					position = { x = 596 y = 171 } #mod
+					maxWidth = 100 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = right
+					format = center #mod
 					orientation = upper_left
+					alwaysTransparent = yes
+				}
+
+				iconType = {
+					name = "attacker_frontline_divider"
+					quadTextureSprite = "GFX_ffu_vert_line" #mod
+					position = { x = 431 y = 73 }
+					scale = 1 #mod
+					alwaysTransparent = yes
+				}
+
+				iconType = {
+					name = "attacker_frontline_divider_2" #mod
+					quadTextureSprite = "GFX_ffu_vert_line" #mod
+					position = { x = 358 y = 73 }
+					scale = 1 #mod
 					alwaysTransparent = yes
 				}
 
 				gridBoxType = {
 					name = "attacker_frontline"
-					size = { width = 70 height = 280 }
-					position = { x = 360 y = 70 }
+					size = { width = 70 height = 385 } #mod
+					position = { x = 365 y = 75 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 2
-					max_slots_vertical = 8
+					max_slots_vertical = 11 #mod
 					add_horizontal = yes
 				}
 
-				iconType = {
-					name = "attacker_frontline_divider"
-					quadTextureSprite = "GFX_vertical_line"
-					position = { x = 435 y = 80 }
-					scale = 0.5
+				containerWindowType = {					#mod
+					name = "planet_atk_res_ffu"			#mod
+					size = { width = 143 height = 423 }	#mod
+					position = { x = 446 y = 108 } 		#mod
+					background = {						#mod
+						name = "planet_atk_res_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
+				instantTextBoxType = {
+					name = "attacker_reserves"
+					font = "cg_16b"
+					text = "GROUND_COMBAT_RESERVES"
+					position = { x = 451 y = 90 } #mod
+					maxWidth = 133 #mod
+					maxHeight = 20
+					fixedSize = yes
+					format = center
+					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
 				gridBoxType = {
 					name = "attacker_armies"
-					size = { width = 140 height = 280 }
-					position = { x = 445 y = 105 }
+					size = { width = 140 height = 420 } #mod
+					position = { x = 448 y = 110 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 4
-					max_slots_vertical = 8
+					max_slots_vertical = 12 #mod
 					add_horizontal = yes
 				}
 
+				containerWindowType = {					#mod
+					name = "planet_atk_dis_ffu"			#mod
+					size = { width = 108 height = 318 }	#mod
+					position = { x = 592 y = 213 } 		#mod
+					background = {						#mod
+						name = "planet_atk_dis_ffu_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
+
 				gridBoxType = {
 					name = "attacker_disengaged"
-					size = { width = 100 height = 210 }
-					position = { x = 600 y = 170 }
+					size = { width = 105 height = 315 } #mod
+					position = { x = 594 y = 215 } #mod
 					format = "UPPER_LEFT"
 					slotsize = { width = 35 height = 35 }
 					max_slots_horizontal = 3
-					max_slots_vertical = 6
+					max_slots_vertical = 9 #mod
 					add_horizontal = yes
 				}
 
@@ -2574,45 +2843,73 @@ guiTypes = {
 					name = "attacker_disengaged_text"
 					font = "cg_16b"
 					text = "ARMY_IS_DISENGAGED"
-					position = { x = 600 y = 150 }
-					maxWidth = 100
+					position = { x = 596 y = 195 } #mod
+					maxWidth = 100 #mod
 					maxHeight = 20
 					fixedSize = yes
-					format = right
+					format = center #mod
 					orientation = upper_left
 					alwaysTransparent = yes
 				}
 
+				iconType = {								#mod
+					name = "frontline_combat_divider"		#mod
+					quadTextureSprite = "GFX_ffu_front_div" #mod
+					position = { x = 344 y = 77 }			#mod
+					scale = 1.0								#mod
+					alwaysTransparent = yes					#mod
+				}											#mod
+
 				buttonType = {
 					name = "retreat_button"
-					position = { x = -215 y = -60 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 254 y = 485 } #mod
+					spriteType = "GFX_standard_button_171_34" #mod
 					buttonFont = "cg_16b"
 					text = "PLANET_VIEW_RETREAT"
 					font = "cg_16b"
-					orientation = LOWER_RIGHT
 					oversound = mouse_over
+					orientation = upper_left #mod
 					navLeft = "change"
 				}
+
+				containerWindowType = {					#mod
+					name = "ffu_combat_width_entry"		#mod
+					size = { width = 171 height = 34 }	#mod
+					position = { x = 266 y = 460 } 		#mod
+					background = {						#mod
+						name = "ffu_combat_width_bg"	#mod
+						spriteType = "GFX_tiles_frame"	#mod
+					}									#mod
+				}										#mod
 
 				instantTextBoxType = {
 					name = "combat_width"
 					font = "cg_16b"
 					text = "Combat Width: 16"
-					position = { x = -245 y = -65 }
-					maxWidth = 200
+					position = { x = 270 y = 468 } #mod
+					maxWidth = 164 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = center
-					orientation = LOWER_RIGHT
+					orientation = upper_left #mod
 				}
+
+				containerWindowType = {							#mod
+					name = "ffu_frontline_text_entry"			#mod
+					size = { width = 181 height = 44 }			#mod
+					position = { x = 261 y = 35 } 				#mod
+					background = {								#mod
+						name = "ffu_frontline_text_bg"			#mod
+						spriteType = "GFX_planet_bg_tile_frame"	#mod
+					}											#mod
+				}												#mod
 
 				instantTextBoxType = {
 					name = "frontline"
 					font = "cg_16b"
 					text = "GROUND_COMBAT_FRONTLINE"
-					position = { x = 255 y = 50 }
-					maxWidth = 200
+					position = { x = 270 y = 48 } #mod
+					maxWidth = 164 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = center
@@ -2620,31 +2917,31 @@ guiTypes = {
 					alwaysTransparent = yes
 				}
 
-				instantTextBoxType = {
-					name = "defender_reserves"
-					font = "cg_16b"
-					text = "GROUND_COMBAT_RESERVES"
-					position = { x = 100 y = 85 }
-					maxWidth = 200
-					maxHeight = 20
-					fixedSize = yes
-					format = center
-					orientation = upper_left
-					alwaysTransparent = yes
-				}
-
-				instantTextBoxType = {
-					name = "attacker_reserves"
-					font = "cg_16b"
-					text = "GROUND_COMBAT_RESERVES"
-					position = { x = 415 y = 85 }
-					maxWidth = 200
-					maxHeight = 20
-					fixedSize = yes
-					format = center
-					orientation = upper_left
-					alwaysTransparent = yes
-				}
+				containerWindowType = {									#mod
+					name = "planet_battle_misc_ffu"						#mod
+					size = { width = 124 height = 280 }					#mod
+					position = { x = 706 y = 254 } 						#mod
+					background = {										#mod
+						name = "planet_battle_ffu_bg"					#mod
+						spriteType = "GFX_dark_area_cut"				#mod
+					}													#mod
+					containerWindowType = {								#mod
+						name = "planet_bat_frame_ffu"					#mod
+						size = { width = 118 height = 274 }				#mod
+						position = { x = 3 y = 3 } 						#mod
+						background = {									#mod
+							name = "planet_bat_frm_ffu_bg"				#mod
+							spriteType = "GFX_tiles_frame"				#mod
+						}												#mod
+						iconType = {									#mod
+							name = "planet_battle_front_combat_feed"	#mod
+							quadTextureSprite = "GFX_ffu_front_combat"	#mod
+							position = { x = 1 y = 1 }					#mod
+							scale = 1.0									#mod
+							alwaysTransparent = yes						#mod
+						}												#mod
+					}													#mod
+				}														#mod
 			}
 
 			containerWindowType = {
@@ -2697,42 +2994,42 @@ guiTypes = {
 					}
 
 					iconType = {									#mod
-						name = "ffu_il_shield_links_back"          	#mod
+						name = "ffu_shield_links_back"          	#mod
 						spriteType = "GFX_ffu_il_shield_links"    	#mod
 						position = { x = 0 y = 66 }              	#mod
 					}                                               #mod
 					iconType = {									#mod
-						name = "ffu_il_shield_nominal"              #mod
+						name = "ffu_shield_nominal"					#mod
 						spriteType = "GFX_ffu_il_shield_nominal"    #mod
 						position = { x = 73 y = 30 }              	#mod
 						pdx_tooltip = "planetary_def_gui_nominal"   #mod
 					}                                               #mod
 					iconType = {                                    #mod
-						name = "ffu_il_shield_stable"               #mod
+						name = "ffu_shield_stable"              	#mod
 						spriteType = "GFX_ffu_il_shield_stable"     #mod
 						position = { x = 35 y = 60 }              	#mod
 						pdx_tooltip = "planetary_def_gui_stable"    #mod
 					}                                               #mod
 					iconType = {                                    #mod
-						name = "ffu_il_shield_disrupted"            #mod
+						name = "ffu_shield_disrupted"            	#mod
 						spriteType = "GFX_ffu_il_shield_disrupted"  #mod
 						position = { x = -3 y = 90 }              	#mod
 						pdx_tooltip = "planetary_def_gui_disrupted" #mod
 					}                                               #mod
 					iconType = {                                    #mod
-						name = "ffu_il_shield_emergency"            #mod
+						name = "ffu_shield_emergency"            	#mod
 						spriteType = "GFX_ffu_il_shield_emergency"  #mod
 						position = { x = 73 y = 335 }              	#mod
 						pdx_tooltip = "planetary_def_gui_emergency" #mod
 					}                                               #mod
 					iconType = {                                    #mod
-						name = "ffu_il_shield_critical"             #mod
+						name = "ffu_shield_critical"            	#mod
 						spriteType = "GFX_ffu_il_shield_critical"   #mod
 						position = { x = 35 y = 365 }              	#mod
 						pdx_tooltip = "planetary_def_gui_critical"  #mod
 					}                                               #mod
 					iconType = {                                    #mod
-						name = "ffu_il_shield_wasted"               #mod
+						name = "ffu_shield_wasted"               	#mod
 						spriteType = "GFX_ffu_il_shield_wasted"     #mod
 						position = { x = -3 y = 395 }              	#mod
 						pdx_tooltip = "planetary_def_gui_wasted"    #mod
@@ -2994,25 +3291,25 @@ guiTypes = {
 						position = { x = -5 y = 19 } #mod
 					}
 
-					containerWindowType = {						#mod
-						name = "general_portrait_bbg_ffu_il"	#mod
-						size = { width = 124 height = 146 } 	#mod
-						position = { x = 0 y = 134 } 			#mod
-						background = {							#mod
-							name = "background"					#mod
-							spriteType = "GFX_dark_area_cut"	#mod
-						}										#mod
-					}											#mod
+					containerWindowType = {					 #mod
+						name = "general_portrait_bbg_ffu"	 #mod
+						size = { width = 124 height = 146 }  #mod
+						position = { x = 0 y = 134 } 		 #mod
+						background = {						 #mod
+							name = "background"				 #mod
+							spriteType = "GFX_dark_area_cut" #mod
+						}									 #mod
+					}										 #mod
 
-					containerWindowType = {						#mod
-						name = "general_portrait_fbg_ffu_il"	#mod
-						size = { width = 118 height = 140 } 	#mod
-						position = { x = 3 y = 137 } 			#mod
-						background = {							#mod
-							name = "background"					#mod
-							spriteType = "GFX_tiles_frame"		#mod
-						}										#mod
-					}											#mod
+					containerWindowType = {					#mod
+						name = "general_portrait_fbg_ffu"	#mod
+						size = { width = 118 height = 140 } #mod
+						position = { x = 3 y = 137 } 		#mod
+						background = {						#mod
+							name = "background"				#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
 
 					instantTextBoxType = {
 						name = "title_text"
@@ -3288,74 +3585,74 @@ guiTypes = {
 					#	}											#mod
 					#}												#mod
 
-					containerWindowType = {							#mod
-						name = "ffu_il_image_frame_1"				#mod
-						position = { x = 3 y = 34 }					#mod
-						size = { width = 264 height = 87 }			#mod
-						background = {								#mod
-							name = "ffu_il_image_frame_1_bg"		#mod
-							spriteType = "GFX_tiles_frame"			#mod
-						}											#mod
-					}												#mod
+					containerWindowType = {					#mod
+						name = "ffu_image_frame_1"			#mod
+						position = { x = 3 y = 34 }			#mod
+						size = { width = 264 height = 87 }	#mod
+						background = {						#mod
+							name = "ffu_image_frame_1_bg"	#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
 
 					containerWindowType = {					 		#mod
-						name = "ffu_il_image_icon_1"		 		#mod
+						name = "ffu_image_icon_1"		 			#mod
 						position = { x = 4 y = 35 }			 		#mod
 						size = { width = 262 height = 85 }			#mod
 						clipping = yes						 		#mod
 						iconType = {								#mod
-							name = "ffu_il_image_icon_1_ico"		#mod
+							name = "ffu_image_icon_1_ico"			#mod
 							spriteType = "GFX_ffu_ship_in_orbit_3"	#mod
 							position = { x = -1 y = -1 }			#mod
 							scale = 0.58666							#mod
 						}											#mod
 					}										 		#mod
 
-					containerWindowType = {							#mod
-						name = "ffu_il_image_frame_2"				#mod
-						position = { x = 3 y = 210 }				#mod
-						size = { width = 264 height = 87 }			#mod
-						background = {								#mod
-							name = "ffu_il_image_frame_2_bg"		#mod
-							spriteType = "GFX_tiles_frame"			#mod
-						}											#mod
-					}												#mod
+					containerWindowType = {					#mod
+						name = "ffu_image_frame_2"			#mod
+						position = { x = 3 y = 210 }		#mod
+						size = { width = 264 height = 87 }	#mod
+						background = {						#mod
+							name = "ffu_image_frame_2_bg"	#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
 
-					containerWindowType = {					 		#mod
-						name = "ffu_il_image_icon_2"		 		#mod
-						position = { x = 4 y = 211 }		 		#mod
-						size = { width = 262 height = 85 }			#mod
-						clipping = yes						 		#mod
-						iconType = {								#mod
-							name = "ffu_il_image_icon_2_ico"		#mod
+					containerWindowType = {					 		  #mod
+						name = "ffu_image_icon_2"		 			  #mod
+						position = { x = 4 y = 211 }		 		  #mod
+						size = { width = 262 height = 85 }			  #mod
+						clipping = yes						 		  #mod
+						iconType = {								  #mod
+							name = "ffu_image_icon_2_ico"			  #mod
 							spriteType = "GFX_ffu_fleet_from_surface" #mod
-							position = { x = -1 y = -1 }			#mod
-							scale = 0.58666							#mod
-						}											#mod
-					}										 		#mod
+							position = { x = -1 y = -1 }			  #mod
+							scale = 0.58666							  #mod
+						}											  #mod
+					}										 		  #mod
 
-					containerWindowType = {							#mod
-						name = "ffu_il_image_frame_3"				#mod
-						position = { x = 3 y = 385 }				#mod
-						size = { width = 264 height = 87 }			#mod
-						background = {								#mod
-							name = "ffu_il_image_frame_3_bg"		#mod
-							spriteType = "GFX_tiles_frame"			#mod
-						}											#mod
-					}												#mod
+					containerWindowType = {					#mod
+						name = "ffu_image_frame_3"			#mod
+						position = { x = 3 y = 385 }		#mod
+						size = { width = 264 height = 87 }	#mod
+						background = {						#mod
+							name = "ffu_image_frame_3_bg"	#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
 
-					containerWindowType = {					 		#mod
-						name = "ffu_il_image_icon_3"		 		#mod
-						position = { x = 4 y = 386 }		 		#mod
-						size = { width = 262 height = 85 }			#mod
-						clipping = yes						 		#mod
-						iconType = {								#mod
-							name = "ffu_il_image_icon_3_ico"		#mod
-							spriteType = "GFX_ffu_ground_combat"	#mod
-							position = { x = -1 y = -1 }			#mod
-							scale = 0.58666							#mod
-						}											#mod
-					}										 		#mod
+					containerWindowType = {					 	 #mod
+						name = "ffu_image_icon_3"		 		 #mod
+						position = { x = 4 y = 386 }		 	 #mod
+						size = { width = 262 height = 85 }		 #mod
+						clipping = yes						 	 #mod
+						iconType = {							 #mod
+							name = "ffu_image_icon_3_ico"		 #mod
+							spriteType = "GFX_ffu_ground_combat" #mod
+							position = { x = -1 y = -1 }		 #mod
+							scale = 0.58666						 #mod
+						}										 #mod
+					}										 	 #mod
 
 					instantTextBoxType = {
 						name = "orbiting_title"
@@ -6795,14 +7092,14 @@ guiTypes = {
 
 		iconType = {
 			name = "army_icon"
-			position = { x=0 y=0 }
+			position = { x = 0 y = 0 } #mod
 			spriteType = "GFX_army_icons"
 		}
 
 		iconType = {
 			name = "army_hp"
 			spriteType = "GFX_ship_life_radial_progress"
-			position = { x = 36 y = -42 }
+			position = { x = 36 y = -43 } #mod
 			orientation = "UPPER_LEFT"
 			rotation = 3.14159
 			frame = 100
