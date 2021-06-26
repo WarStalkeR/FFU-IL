@@ -2,6 +2,7 @@ spriteTypes = {
 	### FFU:IL BACKGROUND REFS
 	#GFX_dark_area_cut
 	#GFX_planet_bg_tile_frame
+	#GFX_clean_frame_area
 	#GFX_tiles_frame_light
 	#GFX_tiles_frame
 	#GFX_invisible
@@ -35,17 +36,9 @@ spriteTypes = {
 		name = "GFX_line_oarmy"
 		textureFile = "gfx/interface/planetview/line_oarmy.dds"
 	}
-	corneredTileSpriteType = {
-		name = "GFX_transparent_frame"
-		textureFile = "gfx/interface/tiles/black_bg_transparent_frame_tile.dds"
-		borderSize = { x=4 y=4 }
-		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-	}
-	corneredTileSpriteType = {
-		name = "GFX_strata_header_button_ffu_il"
-		textureFile = "gfx/interface/planetview/strata_header_ffu_il.dds"
-		borderSize = { x=5 y=5 }
-		effectFile = "gfx/FX/buttonstate.lua"
+	spriteType = {
+		name = "GFX_line_popinfo"
+		textureFile = "gfx/interface/planetview/line_popinfo.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_happiness_ffu_il"
@@ -66,6 +59,48 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ffu_ground_combat"
 		texturefile = "gfx/event_pictures/ground_combat.dds"
+	}
+	spriteType = {
+		name = "GFX_ffu_branch_office"
+		texturefile = "gfx/interface/custom/branch_office_art.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_citizen_bg"
+		texturefile = "gfx/portraits/leaders/leader_citizen_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	#spriteType = {
+	#	name = "GFX_leader_citizen_wide_bg"
+	#	texturefile = "gfx/portraits/leaders/leader_citizen_wide_bg.dds"
+	#	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	#}
+	#spriteType = {
+	#	name = "GFX_leader_citizen_wide_day_bg"
+	#	texturefile = "gfx/portraits/leaders/leader_citizen_wide_day_bg.dds"
+	#	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	#}
+	#spriteType = {
+	#	name = "GFX_leader_citizen_wide_night_bg"
+	#	texturefile = "gfx/portraits/leaders/leader_citizen_wide_night_bg.dds"
+	#	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	#}
+	corneredTileSpriteType = {
+		name = "GFX_transparent_frame"
+		textureFile = "gfx/interface/tiles/black_bg_transparent_frame_tile.dds"
+		borderSize = { x=4 y=4 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_strata_header_button_ffu_il"
+		textureFile = "gfx/interface/planetview/strata_header_ffu_il.dds"
+		borderSize = { x=5 y=5 }
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_planet_construction_button_ffu"
+		textureFile = "gfx/interface/planetview/planet_construction_entry_ffu.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 1
 	}
 
 	### FFU:IL CUSTOM TEXT ICONS
@@ -688,6 +723,24 @@ spriteTypes = {
 		size = { x = 116 y = 21 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+	progressbarType = {
+		name = "GFX_terraform_bar_ffu"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/terraform_ffu_big.dds"
+		textureFile2 = "gfx/interface/progressbars/terraform_ffu_big_empty.dds"
+		size = { x = 261 y = 27 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbarType = {
+		name = "GFX_terraform_bar_ffu_small"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/terraform_ffu_small.dds"
+		textureFile2 = "gfx/interface/progressbars/terraform_ffu_small_empty.dds"
+		size = { x = 86 y = 21 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 	spriteType = {
 		name = "GFX_standard_button_91_37"
 		texturefile = "gfx/interface/buttons/button_91x37_animated.dds"
@@ -710,12 +763,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_standard_button_102_32"
-		texturefile = "gfx/interface/buttons/button_102_animated.dds"
+		texturefile = "gfx/interface/buttons/button_102x32_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
 		animation = {
-			animationmaskfile = "gfx/interface/buttons/button_102_animated_mask.dds"
-			animationtexturefile = "gfx/interface/buttons/button_102_animated_texture.dds"
+			animationmaskfile = "gfx/interface/buttons/button_102x32_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_102x32_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0
@@ -730,12 +783,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_standard_button_112_32"
-		texturefile = "gfx/interface/buttons/button_112_animated.dds"
+		texturefile = "gfx/interface/buttons/button_112x32_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
 		animation = {
-			animationmaskfile = "gfx/interface/buttons/button_112_animated_mask.dds"
-			animationtexturefile = "gfx/interface/buttons/button_112_animated_texture.dds"
+			animationmaskfile = "gfx/interface/buttons/button_112x32_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_112x32_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0
@@ -790,12 +843,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_standard_button_186_34"
-		texturefile = "gfx/interface/buttons/button_186_animated.dds"
+		texturefile = "gfx/interface/buttons/button_186x34_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
 		animation = {
-			animationmaskfile = "gfx/interface/buttons/button_186_animated_mask.dds"
-			animationtexturefile = "gfx/interface/buttons/button_186_animated_texture.dds"
+			animationmaskfile = "gfx/interface/buttons/button_186x34_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_186x34_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0
@@ -830,12 +883,52 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_standard_button_188_34"
-		texturefile = "gfx/interface/buttons/button_188_animated.dds"
+		texturefile = "gfx/interface/buttons/button_188x34_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
 		animation = {
-			animationmaskfile = "gfx/interface/buttons/button_188_animated_mask.dds"
-			animationtexturefile = "gfx/interface/buttons/button_188_animated_texture.dds"
+			animationmaskfile = "gfx/interface/buttons/button_188x34_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_188x34_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x = 11 y = 11 }
+	}
+	spriteType = {
+		name = "GFX_standard_button_264_25"
+		texturefile = "gfx/interface/buttons/button_264x25_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_264x25_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_264x25_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x = 11 y = 11 }
+	}
+	spriteType = {
+		name = "GFX_standard_button_424_86"
+		texturefile = "gfx/interface/buttons/button_424x86_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_424x86_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_424x86_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 40.0
@@ -850,12 +943,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_button_1134_53_animated_ffuil"
-		texturefile = "gfx/interface/buttons/button_1134_53_animated.dds"
+		texturefile = "gfx/interface/buttons/button_1134x53_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3			
 		animation = {
-			animationmaskfile = "gfx/interface/buttons/button_1134_53_animated_mask.dds"
-			animationtexturefile = "gfx/interface/buttons/button_411_58_animated_texture.dds"
+			animationmaskfile = "gfx/interface/buttons/button_1134x53_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_1134x53_animated_texture.dds"
 			animationrotation = 180.0
 			animationlooping = yes
 			animationtime = 180.0	#Higher is slower
@@ -1106,8 +1199,8 @@ spriteTypes = {
 		}
 	}
 	spriteType = {
-		name = "GFX_inspect_planet_features_ffu_il"
-		texturefile = "gfx/interface/planetview/inspect_features_ffu_il.dds"
+		name = "GFX_inspect_planet_features_ffu"
+		texturefile = "gfx/interface/planetview/inspect_features_ffualt.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
 		animation = {

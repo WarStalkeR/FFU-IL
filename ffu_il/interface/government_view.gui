@@ -1378,22 +1378,22 @@ guiTypes = {
 	containerWindowType = {
 		name = "species_piechart_entry"
 		position = { x = 0 y = 0 }
-		size = { width = 133 height = 30 } #mod
+		size = { width = 137 height = 30 } #mod
 		moveable = no
 
 		iconType = {
 			name ="species_plupp"
 			spriteType = "GFX_species_plupp"
-			position = { x= 10 y = 10 }
+			position = { x = 8 y = 12 } #mod
 			alwaysTransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "species_name"
-			position = { x = 20 y = 5 }
+			position = { x = 20 y = 6 } #mod
 			font = "cg_16b"
 			text = "SPECIES"
-			maxWidth = 105
+			maxWidth = 109 #mod
 			maxHeight = 16
 			fixedsize = yes
 			orientation = right
@@ -1404,7 +1404,7 @@ guiTypes = {
 			name = "piechart_button"
 			quadTextureSprite = "GFX_button_light"
 			position = { x = 0 y = 0 }
-			size = { x = 133 y = 28 } #mod
+			size = { x = 137 y = 28 } #mod
 			clicksound = "menu_slide_open"
 		}
 	}
