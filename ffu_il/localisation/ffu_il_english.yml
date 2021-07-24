@@ -263,7 +263,6 @@
  FFU_CORP_OFFICE_NOT:0 "Corporation Office Not Established"
  FFU_CORP_OFFICE_FREE:0 "Unoccupied Office"
  FFU_CORP_OFFICE_TAKEN:0 "Corporation Office"
- FFU_POP_RANDOM_NOTE:0 "Note: §YDreams about robot uprising§!"
  
  ### NEW SPECIAL PROJECTS
  CREATE_NEW_ROBOT_POP:0 "$decision_create_first_robot_pop$"

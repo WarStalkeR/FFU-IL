@@ -1519,8 +1519,8 @@ guiTypes = {
 						name = "sector_name"
 						font = "malgun_goth_24"
 						text = "SECTOR NAME"
-						position = { x = 49 y = 6 } #mod
-						maxWidth = 158 #mod
+						position = { x = 50 y = 6 } #mod
+						maxWidth = 155 #mod
 						maxHeight = 30
 						fixedSize = yes
 						format = left
@@ -4819,9 +4819,10 @@ guiTypes = {
 					name = "deposits_list"
 					position = { x = 15 y = 60 }
 					background = ""
-					size = { x = 250 y = 701 }
+					size = { x = 265 y = 700 } #mod
 					scrollbarType = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
+					offset = { x = -3 y = 0 } #mod
 					orientation = "UPPER_LEFT"
 					spacing = 4
 				}
@@ -4847,8 +4848,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "replace_building"
-					position = { x = 4 y = 85 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 3 y = 85 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "REPLACE"
 					font = "cg_16b"
@@ -4860,8 +4861,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "destroy_building"
-					position = { x = 136 y = 40 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 141 y = 40 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "DESTROY"
 					font = "cg_16b"
@@ -4873,8 +4874,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "enable_disable_building"
-					position = { x = 4 y = 40 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 3 y = 40 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "DISABLE"
 					font = "cg_16b"
@@ -4885,8 +4886,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "repair_building"
-					position = { x = 136 y = 85 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 141 y = 85 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "REPAIR"
 					font = "cg_16b"
@@ -4897,42 +4898,43 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "building_info"
-					size = { width = 250 height = 100 }
+					size = { width = 265 height = 100 } #mod
 					position = { x = 15 y = 142 }
 
 					background = {
 						name = "background"
-						spriteType = "GFX_tiles_frame"
+						spriteType = "GFX_invisible" #mod
 					}
 
 					containerWindowType = {
 						name = "building_icon"
-						size = { width = 79 height = 79	}
+						size = { width = 78 height = 78	} #mod
 						position = { x = 0 y = 21 }
+						clipping = yes #mod
 
 						iconType = {
 							name = "building_bg"
-							position = { x=1 y=1 }
+							position = { x = 1 y = -3 } #mod
 							spriteType = "GFX_building_bg"
 							alwaysTransparent = yes
-							scale = 0.87
+							scale = 1 #mod
 						}
 
 						background = {
 							name = "icon_background"
-							spriteType = "GFX_tiles_frame"
+							spriteType = "GFX_invisible" #mod
 						}
 
 						iconType = {
 							name = "building_icon"
-							position = { x = -25 y = 0 }
+							position = { x = -18 y = 0 } #mod
 							spriteType = "GFX_building_unknown"
 							alwaysTransparent = yes
 						}
 
 						iconType = {
 							name = "ruined_building_icon"
-							position = { x = -25 y = -5 }
+							position = { x = -18 y = 0 } #mod
 							spriteType = "GFX_building_ruined"
 							alwaysTransparent = yes
 						}
@@ -4940,7 +4942,7 @@ guiTypes = {
 
 					containerWindowType = {
 						name = "building_name"
-						size = { width = 250 height = 22 }
+						size = { width = 265 height = 22 } #mod
 						position = { x = 0 y = 0 }
 
 						background = {
@@ -4953,7 +4955,7 @@ guiTypes = {
 							font = "cg_16b"
 							text = "Building Name"
 							position = { x = 0 y = 3 }
-							maxWidth = 250
+							maxWidth = 265 #mod
 							maxHeight = 20
 							fixedSize = yes
 							format = center
@@ -4961,12 +4963,22 @@ guiTypes = {
 						}
 					}
 
+					containerWindowType = {								  #mod
+						name = "planet_building_entry_overlay"			  #mod
+						position = { x = 0 y = 0 }						  #mod
+						size = { width = 265 height = 100 }				  #mod
+						background = {									  #mod
+							name = "planet_building_entry_overlay_bg"	  #mod
+							spriteType = "GFX_planet_construct_entry_ffu" #mod
+						}												  #mod
+					}													  #mod
+
 					instantTextBoxType = {
 						name = "building_effects"
 						font = "cg_16b"
 						text = "Building effects go here"
 						position = { x = 85 y = 25 }
-						maxWidth = 160
+						maxWidth = 175 #mod
 						maxHeight = 80
 						fixedSize = yes
 						format = left
@@ -5024,8 +5036,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "build_district"
-					position = { x = 4 y = 40 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 3 y = 40 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "BUILD"
 					font = "cg_16b"
@@ -5038,8 +5050,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "destroy_district"
-					position = { x = 136 y = 40 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 141 y = 40 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "DESTROY"
 					font = "cg_16b"
@@ -5051,8 +5063,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "replace_district"
-					position = { x = 4 y = 85 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 3 y = 85 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "REPLACE"
 					font = "cg_16b"
@@ -5064,8 +5076,8 @@ guiTypes = {
 
 				buttonType = {
 					name = "quick_clear_blocker"
-					position = { x = 136 y = 85 }
-					spriteType = "GFX_standard_button_116_34"
+					position = { x = 141 y = 85 } #mod
+					spriteType = "GFX_standard_button_127_34" #mod
 					buttonFont = "cg_16b"
 					text = "CLEAR_BLOCKER"
 					font = "cg_16b"
@@ -5078,35 +5090,37 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "district_info"
-					size = { width = 250 height = 98 }
+					size = { width = 265 height = 100 } #mod
 					position = { x = 15 y = 142 }
 
 					background = {
 						name = "background"
-						quadTextureSprite = "GFX_button_light"
+						spriteType = "GFX_invisible" #mod
 						clicksound = "ui_queuing_district"
 					}
+
 					containerWindowType = {
 						name = "district_icon"
-						size = { width = 77 height = 77	}
-						position = { x = 1 y = 21 }
+						size = { width = 77 height = 77	} #mod
+						position = { x = 1 y = 22 } #mod
+						clipping = yes #mod
 
 						iconType = {
 							name = "district_icon"
-							position = { x = 1  y = -1 }
+							position = { x = 0  y = 0 } #mod
 							spriteType = "GFX_district_unknown"
 							alwaysTransparent = yes
 						}
 
 						background = {
 							name = "icon_background"
-							spriteType = "GFX_tiles_frame"
+							spriteType = "GFX_invisible" #mod
 							alwaysTransparent = yes
 						}
 					}
 					containerWindowType = {
 						name = "district_name"
-						size = { width = 250 height = 22 }
+						size = { width = 265 height = 22 } #mod
 						position = { x = 0 y = 0 }
 
 						background = {
@@ -5120,7 +5134,7 @@ guiTypes = {
 							font = "cg_16b"
 							text = "District Name"
 							position = { x = 0 y = 3 }
-							maxWidth = 250
+							maxWidth = 265 #mod
 							maxHeight = 20
 							fixedSize = yes
 							format = center
@@ -5128,12 +5142,22 @@ guiTypes = {
 						}
 					}
 
+					containerWindowType = {								  #mod
+						name = "planet_district_entry_overlay"			  #mod
+						position = { x = 0 y = 0 }						  #mod
+						size = { width = 265 height = 100 }				  #mod
+						background = {									  #mod
+							name = "planet_district_entry_overlay_bg"	  #mod
+							spriteType = "GFX_planet_construct_entry_ffu" #mod
+						}												  #mod
+					}													  #mod
+
 					instantTextBoxType = {
 						name = "district_effects"
 						font = "cg_16b"
 						text = "District effects go here"
 						position = { x = 85 y = 25 }
-						maxWidth = 180
+						maxWidth = 175 #mod
 						maxHeight = 80
 						fixedSize = yes
 						format = left
@@ -5145,7 +5169,7 @@ guiTypes = {
 						font = "cg_16b"
 						text = "50"
 						position = { x = 85 y = 78 }
-						maxWidth = 180
+						maxWidth = 175 #mod
 						maxHeight = 80
 						fixedSize = yes
 						format = left
@@ -5155,27 +5179,27 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "num_districts"
-					size = { width = 76 height = 34 }
-					position = { x = 13 y = 250 }
+					size = { width = 81 height = 34 } #mod
+					position = { x = 15 y = 253 } #mod
 
 					background = {
 						name = "background"
-						spriteType = "GFX_dark_area_cut"
+						spriteType = "GFX_tiles_frame" #mod
 					}
 
 					iconType = {
 						name = "num_districts_icon"
 						spriteType = "GFX_district_small"
-						position = { x = 0 y = 3 }
+						position = { x = 3 y = 3 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "num_districts_text"
 						font = "cg_16b"
-						position = { x = 5 y = 8 }
+						position = { x = 33 y = 9 } #mod
 						text = "10/15"
-						maxWidth = 76
+						maxWidth = 40 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -5184,18 +5208,18 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "num_districts_building"
-					size = { width = 76 height = 34 }
-					position = { x = 101 y = 250 }
+					size = { width = 81 height = 34 } #mod
+					position = { x = 107 y = 253 } #mod
 
 					background = {
 						name = "background"
-						spriteType = "GFX_dark_area_cut"
+						spriteType = "GFX_tiles_frame" #mod
 					}
 
 					iconType = {
 						name = "num_districts_building_icon"
 						spriteType = "GFX_building_build_speed"
-						position = { x = 4 y = 5 }
+						position = { x = 7 y = 7 } #mod
 						scale = 0.8
 						tooltip_mode_enabled = yes
 					}
@@ -5203,9 +5227,9 @@ guiTypes = {
 					instantTextBoxType={
 						name = "num_districts_building_text"
 						font = "cg_16b"
-						position = { x = 5 y = 8 }
+						position = { x = 33 y = 9 } #mod
 						text = "2"
-						maxWidth = 76
+						maxWidth = 40 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -5214,27 +5238,27 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "num_blockers"
-					size = { width = 76 height = 34 }
-					position = { x = 189 y = 250 }
+					size = { width = 81 height = 34 } #mod
+					position = { x = 199 y = 253 } #mod
 
 					background = {
 						name = "background"
-						spriteType = "GFX_dark_area_cut"
+						spriteType = "GFX_tiles_frame" #mod
 					}
 
 					iconType = {
 						name = "num_blockers_icon"
 						spriteType = "GFX_text_blocker"
-						position = { x = 8 y = 7 }
+						position = { x = 8 y = 8 } #mod
 						tooltip_mode_enabled = yes
 					}
 
 					instantTextBoxType={
 						name = "num_blockers_text"
 						font = "cg_16b"
-						position = { x = 5 y = 8 }
+						position = { x = 33 y = 9 } #mod
 						text = "3"
-						maxWidth = 76
+						maxWidth = 40 #mod
 						maxHeight = 20
 						fixedSize = yes
 						format = center
@@ -5263,25 +5287,35 @@ guiTypes = {
 				containerWindowType = {
 					name = "pop_species_info"
 					position = { x = 8 y = 40 }
-					size = { width = 279 height = 465 } #mod
+					size = { width = 279 height = 727 } #mod
 
 					background = {
 						name = "pop_background"
 						spriteType = "GFX_dark_area_cut"
 					}
 
+					containerWindowType = {					#mod
+						name = "pop_basic_info"				#mod
+						position = { x = 10 y = 253 }		#mod
+						size = { width = 259 height = 45 }	#mod
+						background = {						#mod
+							name = "pop_basic_info_bg"		#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
+
 					iconType = {								#mod
 						name = "title_line"						#mod
 						quadTextureSprite = "GFX_line_popinfo"	#mod
-						position = { x = 5 y = 258 }			#mod
+						position = { x = 10 y = 266 }			#mod
 					}											#mod
 
 					instantTextBoxType = {
 						name = "species"
 						font = "malgun_goth_24"
 						text = "Species: Hooman"
-						position = { x = 10 y = 243 } #mod
-						maxWidth = 259 #mod
+						position = { x = 15 y = 251 } #mod
+						maxWidth = 249 #mod
 						maxHeight = 20
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
@@ -5292,8 +5326,8 @@ guiTypes = {
 						name = "habitability"
 						font = "cg_16b"
 						text = "Habitability: 12%"
-						position = { x = 10 y = 271 } #mod
-						maxWidth = 259 #mod
+						position = { x = 15 y = 279 } #mod
+						maxWidth = 249 #mod
 						maxHeight = 20
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
@@ -5302,8 +5336,8 @@ guiTypes = {
 
 					containerWindowType = {					#mod
 						name = "pop_traits_ethics"			#mod
+						position = { x = 10 y = 308 }		#mod
 						size = { width = 259 height = 69 }	#mod
-						position = { x = 10 y = 290 }		#mod
 						background = {						#mod
 							name = "pop_traits_ethics_bg"	#mod
 							spriteType = "GFX_tiles_frame"	#mod
@@ -5312,14 +5346,14 @@ guiTypes = {
 
 					OverlappingElementsBoxType = {
 						name = "traits"
-						position = { x = 14 y = 294 } #mod
+						position = { x = 14 y = 312 } #mod
 						size = { x = 254 y = 16 } #mod
 						format = left
 					}
 
 					OverlappingElementsBoxType = {
 						name = "ethics"
-						position = { x = 14 y = 326 } #mod
+						position = { x = 14 y = 344 } #mod
 						size = { x = 254 y = 16 } #mod
 						format = left
 					}
@@ -5384,36 +5418,66 @@ guiTypes = {
 						shortcut = "T"
 					}
 
+					containerWindowType = {					#mod
+						name = "pop_rights_info"			#mod
+						position = { x = 10 y = 387 }		#mod
+						size = { width = 259 height = 100 }	#mod
+						background = {						#mod
+							name = "pop_rights_info_bg"		#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
+
 					instantTextBoxType = {
 						name = "species_rights"
 						font = "cg_16b"
 						text = "species rights go here"
-						position = { x = 10 y = 362 } #mod
-						maxWidth = 259 #mod
+						position = { x = 15 y = 388 } #mod
+						maxWidth = 249 #mod
 						maxHeight = 170
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
 					}
+
+					containerWindowType = {					#mod
+						name = "pop_data_info"				#mod
+						position = { x = 10 y = 497 }		#mod
+						size = { width = 259 height = 174 }	#mod
+						background = {						#mod
+							name = "pop_data_info_bg"		#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
+
+					containerWindowType = {					#mod
+						name = "pop_output_info"			#mod
+						position = { x = 10 y = 681 }		#mod
+						size = { width = 259 height = 36 }	#mod
+						background = {						#mod
+							name = "pop_output_info_bg"		#mod
+							spriteType = "GFX_tiles_frame"	#mod
+						}									#mod
+					}										#mod
 				}
 
 				containerWindowType = {
 					name = "pop_job_info"
-					position = { x = 8 y = 515 } #mod
-					size = { width = 279 height = 252 } #mod
+					position = { x = 8 y = 532 } #mod
+					size = { width = 279 height = 240 } #mod
 
 					background = {
 						name = "pop_background"
-						spriteType = "GFX_dark_area_cut"
+						spriteType = "GFX_invisible" #mod
 					}
 
 					instantTextBoxType = {
 						name = "job_type"
 						font = "cg_16b"
 						text = "Job: Ice Cream Truck Driver"
-						position = { x = 10 y = 7 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 7 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5423,9 +5487,9 @@ guiTypes = {
 						name = "pop_category"
 						font = "cg_16b"
 						text = "Strata: Prole"
-						position = { x = 10 y = 27 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 24 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5435,9 +5499,9 @@ guiTypes = {
 						name = "pop_faction"
 						font = "cg_16b"
 						text = "Faction: Peaceful Progress Network"
-						position = { x = 10 y = 47 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 41 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5447,9 +5511,9 @@ guiTypes = {
 						name = "happiness"
 						font = "cg_16b"
 						text = "Happiness: 50%"
-						position = { x = 10 y = 67 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 58 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5459,9 +5523,9 @@ guiTypes = {
 						name = "political_power"
 						font = "cg_16b"
 						text = "Political Power: 0.5"
-						position = { x = 10 y = 87 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 75 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5471,9 +5535,9 @@ guiTypes = {
 						name = "crime"
 						font = "cg_16b"
 						text = "Crime: 1.7"
-						position = { x = 10 y = 107 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 92 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5483,9 +5547,9 @@ guiTypes = {
 						name = "empire_sprawl"
 						font = "cg_16b"
 						text = "Empire Sprawl: 1"
-						position = { x = 10 y = 127 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 109 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5495,9 +5559,9 @@ guiTypes = {
 						name = "housing_needs"
 						font = "cg_16b"
 						text = "Housing Needs: 2"
-						position = { x = 10 y = 147 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 126 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5507,9 +5571,9 @@ guiTypes = {
 						name = "amenities_usage"
 						font = "cg_16b"
 						text = "Amenities Usage: 2"
-						position = { x = 10 y = 167 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 143 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5519,9 +5583,9 @@ guiTypes = {
 						name = "production"
 						font = "cg_16b"
 						text = "12 minerals"
-						position = { x = 10 y = 187 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 190 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 36 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5531,21 +5595,9 @@ guiTypes = {
 						name = "upkeep"
 						font = "cg_16b"
 						text = "5 energy"
-						position = { x = 10 y = 207 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
-						fixedSize = yes
-						orientation = "UPPER_LEFT"
-						format = left
-					}
-
-					instantTextBoxType = {
-						name = "pop_note"
-						font = "cg_16b"
-						text = "FFU_POP_RANDOM_NOTE"
-						position = { x = 10 y = 227 } #mod
-						maxWidth = 259 #mod
-						maxHeight = 20
+						position = { x = 15 y = 160 } #mod
+						maxWidth = 249 #mod
+						maxHeight = 16 #mod
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
@@ -5821,7 +5873,8 @@ guiTypes = {
 					name = "district_constructions_list"
 					position = { x = 15 y = 60 }
 					background = ""
-					size = { x = 250 y = 500 }
+					size = { x = 265 y = 700 } #mod
+					offset = { x = -3 y = 0 } #mod
 					scrollbarType = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
 					orientation = "UPPER_LEFT"
@@ -5849,7 +5902,8 @@ guiTypes = {
 					name = "species_select_list"
 					position = { x = 15 y = 60 }
 					background = ""
-					size = { x = 250 y = 500 }
+					size = { x = 265 y = 700 } #mod
+					offset = { x = -3 y = 0 } #mod
 					scrollbarType = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
 					orientation = "UPPER_LEFT"
@@ -5878,11 +5932,12 @@ guiTypes = {
 					name = "recruitment_list"
 					position = { x = 15 y = 60 }
 					background = ""
-					size = { x = 250 y = 500 }
+					size = { x = 265 y = 700 } #mod
+					offset = { x = -3 y = 0 } #mod
 					scrollbarType = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
 					orientation = "UPPER_LEFT"
-					spacing = 1
+					spacing = 3 #mod
 				}
 			}
 		}
@@ -6030,24 +6085,30 @@ guiTypes = {
 		name = "planet_deposit_entry"
 		position = { x=0 y=82 }
 		moveable = no
-		size = { width = 250 height = 90 }
+		size = { width = 265 height = 90 } #mod
 
 		background = {
 			name = "background"
-			spriteType = "GFX_planet_construction_button"
+			spriteType = "GFX_invisible" #mod
 		}
 
 		containerWindowType = {
 			name = "deposit_name"
-			size = { width = 250 height = 22 }
+			size = { width = 265 height = 22 } #mod
 			position = { x = 0 y = -2 }
+
+			background = {						#mod
+				name = "background"				#mod
+				spriteType = "GFX_tiles_frame"	#mod
+				alwaysTransparent = yes			#mod
+			}									#mod
 
 			instantTextBoxType = {
 				name = "deposit_name"
 				font = "cg_16b"
 				text = "Deposit Name"
 				position = { x = 0 y = 3 }
-				maxWidth = 250
+				maxWidth = 265 #mod
 				maxHeight = 20
 				fixedSize = yes
 				format = center
@@ -6059,8 +6120,8 @@ guiTypes = {
 			name = "deposit_effects"
 			font = "cg_16b"
 			text = "Deposit effects go here"
-			position = { x = 85 y = 25 }
-			maxWidth = 170
+			position = { x = 95 y = 25 } #mod
+			maxWidth = 175 #mod
 			maxHeight = 80
 			fixedSize = yes
 			format = left
@@ -6070,33 +6131,33 @@ guiTypes = {
 		iconType = {
 			name = "deposit_icon"
 			spriteType = "GFX_deposit_unknown"
-			position = { x=4 y= 26 }
+			position = { x = 2 y = 21 } #mod
 			alwaysTransparent = yes
-			scale = 0.75
+			scale = 0.9 #mod
 		}
 
 		iconType = {
 			name = "blocker_frame"
-			spriteType = "GFX_planet_background_frame_blocker"
-			position = { x=4 y= 26 }
+			spriteType = "GFX_planet_background_frame_blocker_compact"
+			position = { x = 1 y = 20 } #mod
 			alwaysTransparent = yes
-			scale = 0.77
+			scale = 1.0 #mod
 		}
 
 		iconType = {
 			name = "rare_deposit_frame"
-			spriteType = "GFX_planet_background_frame_rare"
-			position = { x=4 y= 26 }
+			spriteType = "GFX_planet_background_frame_rare_compact"
+			position = { x = 1 y = 20 } #mod
 			alwaysTransparent = yes
-			scale = 0.76
+			scale = 1.0 #mod
 		}
 
 		instantTextBoxType={
 			name = "clear_blocker_cost"
 			font = "cg_16b"
 			text = "cost cost"
-			position = { x = 70 y = 68 }
-			maxWidth = 170
+			position = { x = 90 y = 70 } #mod
+			maxWidth = 165 #mod
 			maxHeight = 20
 			fixedSize = yes
 			format = right
@@ -6106,14 +6167,24 @@ guiTypes = {
 		iconType = {
 			name = "clear_blocker_deposit_icon"
 			spriteType = "GFX_deposit_unknown"
-			position = { x=160 y=25 }
+			position = { x = 175 y = 26 } #mod
 			scale = 0.5
 		}
+
+		containerWindowType = {								#mod
+			name = "planet_deposit_entry_overlay"			#mod
+			position = { x = 0 y = 0 }						#mod
+			size = { width = 265 height = 90 }				#mod
+			background = {									#mod
+				name = "planet_deposit_entry_overlay_bg"	#mod
+				spriteType = "GFX_planet_deposit_entry_ffu" #mod
+			}												#mod
+		}													#mod
 
 		buttonType = {
 			name = "clear_blocker_button"
 			spriteType = "GFX_clear_blocker_button"
-			position = { x=213 y=33 }
+			position = { x = 228 y = 33 } #mod
 			scale = 0.65
 			clicksound = ui_demolish_building_district
 			oversound = mouse_over
@@ -6130,8 +6201,8 @@ guiTypes = {
 
 		iconType = {
 			name = "progressbar"
-			spriteType = "GFX_blocker_progressbar"
-			position = { x = 79 y = 70 }
+			spriteType = "GFX_experience_bar_dep" #mod
+			position = { x = 92 y = 68 } #mod
 		}
 	}
 
@@ -6836,7 +6907,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_species_select_entry_blank_species"
 		position = { x=0 y=0 }
-		size = { width = 250 height = 30 }
+		size = { width = 265 height = 30 } #mod
 
 		instantTextBoxType = {
 			name = "species_name"
@@ -6868,7 +6939,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_species_select_entry_specific_species"
 		position = { x=0 y=0 }
-		size = { width = 250 height = 108 }
+		size = { width = 265 height = 108 } #mod
 
 		background = {
 			name = "background"
@@ -6878,7 +6949,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "species_name"
-			size = { width = 250 height = 30 }
+			size = { width = 265 height = 30 } #mod
 			position = { x = 0 y = 0 }
 
 			background = {
@@ -6892,7 +6963,7 @@ guiTypes = {
 				font = "malgun_goth_24"
 				text = "Species Name"
 				position = { x = 0 y = 3 }
-				maxWidth = 250
+				maxWidth = 265 #mod
 				maxHeight = 20
 				fixedSize = yes
 				format = center
@@ -6929,28 +7000,28 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "traits"
-			position = { x = 83 y = 70 }
-			size = { x = 152 y = 16 }
+			position = { x = 83 y = 74 } #mod
+			size = { x = 180 y = 16 } #mod
 			format = left
 		}
 
 		containerWindowType = {
 			name = "portrait"
-			size = { width = 80 height = 80 }
+			size = { width = 79 height = 79 } #mod
 			position = { x = 0 y = 29 }
 			clipping = yes
 
 			iconType = {
 				name = "species_background"
 				spriteType = "GFX_planet_background"
-				position = { x = 1 y = 2 }
-				scale = 0.79
+				position = { x = -1 y = -1 } #mod
+				scale = 0.85 #mod
 				alwaysTransparent = yes
 			}
 
 			iconType = {
 				name = "species_background_frame"
-				spriteType = "GFX_planet_background_frame"
+				spriteType = "GFX_invisible" #mod
 				scale = 0.79
 				alwaysTransparent = yes
 			}
@@ -6963,6 +7034,16 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 		}
+		
+		containerWindowType = {								   #mod
+			name = "planet_population_entry_overlay"		   #mod
+			position = { x = 0 y = 0 }						   #mod
+			size = { width = 265 height = 108 }				   #mod
+			background = {									   #mod
+				name = "planet_population_entry_overlay_bg"	   #mod
+				spriteType = "GFX_planet_population_entry_ffu" #mod
+			}												   #mod
+		}													   #mod
 
 		iconType = {
 			name = "selected_icon"
@@ -7247,7 +7328,7 @@ guiTypes = {
 
 		background = {
 			name = "background"
-			spriteType = "GFX_planet_construction_button_ffu"
+			spriteType = "GFX_invisible" #mod
 		}
 
 		containerWindowType = {
@@ -7277,6 +7358,11 @@ guiTypes = {
 			name = "building_name"
 			size = { width = 265 height = 22 } #mod
 			position = { x = 0 y = 0 }
+
+			background = {						#mod
+				name = "background"				#mod
+				spriteType = "GFX_tiles_frame"	#mod
+			}									#mod
 
 			instantTextBoxType = {
 				name = "building_name"
@@ -7316,15 +7402,15 @@ guiTypes = {
 			text_color_code = "Y"
 		}
 
-		containerWindowType = {										#mod
-			name = "planet_construction_entry_overlay"				#mod
-			position = { x = 0 y = 0 }								#mod
-			size = { width = 265 height = 100 }						#mod
-			background = {											#mod
-				name = "planet_construction_entry_overlay_back"		#mod
-				spriteType = "GFX_planet_construction_button_ffu"	#mod
-			}														#mod
-		}															#mod
+		containerWindowType = {								  #mod
+			name = "planet_construction_entry_overlay"		  #mod
+			position = { x = 0 y = 0 }						  #mod
+			size = { width = 265 height = 100 }				  #mod
+			background = {									  #mod
+				name = "planet_construction_entry_overlay_bg" #mod
+				spriteType = "GFX_planet_construct_entry_ffu" #mod
+			}												  #mod
+		}													  #mod
 
 		buttonType = {
 			name = "button_build"
@@ -7427,7 +7513,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_recruitment_entry"
 		position = { x = 0 y = 8 }
-		size = { width = 250 height = 65 }
+		size = { width = 265 height = 65 } #mod
 
 		background = {
 			name = "background"
@@ -7446,7 +7532,7 @@ guiTypes = {
 			font = "malgun_goth_24"
 			text = "Army Name"
 			position = { x = 30 y = 0 }
-			maxWidth = 300
+			maxWidth = 230 #mod
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -7457,7 +7543,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "Army Species"
 			position = { x = 30 y = 20 }
-			maxWidth = 300
+			maxWidth = 230 #mod
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -7468,7 +7554,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "50"
 			position = { x = 10 y = 40 }
-			maxWidth = 180
+			maxWidth = 195 #mod
 			maxHeight = 80
 			fixedSize = yes
 			text = "1 mineral"
@@ -7479,7 +7565,7 @@ guiTypes = {
 		buttonType = {
 			name = "recruit_button"
 			position = { x=-1 y=-1 }
-			size = { x=252 y=67 }
+			size = { x = 267 y = 67 } #mod
 			quadTextureSprite = "GFX_button_light"
 			clicksound = "back_click"
 		}

@@ -1,0 +1,51 @@
+defined_text = {
+	name = GetPlanetIconLarge
+	text = { trigger = { is_planet_class = pc_desert } localization_key = ffu_il_lpc_desert }
+	text = { trigger = { is_planet_class = pc_arid } localization_key = ffu_il_lpc_arid }
+	text = { trigger = { is_planet_class = pc_savannah } localization_key = ffu_il_lpc_savannah }
+	text = { trigger = { is_planet_class = pc_tropical } localization_key = ffu_il_lpc_tropical }
+	text = { trigger = { is_planet_class = pc_continental } localization_key = ffu_il_lpc_continental }
+	text = { trigger = { is_planet_class = pc_ocean } localization_key = ffu_il_lpc_ocean }
+	text = { trigger = { is_planet_class = pc_tundra } localization_key = ffu_il_lpc_tundra }
+	text = { trigger = { is_planet_class = pc_arctic } localization_key = ffu_il_lpc_arctic }
+	text = { trigger = { is_planet_class = pc_alpine } localization_key = ffu_il_lpc_alpine }
+	text = { trigger = { is_planet_class = pc_gas_giant } localization_key = ffu_il_lpc_gas_giant }
+	text = { trigger = { OR = { is_planet_class = pc_asteroid is_planet_class = pc_ice_asteroid } } localization_key = ffu_il_lpc_asteroid }
+	text = { trigger = { is_planet_class = pc_barren } localization_key = ffu_il_lpc_barren }
+	text = { trigger = { is_planet_class = pc_barren_cold } localization_key = ffu_il_lpc_barren_cold }
+	text = { trigger = { OR = { is_planet_class = pc_broken is_planet_class = pc_shattered } } localization_key = ffu_il_lpc_broken }
+	text = { trigger = { is_planet_class = pc_molten } localization_key = ffu_il_lpc_molten }
+	text = { trigger = { is_planet_class = pc_toxic } localization_key = ffu_il_lpc_toxic }
+	text = { trigger = { is_planet_class = pc_frozen } localization_key = ffu_il_lpc_frozen }
+	text = { trigger = { is_planet_class = pc_gaia } localization_key = ffu_il_lpc_gaia }
+	text = { trigger = { is_planet_class = pc_nuked } localization_key = ffu_il_lpc_nuked }
+	text = { trigger = { is_planet_class = pc_shielded } localization_key = ffu_il_lpc_shielded }
+	text = { trigger = { OR = { is_planet_class = pc_infested is_planet_class = pc_hive } } localization_key = ffu_il_lpc_infested }
+	text = { trigger = { is_planet_class = pc_shrouded } localization_key = ffu_il_lpc_shrouded }
+	text = { trigger = { OR = { is_planet_class = pc_ai is_planet_class = pc_machine } } localization_key = ffu_il_lpc_machine }
+	text = { trigger = { is_planet_class = pc_city } localization_key = ffu_il_lpc_city }
+	text = { trigger = { OR = { is_planet_class = pc_ringworld_habitable is_planet_class = pc_ringworld_tech } } localization_key = ffu_il_lpc_ringworld }
+	text = { trigger = { is_planet_class = pc_habitat } localization_key = ffu_il_lpc_habitat }
+	text = { trigger = { is_planet_class = pc_ringworld_shielded } localization_key = ffu_il_lpc_ringworld_sh }
+	text = { trigger = { is_planet_class = pc_habitat_shielded } localization_key = ffu_il_lpc_habitat_sh }
+	text = { localization_key = ffu_il_lpc_unknown }
+}
+defined_text = {
+	name = GetDefensesStatus
+	text = { trigger = { has_modifier = planetary_defenses_nominal } localization_key = ffu_il_dstatus_nominal }
+	text = { trigger = { has_modifier = planetary_defenses_stable } localization_key = ffu_il_dstatus_stable }
+	text = { trigger = { has_modifier = planetary_defenses_disrupted } localization_key = ffu_il_dstatus_disrupted }
+	text = { trigger = { has_modifier = planetary_defenses_emergency } localization_key = ffu_il_dstatus_emergency }
+	text = { trigger = { has_modifier = planetary_defenses_critical } localization_key = ffu_il_dstatus_critical }
+	text = { trigger = { has_modifier = planetary_defenses_wasted } localization_key = ffu_il_dstatus_wasted }
+	text = { localization_key = ffu_il_dstatus_unknown }
+}
+defined_text = {
+	name = GetIntegrityColor
+	text = { trigger = { check_variable = { which = planetaryShield value > planetaryShield_x8 } } localization_key = ffu_il_icolor_nominal }
+	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x8 } check_variable = { which = planetaryShield value > planetaryShield_x6 } } localization_key = ffu_il_icolor_stable }
+	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x6 } check_variable = { which = planetaryShield value > planetaryShield_x4 } } localization_key = ffu_il_icolor_disrupted }
+	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x4 } check_variable = { which = planetaryShield value > planetaryShield_x2 } } localization_key = ffu_il_icolor_emergency }
+	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x2 } check_variable = { which = planetaryShield value > 0 } } localization_key = ffu_il_icolor_critical }
+	text = { localization_key = ffu_il_icolor_unknown }
+}
