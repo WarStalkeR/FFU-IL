@@ -6120,9 +6120,9 @@ guiTypes = {
 			name = "deposit_effects"
 			font = "cg_16b"
 			text = "Deposit effects go here"
-			position = { x = 95 y = 25 } #mod
+			position = { x = 95 y = 20 } #mod
 			maxWidth = 175 #mod
-			maxHeight = 80
+			maxHeight = 50 #mod
 			fixedSize = yes
 			format = left
 			alwaysTransparent = yes
