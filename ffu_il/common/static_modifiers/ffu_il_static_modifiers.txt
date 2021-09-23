@@ -1,0 +1,275 @@
+##########################
+#### Penalty Modifiers ###
+##########################
+#incompatible_planet_trait_penalty = {
+#	pop_happiness = -5.0
+#	pop_government_ethic_attraction = -5.0
+#	planet_migration_all_mult = -1.00
+#	pop_growth_speed = -1.00
+#	all_technology_research_speed = -5.0
+#	country_admin_cap_add = -500
+#	country_energy_produces_add = -500000
+#	country_minerals_produces_add = -500000
+#	country_food_produces_add = -500000
+#	country_energy_produces_mult = -5.0
+#	country_minerals_produces_mult = -5.0
+#	country_food_produces_mult = -5.0
+#	country_physics_research_produces_mult = -5.0
+#	country_society_research_produces_mult = -5.0
+#	country_engineering_research_produces_mult = -5.0
+#	country_influence_produces_mult = -5.0
+#	country_unity_produces_mult = -5.0
+#}
+#
+#########################
+#### Legacy Modifiers ###
+#########################
+#legacy_big_world_flag = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_illuminati_legacy.dds"
+#	icon_frame = 4
+#	pop_environment_tolerance = 5.0
+#}
+#legacy_perfect_world_flag = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_illuminati_legacy.dds"
+#	icon_frame = 4
+#	pop_environment_tolerance = 5.0
+#}
+#legacy_ringworld_basic_flag = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_illuminati_legacy.dds"
+#	icon_frame = 4
+#	pop_environment_tolerance = 5.0
+#}
+#legacy_ringworld_advanced_flag = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_illuminati_legacy.dds"
+#	icon_frame = 4
+#	pop_environment_tolerance = 5.0
+#}
+#legacy_big_world_balance = {
+#	leader_age = 20
+#	shipsize_colonizer_build_speed_mult = 0.25
+#	shipsize_sponsored_colonizer_build_speed_mult = 0.25
+#	ship_colonizer_cost_mult = -0.15
+#}
+#legacy_perfect_world_balance = {
+#	leader_age = 60
+#	shipsize_colonizer_build_speed_mult = 0.50
+#	shipsize_sponsored_colonizer_build_speed_mult = 0.50
+#	ship_colonizer_cost_mult = -0.25
+#}
+#legacy_ringworld_basic_balance = {
+#	leader_age = 200
+#	shipsize_colonizer_build_speed_mult = 1.00
+#	shipsize_sponsored_colonizer_build_speed_mult = 1.00
+#	ship_colonizer_cost_mult = -0.35
+#}
+#legacy_ringworld_advanced_balance = {
+#	leader_age = 600
+#	shipsize_colonizer_build_speed_mult = 2.00
+#	shipsize_sponsored_colonizer_build_speed_mult = 2.00
+#	ship_colonizer_cost_mult = -0.50
+#}
+#
+###############################
+#### Habitability Balancing ###
+###############################
+#initial_habitability_balance = {
+#	BIOLOGICAL_species_trait_points_add = 1
+#	MACHINE_species_trait_points_add = 10
+#	ROBOT_species_trait_points_add = 10
+#}
+#initial_habitability_bio_default = {
+#	BIOLOGICAL_species_trait_points_add = 1
+#}
+#initial_habitability_bio_atmosphereless = {
+#	BIOLOGICAL_species_trait_points_add = 2
+#}
+#initial_habitability_bio_decompressed = {
+#	BIOLOGICAL_species_trait_points_add = 4
+#}
+#initial_habitability_bio_hostile = {
+#	BIOLOGICAL_species_trait_points_add = 6
+#}
+#initial_habitability_bio_hazard = {
+#	BIOLOGICAL_species_trait_points_add = 9
+#}
+#initial_habitability_bio_volatile = {
+#	BIOLOGICAL_species_trait_points_add = 24
+#}
+#initial_habitability_mac_volatile = {
+#	MACHINE_species_trait_points_add = 15
+#}
+#initial_habitability_rob_volatile = {
+#	ROBOT_species_trait_points_add = 15
+#}
+#initital_nuclear_winter = {
+#	planet_jobs_food_produces_mult = -0.25
+#	planet_jobs_minerals_produces_mult = -0.05
+#	planet_jobs_energy_produces_mult = -0.15
+#	pop_happiness = -0.10
+#	pop_growth_speed = -0.25
+#	icon = "gfx/interface/icons/planet_modifiers/pm_nuclear_winter.dds"
+#	icon_frame = 5
+#}
+#
+#############################
+#### Enrichment Pollution ###
+#############################
+#enrichment_pollution_light = {
+#	planet_jobs_food_produces_mult = -0.15
+#	planet_jobs_minerals_produces_mult = -0.15
+#	planet_jobs_energy_produces_mult = -0.15
+#	pop_happiness = -0.05
+#	pop_growth_speed = -0.25
+#	planet_jobs_produces_mult = -0.10
+#	icon = "gfx/interface/icons/planet_modifiers/pm_pollution_light.dds"
+#	icon_frame = 5
+#}
+#enrichment_pollution_heavy = {
+#	planet_jobs_food_produces_mult = -0.35
+#	planet_jobs_minerals_produces_mult = -0.35
+#	planet_jobs_energy_produces_mult = -0.35
+#	pop_happiness = -0.15
+#	pop_growth_speed = -0.50
+#	planet_jobs_produces_mult = -0.25
+#	icon = "gfx/interface/icons/planet_modifiers/pm_pollution_heavy.dds"
+#	icon_frame = 5
+#}
+
+################################
+### Planetary Defense Status ###
+################################
+planetary_defenses_nominal = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_nominal.dds"
+	icon_frame = 7
+}
+planetary_defenses_stable = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_stable.dds"
+	icon_frame = 8
+}
+planetary_defenses_disrupted = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_disrupted.dds"
+	icon_frame = 9
+}
+planetary_defenses_emergency = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_emergency.dds"
+	icon_frame = 10
+}
+planetary_defenses_critical = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_critical.dds"
+	icon_frame = 11
+}
+planetary_defenses_wasted = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_status_wasted.dds"
+	icon_frame = 12
+}
+planetary_weapon_reloading = {
+	icon = "gfx/interface/icons/planet_modifiers/pd_weapon_reloading.dds"
+	icon_frame = 15
+}
+
+#######################################
+#### Planetary Bombardment Features ###
+#######################################
+#bomb_bay_reloading = {
+#	icon = "gfx/interface/icons/planet_modifiers/bomb_bay_reloading.dds"
+#	icon_frame = 15
+#}
+#planetary_restoration_unstable = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_unstable_status.dds"
+#	icon_frame = 16
+#}
+#
+###################################
+#### Planetary Shield Integrity ###
+###################################
+#planet_def_integrity_X = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_X.dds"
+#	icon_frame = 13
+#}
+#planet_def_integrity_9 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_9.dds"
+#	icon_frame = 13
+#}
+#planet_def_integrity_8 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_8.dds"
+#	icon_frame = 13
+#}
+#planet_def_integrity_7 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_7.dds"
+#	icon_frame = 14
+#}
+#planet_def_integrity_6 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_6.dds"
+#	icon_frame = 14
+#}
+#planet_def_integrity_5 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_5.dds"
+#	icon_frame = 15
+#}
+#planet_def_integrity_4 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_4.dds"
+#	icon_frame = 15
+#}
+#planet_def_integrity_3 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_3.dds"
+#	icon_frame = 16
+#}
+#planet_def_integrity_2 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_2.dds"
+#	icon_frame = 16
+#}
+#planet_def_integrity_1 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_1.dds"
+#	icon_frame = 17
+#}
+#planet_def_integrity_0 = {
+#	icon = "gfx/interface/icons/planet_modifiers/pd_integrity_stat_0.dds"
+#	icon_frame = 17
+#}
+#
+######################################
+#### Jump Drive Cooldown Modifiers ###
+######################################
+#jump_drive_cooldown_classic = {
+#	ship_weapon_damage = -0.50
+#	ship_speed_mult = -0.50
+#}
+#jump_drive_cooldown_psionic = {
+#	ship_weapon_damage = -0.35
+#	ship_speed_mult = -0.35
+#}
+#
+############################
+#### World Working Modes ###
+############################
+#habitat_unstable_frame = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_habitat_unstable_frame.dds"
+#	icon_frame = 5
+#}
+#habitat_industrial_mode = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_habitat_industrial_mode.dds"
+#	icon_frame = 5
+#}
+#
+###############################
+#### Terraforming Modifiers ###
+###############################
+#stabilized_environment = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_stabilized_environment.dds"
+#	icon_frame = 1
+#	pop_environment_tolerance = 5.0
+#}
+#
+#######################
+#### Misc Modifiers ###
+#######################
+#important_ringworld = {
+#	icon = "gfx/interface/icons/planet_modifiers/pm_important_ringworld.dds"
+#	icon_frame = 18
+#	important = yes
+#}
+#ai_colony_expansion_initiative = {
+#	shipsize_colonizer_build_speed_mult = 5.00
+#	shipsize_sponsored_colonizer_build_speed_mult = 5.00
+#	ship_colonizer_cost_mult = -0.90
+#}

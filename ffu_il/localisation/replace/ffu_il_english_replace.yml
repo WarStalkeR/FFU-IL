@@ -17,6 +17,8 @@
  GARRISON_ASSAULT_POWER_INFO:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
  INVADER_POWER_INFO:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
  ARMY_STRENGTH:0 "£job_soldier£ $VALUE|0Y$ £army_power£"
+ NO_DEVASTATION:0 "§GPlanet has no Devastation§!"
+ DEVASTATION_BOMBARDMENT_EFFECTS:0 "Effects on Planet from Devastation:"
  
  ### SHIP PARTS
  power_core:0 "$ffu_il_main_reactor_core$"
@@ -254,7 +256,9 @@
  riggan:0 "Riggan Spice"
  riggan_desc:0 "The methods of extracting and mixing this spice is very complicated. The spice itself has a unique flavor and is a popular food ingredient."
  nanites:0 "Active Nanites"
- nanites_desc:0 "Simple but powerful nanomachines, allowing for complex manipulations and experiments at mesoscopic scales. Or catastrophes at interstellar scales."
+ nanites_desc:0 "Simple but powerful nanomachines, allowing for complex manipulations and experiments at mesoscopic scale. Or catastrophes at interstellar scale."
+ luxury_goods:0 "Luxury Goods"
+ luxury_goods_desc:0 "Rare and exotic goods that are less used for consumption, except for auspicious occasions, and more often than not to emphasize status of their owners in particular, and prosperity of the empire in general."
  #sr_muutagan:0 "Muutagan Crystals"
  #sr_muutagan_desc:0 "If struck, these "singing" crystals start to vibrate while emitting a unique humming sound. They are often used as musical instruments, and have a calming effect on most beings."
  #sr_xuran:0 "Xurian Gel"

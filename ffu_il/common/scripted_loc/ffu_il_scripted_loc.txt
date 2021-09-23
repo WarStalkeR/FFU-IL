@@ -28,6 +28,7 @@ defined_text = {
 	text = { trigger = { is_planet_class = pc_habitat } localization_key = ffu_il_lpc_habitat }
 	text = { trigger = { is_planet_class = pc_ringworld_shielded } localization_key = ffu_il_lpc_ringworld_sh }
 	text = { trigger = { is_planet_class = pc_habitat_shielded } localization_key = ffu_il_lpc_habitat_sh }
+	text = { trigger = { is_planet_class = pc_relic } localization_key = ffu_il_lpc_relic }
 	text = { localization_key = ffu_il_lpc_unknown }
 }
 defined_text = {
@@ -48,4 +49,9 @@ defined_text = {
 	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x4 } check_variable = { which = planetaryShield value > planetaryShield_x2 } } localization_key = ffu_il_icolor_emergency }
 	text = { trigger = { check_variable = { which = planetaryShield value <= planetaryShield_x2 } check_variable = { which = planetaryShield value > 0 } } localization_key = ffu_il_icolor_critical }
 	text = { localization_key = ffu_il_icolor_unknown }
+}
+defined_text = {
+	name = GetDefensesIntegrity
+	text = {trigger = {planet = {is_variable_set = planetaryShield is_variable_set = planetaryShieldMax}} localization_key = planetary_defenses_int}
+	text = {trigger = {planet = { NOR = {is_variable_set = planetaryShield is_variable_set = planetaryShieldMax}}} localization_key = planetary_empty}
 }

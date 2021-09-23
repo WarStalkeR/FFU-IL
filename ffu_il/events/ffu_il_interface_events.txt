@@ -1,0 +1,715 @@
+namespace = ffu_il_interface
+
+country_event = {
+	id = ffu_il_interface.01
+	title = ffu_il_interface.01.name
+	desc = ffu_il_interface.01.desc
+	custom_gui = "ffu_il_interface_defint_info"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root
+		room = no_video_feed_room
+		planet_background = pc_habitat
+	}
+	option = {
+		name = ffu_il_interface_empty
+		custom_gui = "ffu_il_interface_exit"
+		hidden_effect = { }
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = ffu_il_interface.02
+	title = ffu_il_interface.02.name
+	desc = ffu_il_interface.02.desc
+	custom_gui = "ffu_il_interface_plbomb_info"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root
+		room = no_video_feed_room
+		planet_background = pc_habitat
+	}
+	option = {
+		name = ffu_il_interface_empty
+		custom_gui = "ffu_il_interface_exit"
+		hidden_effect = { }
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = ffu_il_interface.03
+	title = ffu_il_interface.03.name
+	desc = ffu_il_interface.03.desc
+	custom_gui = "ffu_il_interface_plweap_info"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root
+		room = no_video_feed_room
+		planet_background = pc_habitat
+	}
+	option = {
+		name = ffu_il_interface_empty
+		custom_gui = "ffu_il_interface_exit"
+		hidden_effect = { }
+		ai_chance = { factor = 0 }
+	}
+}
+#country_event = {
+#	id = ffu_il_interface.100
+#	title = ffu_il_interface.100.name
+#	desc = ffu_il_interface.100.desc
+#	custom_gui = "ffu_il_integrity_status_info"
+#	is_triggered_only = yes
+#	diplomatic = yes
+#	picture_event_data = {
+#		portrait = root
+#		room = no_video_feed_room
+#		planet_background = pc_habitat
+#	}
+#	immediate = {
+#		### PURGE DATA
+#		if = {
+#			limit = { has_country_flag = ffuil_status_data_purge }
+#			log = "Purging Data..."
+#			every_owned_planet = {
+#				limit = { has_planet_flag = ffuil_ignored_p }
+#				remove_planet_flag = ffuil_ignored_p
+#			}
+#			every_owned_planet = {
+#				limit = { has_planet_flag = ffuil_type_p }
+#				remove_planet_flag = ffuil_type_p
+#			}
+#			every_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					has_planet_flag = ffuil_ignored_t
+#				} }
+#				orbit = { remove_planet_flag = ffuil_ignored_t }
+#			}
+#			every_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					has_planet_flag = ffuil_type_t
+#				} }
+#				orbit = { remove_planet_flag = ffuil_type_t }
+#			}
+#			remove_country_flag = ffuil_status_data_purge
+#			set_country_flag = ffuil_status_data_getnext
+#		}
+#		### GET NEXT DATA
+#		if = {
+#			limit = { has_country_flag = ffuil_status_data_getnext }
+#			log = "Flagging Previous Data..."
+#			if = { limit = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p0 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p1 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p2 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p3 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p4 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p5 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p6 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p7 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p8 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { has_planet_flag = ffuil_type_t } } event_target:ffuil_listed_p9 = { remove_planet_flag = ffuil_type_t set_planet_flag = ffuil_ignored_t } }
+#			if = { limit = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p0 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p1 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p2 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p3 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p4 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p5 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p6 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p7 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p8 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { has_planet_flag = ffuil_type_p } } event_target:ffuil_listed_p9 = { remove_planet_flag = ffuil_type_p set_planet_flag = ffuil_ignored_p } }
+#			if = { limit = { has_country_flag = ffuil_listed_p0_set } remove_country_flag = ffuil_listed_p0_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p1_set } remove_country_flag = ffuil_listed_p1_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p2_set } remove_country_flag = ffuil_listed_p2_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p3_set } remove_country_flag = ffuil_listed_p3_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p4_set } remove_country_flag = ffuil_listed_p4_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p5_set } remove_country_flag = ffuil_listed_p5_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p6_set } remove_country_flag = ffuil_listed_p6_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p7_set } remove_country_flag = ffuil_listed_p7_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p8_set } remove_country_flag = ffuil_listed_p8_set }
+#			if = { limit = { has_country_flag = ffuil_listed_p9_set } remove_country_flag = ffuil_listed_p9_set }
+#			log = "Getting Next Data..."
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p0 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p0_set }
+#				orbit = { log = "[This.GetName] is set as Target #0..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p1 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p1_set }
+#				orbit = { log = "[This.GetName] is set as Target #1..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p2 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p2_set }
+#				orbit = { log = "[This.GetName] is set as Target #2..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p3 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p3_set }
+#				orbit = { log = "[This.GetName] is set as Target #3..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p4 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p4_set }
+#				orbit = { log = "[This.GetName] is set as Target #4..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p5 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p5_set }
+#				orbit = { log = "[This.GetName] is set as Target #5..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p6 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p6_set }
+#				orbit = { log = "[This.GetName] is set as Target #6..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p7 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p7_set }
+#				orbit = { log = "[This.GetName] is set as Target #7..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p8 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p8_set }
+#				orbit = { log = "[This.GetName] is set as Target #8..." }
+#			}
+#			random_owned_fleet = {
+#				limit = { exists = orbit orbit = {
+#					has_orbital_bombardment = yes
+#					owner = { NOT = { is_same_value = event_target:ffuil_interface_owner } }
+#					NOR = { has_planet_flag = ffuil_type_t has_planet_flag = ffuil_ignored_t }
+#				} }
+#				orbit = { save_event_target_as = ffuil_listed_p9 }
+#				orbit = { set_planet_flag = ffuil_type_t }
+#				owner = { set_country_flag = ffuil_listed_p9_set }
+#				orbit = { log = "[This.GetName] is set as Target #9..." }
+#			}
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p9_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p9
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p9_set }
+#				log = "[This.GetName] is set as Planet #9..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p8_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p8
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p8_set }
+#				log = "[This.GetName] is set as Planet #8..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p7_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p7
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p7_set }
+#				log = "[This.GetName] is set as Planet #7..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p6_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p6
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p6_set }
+#				log = "[This.GetName] is set as Planet #6..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p5_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p5
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p5_set }
+#				log = "[This.GetName] is set as Planet #5..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p4_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p4
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p4_set }
+#				log = "[This.GetName] is set as Planet #4..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p3_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p3
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p3_set }
+#				log = "[This.GetName] is set as Planet #3..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p2_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p2
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p2_set }
+#				log = "[This.GetName] is set as Planet #2..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p1_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p1
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p1_set }
+#				log = "[This.GetName] is set as Planet #1..."
+#			} }
+#			if = { limit = { NOT = { has_country_flag = ffuil_listed_p0_set } } random_owned_planet = {
+#				limit = { NOR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_ignored_p } is_colony = yes }
+#				save_event_target_as = ffuil_listed_p0
+#				set_planet_flag = ffuil_type_p
+#				owner = { set_country_flag = ffuil_listed_p0_set }
+#				log = "[This.GetName] is set as Planet #0..."
+#			} }
+#			remove_country_flag = ffuil_status_data_getnext
+#		}
+#		### REFRESH CURRENT DATA
+#		if = {
+#			limit = { has_country_flag = ffuil_status_data_refresh }
+#			log = "Refreshing Current Data..."
+#			remove_country_flag = ffuil_status_data_refresh
+#		}
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_exit"
+#		hidden_effect = { }
+#		ai_chance = { factor = 0 }
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_refresh"
+#		custom_gui = "ffu_il_integrity_status_button_1"
+#		custom_tooltip = ffu_il_intstatus_refresh_desc
+#		hidden_effect = { set_country_flag = ffuil_status_data_refresh country_event = { id = ffu_il_interface.100 } }
+#		ai_chance = { factor = 0 }
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_getnext"
+#		custom_gui = "ffu_il_integrity_status_button_2"
+#		custom_tooltip = ffu_il_intstatus_getnext_desc
+#		hidden_effect = { set_country_flag = ffuil_status_data_getnext country_event = { id = ffu_il_interface.100 } }
+#		ai_chance = { factor = 0 }
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_restart"
+#		custom_gui = "ffu_il_integrity_status_button_3"
+#		custom_tooltip = ffu_il_intstatus_restart_desc
+#		hidden_effect = { set_country_flag = ffuil_status_data_purge country_event = { id = ffu_il_interface.100 } }
+#		ai_chance = { factor = 0 }
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data0_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data0_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data0_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data0_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p0 event_target:ffuil_listed_p0 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data1_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data1_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data1_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data1_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p1 event_target:ffuil_listed_p1 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data2_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data2_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data2_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data2_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p2 event_target:ffuil_listed_p2 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data3_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data3_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data3_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data3_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p3 event_target:ffuil_listed_p3 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data4_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data4_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data4_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data4_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p4 event_target:ffuil_listed_p4 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data5_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data5_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data5_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data5_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p5 event_target:ffuil_listed_p5 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data6_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data6_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data6_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data6_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p6 event_target:ffuil_listed_p6 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data7_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data7_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data7_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data7_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p7 event_target:ffuil_listed_p7 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data8_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data8_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data8_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data8_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p8 event_target:ffuil_listed_p8 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_green"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_p } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_interface_empty"
+#		custom_gui = "ffu_il_integrity_status_frame_red"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } has_planet_flag = ffuil_type_t } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data9_icon"
+#		custom_gui = "ffu_il_integrity_status_icon"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data9_name"
+#		custom_gui = "ffu_il_integrity_status_name"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data9_stat"
+#		custom_gui = "ffu_il_integrity_status_stat"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#	option = {
+#		name = "ffu_il_intstatus_data9_int"
+#		custom_gui = "ffu_il_integrity_status_int"
+#		trigger = { exists = event_target:ffuil_listed_p9 event_target:ffuil_listed_p9 = { NOR = { has_planet_flag = ffuil_ignored_t has_planet_flag = ffuil_ignored_p } OR = { has_planet_flag = ffuil_type_p has_planet_flag = ffuil_type_t } } }
+#		is_dialog_only = yes
+#	}
+#}

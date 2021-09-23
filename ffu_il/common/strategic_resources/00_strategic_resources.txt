@@ -1,0 +1,297 @@
+##############
+### System ###
+##############
+time = { }
+
+#############
+### Basic ###
+#############
+energy = {
+	tradable = yes
+	max = 50000
+	deficit_modifier = energy_deficit
+	ai_weight = { weight = 1.5 }
+	ai_wants = { base = 500 }
+}
+minerals = {
+	tradable = yes
+	market_amount = 100
+	market_price = 100
+	max = 50000
+	deficit_modifier = minerals_deficit
+	ai_weight = { weight = 1 }
+	ai_wants = { base = 1000 }
+}
+food = {
+	tradable = yes
+	market_amount = 100
+	market_price = 100
+	max = 50000 
+	deficit_modifier = food_deficit
+	ai_weight = { weight = 1 }
+	ai_wants = { base = 300 }
+}
+physics_research = {
+	ai_weight = { weight = 1 }
+}
+society_research = {
+	ai_weight = { weight = 1 }
+}
+engineering_research = {
+	ai_weight = { weight = 1 }
+}
+influence = {
+	max = 10000
+	tooltip_decimals = 1
+	deficit_modifier = influence_deficit
+	ai_weight = { weight = 1 }
+}
+unity = {
+	ai_weight = { weight = 1 }
+}
+
+####################
+### Manufactured ###
+####################
+alloys = {
+	tradable = yes
+	market_amount = 25
+	market_price = 100
+	max = 25000
+	deficit_modifier = alloys_deficit
+	ai_weight = { weight = 5 }
+	ai_wants = { base = 100 }
+}
+consumer_goods = {
+	tradable = yes
+	market_amount = 50
+	market_price = 100
+	max = 25000
+	deficit_modifier = consumer_goods_deficit
+	ai_weight = { weight = 5 }
+	ai_wants = { base = 300 }
+}
+luxury_goods = {
+	tradable = yes
+	market_amount = 1
+	market_price = 500
+	max = 10000
+	#deficit_modifier = luxury_goods_deficit
+	ai_weight = { weight = 1 }
+}
+
+################
+### Advanced ###
+################
+volatile_motes = {
+	tradable = yes
+	market_amount = 10
+	market_price = 100
+	max = 15000
+	prerequisites = { "tech_mine_volatile_motes" }
+	deficit_modifier = volatile_motes_deficit
+	ai_weight = { weight = 10 }
+}
+exotic_gases = {
+	tradable = yes
+	market_amount = 10
+	market_price = 100
+	max = 15000
+	prerequisites = { "tech_mine_exotic_gases" }
+	deficit_modifier = exotic_gases_deficit
+	ai_weight = { weight = 10 }
+}
+rare_crystals = {
+	tradable = yes
+	market_amount = 10
+	market_price = 100
+	max = 15000
+	prerequisites = { "tech_mine_rare_crystals" }
+	deficit_modifier = rare_crystals_deficit
+	ai_weight = { weight = 10 }
+}
+
+#############
+### Event ###
+#############
+nanites = {
+	tradable = yes
+	market_amount = 1
+	market_price = 75
+	max = 12500
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = nanites_deficit
+	ai_weight = { weight = 100 }
+}
+riggan = {
+	tradable = yes
+	market_amount = 1
+	market_price = 25
+	max = 12500
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = riggan_deficit
+	ai_weight = { weight = 100 }
+}
+minor_artifacts = {
+	tradable = yes
+	market_amount = 1
+	market_price = 1000
+	max = 5000
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = artifacts_deficit
+	ai_weight = { weight = 1 }
+}
+
+#################
+### Strategic ###
+#################
+sr_light_gases = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_light_gases" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_light_gases_deficit
+	ai_weight = { weight = 100 }
+}
+sr_natural_liquids = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_natural_liquids" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_natural_liquids_deficit
+	ai_weight = { weight = 100 }
+}
+sr_garanthium = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_garanthium" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_garanthium_deficit
+	ai_weight = { weight = 100 }
+}
+sr_lythuric = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_lythuric_gas" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_lythuric_deficit
+	ai_weight = { weight = 100 }
+}
+sr_engos = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_engos_vapor" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_engos_deficit
+	ai_weight = { weight = 100 }
+}
+sr_teldar = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_teldar" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_teldar_deficit
+	ai_weight = { weight = 100 }
+}
+sr_pitharan = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_pitharan_dust" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_pitharan_deficit
+	ai_weight = { weight = 100 }
+}
+sr_orillium = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_orillium" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_orillium_deficit
+	ai_weight = { weight = 100 }
+}
+sr_neutronium = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_neutronium" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_neutronium_deficit
+	ai_weight = { weight = 100 }
+}
+sr_living_metal = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_living_metal" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_living_metal_deficit
+	ai_weight = { weight = 100 }
+}
+sr_dark_matter = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_dark_matter" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_dark_matter_deficit
+	ai_weight = { weight = 100 }
+}
+sr_betharian = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_betharian" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_betharian_deficit
+	ai_weight = { weight = 100 }
+}
+sr_alien_pets = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_alien_pets" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_alien_pets_deficit
+	ai_weight = { weight = 100 }
+}
+sr_satramene = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_satramene" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_satramene_deficit
+	ai_weight = { weight = 100 }
+}
+sr_zro = {
+	tradable = yes
+	market_amount = 1
+	market_price = 50
+	max = 7500
+	#prerequisites = { "tech_mine_zro" }
+	visibility_prerequisite = { always = yes }
+	#deficit_modifier = sr_zro_deficit
+	ai_weight = { weight = 100 }
+}

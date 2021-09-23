@@ -1,0 +1,32 @@
+ffu_il_features_defint_effect = {
+	potential = { exists = from }
+	allow = { hidden_trigger = { from = { is_ai = no } } }
+	effect = {
+		hidden_effect = { hidden_effect = { from = { country_event = { id = ffu_il_interface.01 } } } }
+		custom_tooltip = ffu_il_interface_defint_desc
+	}
+}
+ffu_il_features_plbomb_effect = {
+	potential = { exists = from }
+	allow = { hidden_trigger = { from = { is_ai = no } } }
+	effect = {
+		hidden_effect = { hidden_effect = { from = { country_event = { id = ffu_il_interface.02 } } } }
+		custom_tooltip = ffu_il_interface_plbomb_desc
+	}
+}
+ffu_il_features_plweap_effect = {
+	potential = { exists = from }
+	allow = { hidden_trigger = { from = { is_ai = no } } }
+	effect = {
+		hidden_effect = { hidden_effect = { from = { country_event = { id = ffu_il_interface.03 } } } }
+		custom_tooltip = ffu_il_interface_plweap_desc
+	}
+}
+#ffu_il_integrity_status_effect = {
+#	potential = { exists = from }
+#	allow = { hidden_trigger = { from = { is_ai = no } } }
+#	effect = {
+#		hidden_effect = { hidden_effect = { from = { save_event_target_as = ffuil_interface_owner set_country_flag = ffuil_status_data_purge country_event = { id = ffu_il_interface.100 } } } }
+#		custom_tooltip = ffu_il_intstatus_button_desc
+#	}
+#}

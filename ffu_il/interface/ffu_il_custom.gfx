@@ -115,6 +115,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 1
 	}
+	corneredTileSpriteType = {
+		name = "GFX_colony_deposit_entry_ffu"
+		textureFile = "gfx/interface/planetview/colony_deposit_entry_ffu.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 1
+	}
 
 	### FFU:IL CUSTOM TEXT ICONS
 	spriteType = {
@@ -196,6 +202,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_text_large_planet_ocean"
 		texturefile = "gfx/interface/icons/text_icons/planet_large_ocean.dds"
+	}
+	spriteType = {
+		name = "GFX_text_large_planet_relic"
+		texturefile = "gfx/interface/icons/text_icons/planet_large_relic.dds"
 	}
 	spriteType = {
 		name = "GFX_text_large_planet_ringworld"
@@ -504,22 +514,22 @@ spriteTypes = {
 		noOfFrames = 3
 	}
 	spriteType = {
-		name = "GFX_planet_background_frame_blocker_micro"
-		textureFile = "gfx/interface/planetview/blocker_frame_ffuil.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
 		name = "GFX_planet_background_frame_blocker_compact"
 		textureFile = "gfx/interface/planetview/blocker_frame_cmp.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_planet_background_frame_rare_micro"
-		textureFile = "gfx/interface/planetview/rare_frame_ffuil.dds"
+		name = "GFX_planet_background_frame_blocker_colony"
+		textureFile = "gfx/interface/planetview/blocker_frame_col.dds"
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_planet_background_frame_rare_compact"
-		textureFile = "gfx/interface/planetview/rare_frame_ffuil_cmp.dds"
+		textureFile = "gfx/interface/planetview/rare_frame_cmp.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_background_frame_rare_colony"
+		textureFile = "gfx/interface/planetview/rare_frame_col.dds"
 	}
 	spriteType = {
 		name = "GFX_strategic_icon_ffuil"
