@@ -155,7 +155,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "topbar"
 			position = { x=0 y=0 }
-			size = { width=750 height=36 }
+			size = { width = 809 height = 36 } #mod
 
 			background = {
 				name ="background"
@@ -187,7 +187,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "topbar_bar_04"
 			size = { width = 138 height = 25 }
-			position = { x = 750 y = 13 }
+			position = { x = 809 y = 13 } #mod
 
 				background = {
 					name = "topbar_bar_04"
@@ -201,10 +201,10 @@ guiTypes = {
 		####################
 		containerWindowType = {
 			name = "topbar_extended"
-			position = { x=750 y=0 }
+			position = { x = 809 y = 0 } #mod
 			size = { width=100%% height=36 }
 			hide_position = { x = 0 y = 0 }
-			show_position = { x = 750 y = 0 }
+			show_position = { x = 809 y = 0 } #mod
 			show_animation_type = decelerated
 			hide_animation_type = accelerated
 			animation_time = 200
@@ -230,7 +230,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "empire_size_group"
 				size = { width = 100 height = 35 }
-				position = { x = 0 y = 0 }
+				position = { x = 0 y = 2 } #mod
 
 				background = {
 					name = "background"
@@ -261,7 +261,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "envoys_group"
 				size = { width = 100 height = 35 }
-				position = { x = 80 y = 0 }
+				position = { x = 80 y = 2 } #mod
 
 				background = {
 					name = "background"
@@ -292,7 +292,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "pop_group"
 				size = { width = 50 height = 35 }
-				position = { x = 130 y = 0 }
+				position = { x = 130 y = 2 } #mod
 
 				background = {
 					name = "background"
@@ -323,7 +323,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "starbase_group"
 				size = { width = 64 height = 35 }
-				position = { x = 190 y = 0 }
+				position = { x = 190 y = 2 } #mod
 
 				background = {
 					name = "background"
@@ -353,7 +353,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "navy_group"
 				size = { width = 84 height = 35 }
-				position = { x = 250 y = 0 }
+				position = { x = 250 y = 2 } #mod
 
 				background = {
 					name = "background"
@@ -383,7 +383,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "topbar_static"
-			position = { x= 70 y = 0 }
+			position = { x= 70 y = 2 } #mod
 			size = { width=200 height=200 }
 			Orientation = UPPER_LEFT
 
@@ -631,8 +631,8 @@ guiTypes = {
 					name = "expanded_window"
 					position = { x = 0 y = -100 }
 					hide_position = { x = 0 y = -100 }
-					show_position = { x = 0 y = 35 }
-					size = { width = 100 height = 80 } #mod
+					show_position = { x = 0 y = 34 } #mod
+					size = { width = 100 height = 82 } #mod
 					show_animation_type = decelerated
 					hide_animation_type = accelerated
 					animation_time = 200
@@ -665,7 +665,7 @@ guiTypes = {
 
 				iconType = {
 					name = "icon"
-					spriteType = "GFX_resource_strategic_top_bar"
+					spriteType = "GFX_resource_advanced_icon" #mod
 					position = { x = 22 y = 2 }
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
@@ -685,8 +685,8 @@ guiTypes = {
 				expandedWindow = {
 					name = "expanded_window"
 					hide_position = { x = 0 y = -190 }
-					show_position = { x = 0 y = 36 }
-					size = { width = 100 height = 504 } #mod
+					show_position = { x = 0 y = 34 } #mod
+					size = { width = 100 height = 179 } #mod
 					show_animation_type = decelerated
 					hide_animation_type = accelerated
 					animation_time = 200
@@ -706,6 +706,54 @@ guiTypes = {
 					}
 				}
 			}
+
+			dropDownBoxType = {											#mod
+				name = "tb_strategic_group"								#mod
+				size = { width = 80 height = 35 }						#mod
+				position = { x = 674 y = 0 }							#mod
+				background = {											#mod
+					name = "background"									#mod
+					spriteType = "GFX_invisible"						#mod
+				}														#mod
+				iconType = {											#mod
+					name = "icon"										#mod
+					spriteType = "GFX_text_strategic_icon"				#mod
+					position = { x = 22 y = 2 }							#mod
+					tooltip_mode_enabled = yes							#mod
+					alwaysTransparent = yes								#mod
+				}														#mod
+				instantTextBoxType = {									#mod
+					name = "amount"										#mod
+					font = "cg_16b"										#mod
+					position = { x = 2 y = 16 }							#mod
+					maxWidth = 60										#mod
+					maxHeight = 16										#mod
+					text = "0 / 0"										#mod
+					format = center										#mod
+					alwaysTransparent = yes								#mod
+				}														#mod
+				expandedWindow = {										#mod
+					name = "expanded_window"							#mod
+					hide_position = { x = 0 y = -190 }					#mod
+					show_position = { x = 0 y = 34 }					#mod
+					size = { width = 100 height = 379 }					#mod
+					show_animation_type = decelerated					#mod
+					hide_animation_type = accelerated					#mod
+					animation_time = 200								#mod
+					background = {										#mod
+						name = "bg"										#mod
+						spriteType = "GFX_subwindow_tile_plain_solid"	#mod
+					}													#mod
+					gridBoxType = {										#mod
+						name = "resources"								#mod
+						format = "UPPER_LEFT"							#mod
+						position = { x = 5 y = 5 } #mod					#mod
+						size = { width = 100% height = 100% }			#mod
+						slotsize = { width = 100% height = 25 }			#mod
+						max_slots_horizontal = 1						#mod
+					}													#mod
+				}														#mod
+			}															#mod
 		}
 
 		#buttonType = {

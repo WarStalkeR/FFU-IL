@@ -1,0 +1,39 @@
+sectors_others_group = {
+	resources = {
+		luxury_goods
+		volatile_motes
+		exotic_gases
+		rare_crystals
+		nanites
+		riggan_spice
+		minor_artifacts
+	}
+	localization = {
+		"RESOURCE_GROUP_BALANCE_ONLY" = default
+		"RESOURCE_GROUP_BALANCE_ONLY_NEG" = { balance < 0 }
+	}
+}
+
+sectors_strategic_group = {
+	resources = {
+		sr_light_gases
+		sr_natural_liquids
+		sr_garanthium
+		sr_lythuric
+		sr_engos
+		sr_teldar
+		sr_pitharan
+		sr_orillium
+		sr_neutronium
+		sr_living_metal
+		sr_dark_matter
+		sr_betharian
+		sr_alien_pets
+		sr_satramene
+		sr_zro
+	}
+	localization = {
+		"RESOURCE_GROUP_BALANCE_ONLY" = default
+		"RESOURCE_GROUP_BALANCE_ONLY_NEG" = { balance < 0 }
+	}
+}

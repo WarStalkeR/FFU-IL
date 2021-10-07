@@ -123,7 +123,7 @@ nanites = {
 	#deficit_modifier = nanites_deficit
 	ai_weight = { weight = 100 }
 }
-riggan = {
+riggan_spice = {
 	tradable = yes
 	market_amount = 1
 	market_price = 25

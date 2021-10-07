@@ -272,4 +272,36 @@ spriteTypes = {
 		name = "GFX_resource_luxury_goods_large"
 		texturefile = "gfx/interface/icons/resources/luxury_goods_large.dds"
 	}
+	spriteType = {
+		name = "GFX_text_advanced_icon"
+		texturefile = "gfx/interface/icons/resources/advanced.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_advanced_icon"
+		texturefile = "gfx/interface/icons/resources/advanced.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_advanced_icon_grey"
+		texturefile = "gfx/interface/icons/resources/advanced_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_advanced_icon_large"
+		texturefile = "gfx/interface/icons/resources/advanced_large.dds"
+	}
+	spriteType = {
+		name = "GFX_text_strategic_icon"
+		texturefile = "gfx/interface/icons/resources/strategic.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_strategic_icon"
+		texturefile = "gfx/interface/icons/resources/strategic.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_strategic_icon_grey"
+		texturefile = "gfx/interface/icons/resources/strategic_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_strategic_icon_large"
+		texturefile = "gfx/interface/icons/resources/strategic_large.dds"
+	}
 }

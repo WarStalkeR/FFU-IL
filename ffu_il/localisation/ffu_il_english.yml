@@ -1153,7 +1153,7 @@
  mod_country_resource_max_exotic_gases_add:0 "$exotic_gases$ $mod_country_cap_str$"
  mod_country_resource_max_rare_crystals_add:0 "$rare_crystals$ $mod_country_cap_str$"
  mod_country_resource_max_nanites_add:0 "$nanites$ $mod_country_cap_str$"
- mod_country_resource_max_riggan_add:0 "$riggan$ $mod_country_cap_str$"
+ mod_country_resource_max_riggan_spice_add:0 "$riggan_spice$ $mod_country_cap_str$"
  mod_country_resource_max_sr_light_gases_add:0 "$sr_light_gases$ $mod_country_cap_str$"
  mod_country_resource_max_sr_natural_liquids_add:0 "$sr_natural_liquids$ $mod_country_cap_str$"
  mod_country_resource_max_sr_garanthium_add:0 "$sr_garanthium$ $mod_country_cap_str$"
@@ -4662,7 +4662,7 @@
  
  ### ECONOMY MODIFIERS
  nanites_deficit:0 "$nanites$ Shortage"
- riggan_deficit:0 "$riggan$ Shortage"
+ riggan_spice_deficit:0 "$riggan$ Shortage"
  sr_light_gases_deficit:0 "$sr_light_gases$ Shortage"
  sr_natural_liquids_deficit:0 "$sr_natural_liquids$ Shortage"
  sr_garanthium_deficit:0 "$sr_garanthium$ Shortage"

@@ -1025,8 +1025,8 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "planet_desc_window"
-					position = { x = 10 y = 0 }
-					size = { width = 400 height = 240 }
+					position = { x = 9 y = -4 } #mod
+					size = { width = 448 height = 534 } #mod
 
 					background = {
 						name = "planet_desc_background"
@@ -1038,8 +1038,8 @@ guiTypes = {
 						font = "cg_16b"
 						position = { x = 10 y = 10 }
 						text = "blah blah blah"
-						maxWidth = 380
-						maxHeight = 520
+						maxWidth = 428 #mod
+						maxHeight = 514 #mod
 						fixedSize = yes
 						format = left
 						orientation = upper_left
@@ -1049,8 +1049,8 @@ guiTypes = {
 				# Planetary resources
 				containerWindowType = {
 					name = "planetary_resources"
-					size = { width = 270 height = 240 }
-					position = { x = 569  y = 0 }
+					size = { width = 124 height = 534 } #mod
+					position = { x = 715  y = -4 } #mod
 
 					background = {
 						name = "resources_background"
@@ -1061,26 +1061,41 @@ guiTypes = {
 						name = "planetary_resources_title"
 						font = "malgun_goth_24"
 						text = "RESOURCES"
-						position = { x = 30 y = 15 }
-						maxWidth = 270
-						maxHeight = 20
+						position = { x = 15 y = 15 } #mod
+						maxWidth = 94 #mod
+						maxHeight = 30 #mod
 						fixedSize = yes
-						format = left
+						format = center #mod
 						orientation = upper_left
 						alwaysTransparent = yes
 					}
 
 					instantTextBoxType={
 						name = "planetary_resources_amount"
-						font = "cg_16b"
-						position = { x = 40  y = 60 }
+						font = "malgun_goth_24" #mod
+						position = { x = 35  y = 50 }
 						text = "10"
-						maxWidth = 155
-						maxHeight = 60
+						maxWidth = 54 #mod
+						maxHeight = 454 #mod
 						fixedSize = yes
-						format = left
+						format = center #mod
 					}
 				}
+
+				containerWindowType = {								 #mod
+					name = "planet_view_midbar"						 #mod
+					position = { x = 460 y = 35 }					 #mod
+					size = { width = 252 height = 495 }				 #mod
+					background = {									 #mod
+						name = "planet_view_midbar_bg"				 #mod
+						spriteType = "GFX_tiles_frame"				 #mod
+					}												 #mod
+					iconType = {									 #mod
+						name = "planet_view_midbar_icon"			 #mod
+						spriteType = "GFX_ffu_il_planet_view_midbar" #mod
+						position = { x = 1 y = 1 }					 #mod
+					}												 #mod
+				}													 #mod
 			}
 
 			containerWindowType = {
@@ -1857,8 +1872,8 @@ guiTypes = {
 						format = "UPPER_LEFT"
 						slotsize = { width = 78 height = 110 } #mod
 						add_horizontal = yes
-						max_slots_horizontal = 5
-						max_slots_vertical = 1
+						max_slots_horizontal = 5 #mod
+						max_slots_vertical = 1 #mod
 					}
 
 					# Available District Cubes Container
@@ -1910,8 +1925,8 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "planet_desc_window"
-					position = { x = 10  y = 250 }
-					size = { width = 555 height = 180 }
+					position = { x = 9  y = 185 } #mod
+					size = { width = 448 height = 390 } #mod
 
 					background = {
 						name = "planet_desc_background"
@@ -1923,13 +1938,43 @@ guiTypes = {
 						font = "cg_16b"
 						position = { x = 10 y = 10 }
 						text = "blah blah blah"
-						maxWidth = 495
-						maxHeight = 230
+						maxWidth = 428 #mod
+						maxHeight = 370 #mod
 						fixedSize = yes
 						format = left
 						orientation = upper_left
 					}
 				}
+
+				containerWindowType = {								 #mod
+					name = "planet_view_midbar"						 #mod
+					position = { x = 460 y = 80 }					 #mod
+					size = { width = 252 height = 495 }				 #mod
+					background = {									 #mod
+						name = "planet_view_midbar_bg"				 #mod
+						spriteType = "GFX_tiles_frame"				 #mod
+					}												 #mod
+					iconType = {									 #mod
+						name = "planet_view_midbar_icon"			 #mod
+						spriteType = "GFX_ffu_il_planet_view_midbar" #mod
+						position = { x = 1 y = 1 }					 #mod
+					}												 #mod
+				}													 #mod
+
+				containerWindowType = {								  #mod
+					name = "planet_view_sidebar"					  #mod
+					position = { x = 715 y = 41 }					  #mod
+					size = { width = 124 height = 534 }				  #mod
+					background = {									  #mod
+						name = "planet_view_sidebar_bg"				  #mod
+						spriteType = "GFX_tiles_frame"				  #mod
+					}												  #mod
+					iconType = {									  #mod
+						name = "planet_view_sidebar_icon"			  #mod
+						spriteType = "GFX_ffu_il_planet_view_sidebar" #mod
+						position = { x = 1 y = 1 }					  #mod
+					}												  #mod
+				}													  #mod
 			}
 		}
 
@@ -6130,9 +6175,9 @@ guiTypes = {
 		iconType = {
 			name = "deposit_icon"
 			spriteType = "GFX_deposit_unknown"
-			position = { x = 2 y = 21 } #mod
+			position = { x = 1 y = 20 } #mod
 			alwaysTransparent = yes
-			scale = 0.9 #mod
+			scale = 0.925 #mod
 		}
 
 		iconType = {

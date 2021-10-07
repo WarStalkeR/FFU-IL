@@ -611,6 +611,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/custom/branch_office_links.dds"
 	}
 	spriteType = {
+		name = "GFX_ffu_il_planet_view_midbar"
+		texturefile = "gfx/interface/custom/planet_view_midbar.dds"
+	}
+	spriteType = {
+		name = "GFX_ffu_il_planet_view_sidebar"
+		texturefile = "gfx/interface/custom/planet_view_sidebar.dds"
+	}
+	spriteType = {
 		name = "GFX_ffu_il_branch_arcology_housing"
 		texturefile = "gfx/interface/icons/districts/district_arcology_housing.dds"
 	}
