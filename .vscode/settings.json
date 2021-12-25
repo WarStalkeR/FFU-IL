@@ -1,0 +1,15 @@
+{
+    "spellright.language": [
+        "en",
+        "ru"
+    ],
+    "spellright.documentTypes": [
+        "yml",
+        "yaml",
+        "cfg",
+        "markdown",
+        "latex",
+        "plaintext",
+        "factorio-locale"
+    ]
+}
