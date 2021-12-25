@@ -295,3 +295,13 @@ sr_zro = {
 	#deficit_modifier = sr_zro_deficit
 	ai_weight = { weight = 100 }
 }
+
+################
+### Scenario ###
+################
+menace = {
+	tradable = no
+	ai_weight = {
+		weight = 1
+	}
+}

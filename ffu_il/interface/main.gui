@@ -48,9 +48,14 @@ guiTypes = {
 	### TOPBAR FOR MUSICPLAYER
 	containerWindowType = {
 		name = "maingui_lower_topbar"
-		position = { x=-170 y=34 }
+		position = { x=-68 y=34 }
 		size = { width=170 height=36 }
 		orientation = upper_right
+		hide_position = { x=-68 y=34 }
+		show_position = { x=-170 y=34 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 200
 
 		background = {
 			name ="background"
@@ -58,11 +63,13 @@ guiTypes = {
 			position = { x= 0 y = 0 }
 		}
 			
-		iconType = {
-			name = "music_commands_icon"
-			spriteType = "GFX_music_commands_icon"
+		buttonType = {
+			name = "music_controls_toggle"
+			quadTextureSprite = "GFX_music_commands_icon"
 			position = { x = 33 y = 0 }
-			alwaysTransparent = yes
+			pdx_tooltip = "MUSIC_CONTROLS_TOGGLE_VISIBLE"
+			clicksound = interface
+			oversound = no_sound
 		}
 
 		containerWindowType = {

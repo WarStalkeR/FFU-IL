@@ -133,7 +133,7 @@ guiTypes = {
 		buttonType = {
                 name = "ffu_il_logo"														#mod
 				quadTextureSprite = "GFX_ffu_il_logo"										#mod
-				position = { x = 340 y = 210 }												#mod
+				position = { x = 331 y = 210 }												#mod
 				Orientation = "UPPER_LEFT"													#mod
 				web_link="http://steamcommunity.com/sharedfiles/filedetails/?id=685233391"	#mod
 		}																					#mod

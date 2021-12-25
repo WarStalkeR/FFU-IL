@@ -674,7 +674,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "diplomacy_status_window"
 				position = { x=288 y=268 }
-				size = { width = 257 height = 270  }
+				size = { width = 257 height = 282 } #mod
 				margin = { top = 5 bottom = 5 }
 
 				background = {
@@ -976,8 +976,8 @@ guiTypes = {
 					name = "species_name"
 					font = "cg_16b"
 					text = "PLANETTYPE"
-					position = { x = 350 y = 20}
-					maxWidth = 140
+					position = { x = 349 y = 20} #mod
+					maxWidth = 165 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = left
@@ -988,8 +988,8 @@ guiTypes = {
 					name = "founder_species_class"
 					font = "cg_16b"
 					text = "SPECIES"
-					position = { x = 350 y = 40}
-					maxWidth = 140
+					position = { x = 349 y = 40} #mod
+					maxWidth = 165 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = left
@@ -999,8 +999,8 @@ guiTypes = {
 					name = "ideal_planet_class"
 					font = "cg_16b"
 					text = "IDEAL_PLANET_CLASS"
-					position = { x = 350 y = 60}
-					maxWidth = 140
+					position = { x = 349 y = 60} #mod
+					maxWidth = 165 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = left
@@ -1011,8 +1011,8 @@ guiTypes = {
 					name = "pops"
 					font = "cg_16b"
 					text = "POPS_IN_WORLD"
-					position = { x = 350 y = 80}
-					maxWidth = 200
+					position = { x = 349 y = 80} #mod
+					maxWidth = 165 #mod
 					maxHeight = 20
 					fixedSize = yes
 					format = left
@@ -1021,13 +1021,13 @@ guiTypes = {
 				iconType = {
 					name = "species_leader_image"
 					quadTextureSprite = "GFX_portrait_character"
-					position = { x = 220 y = 6 }
+					position = { x = 239 y = 6 } #mod
 					scale = 0.24
 				}
 
 				containerWindowType = {
 					name = "setting_bg_box"
-					position = { x = 250 y = 106 }
+					position = { x = 269 y = 106 } #mod
 					size = { width = 270 height = 43 }
 
 						background = {
@@ -1038,8 +1038,8 @@ guiTypes = {
 
 				OverlappingElementsBoxType = {
 					name = "traits"
-					position = { x = 255 y = 110}
-					size = { x = 250 y = 33 }
+					position = { x = 276 y = 113} #mod
+					size = { x = 258 y = 33 }
 					format = left
 					orientation = "UPPER_LEFT"
 				}
@@ -1055,7 +1055,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "species_piechart"
-				position = { x = 120 y = 50 }
+				position = { x = 140 y = 50 } #mod
 				size = { width =0 height = 160 }
 				moveable = no
 
@@ -1067,16 +1067,18 @@ guiTypes = {
 
 				iconType = {
 					name ="species_piechart_overlay"
-					spriteType = "GFX_pie_chart_overlay"
+					spriteType = "GFX_pie_chart_overlay_ffu_il" #mod
 					position = { x= 18 y = 13 }
 				}
 
 				smoothListboxType = 	{
 					name ="species_list"
-					position = { x = -102 y = 0 }
-					size = { x=100 y = 185 }
+					position = { x = -130 y = 0 } #mod
+					size = { x = 137 y = 189 } #mod
+					offset = { x = -4 y = 0 } #mod
 					scrollbartype = "standardlistbox_slider"
 					orientation = "UPPER_LEFT"
+					spacing = -3 #mod
 				}
 			}
 

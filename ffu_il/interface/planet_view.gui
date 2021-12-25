@@ -1927,6 +1927,7 @@ guiTypes = {
 					name = "planet_desc_window"
 					position = { x = 9  y = 185 } #mod
 					size = { width = 448 height = 390 } #mod
+					clipping = no #mod
 
 					background = {
 						name = "planet_desc_background"
@@ -1944,37 +1945,37 @@ guiTypes = {
 						format = left
 						orientation = upper_left
 					}
+
+					containerWindowType = {								 #mod
+						name = "planet_view_midbar"						 #mod
+						position = { x = 451 y = -105 }					 #mod
+						size = { width = 252 height = 495 }				 #mod
+						background = {									 #mod
+							name = "planet_view_midbar_bg"				 #mod
+							spriteType = "GFX_tiles_frame"				 #mod
+						}												 #mod
+						iconType = {									 #mod
+							name = "planet_view_midbar_icon"			 #mod
+							spriteType = "GFX_ffu_il_planet_view_midbar" #mod
+							position = { x = 1 y = 1 }					 #mod
+						}												 #mod
+					}													 #mod
+	
+					containerWindowType = {								  #mod
+						name = "planet_view_sidebar"					  #mod
+						position = { x = 706 y = -144 }					  #mod
+						size = { width = 124 height = 534 }				  #mod
+						background = {									  #mod
+							name = "planet_view_sidebar_bg"				  #mod
+							spriteType = "GFX_tiles_frame"				  #mod
+						}												  #mod
+						iconType = {									  #mod
+							name = "planet_view_sidebar_icon"			  #mod
+							spriteType = "GFX_ffu_il_planet_view_sidebar" #mod
+							position = { x = 1 y = 1 }					  #mod
+						}												  #mod
+					}													  #mod
 				}
-
-				containerWindowType = {								 #mod
-					name = "planet_view_midbar"						 #mod
-					position = { x = 460 y = 80 }					 #mod
-					size = { width = 252 height = 495 }				 #mod
-					background = {									 #mod
-						name = "planet_view_midbar_bg"				 #mod
-						spriteType = "GFX_tiles_frame"				 #mod
-					}												 #mod
-					iconType = {									 #mod
-						name = "planet_view_midbar_icon"			 #mod
-						spriteType = "GFX_ffu_il_planet_view_midbar" #mod
-						position = { x = 1 y = 1 }					 #mod
-					}												 #mod
-				}													 #mod
-
-				containerWindowType = {								  #mod
-					name = "planet_view_sidebar"					  #mod
-					position = { x = 715 y = 41 }					  #mod
-					size = { width = 124 height = 534 }				  #mod
-					background = {									  #mod
-						name = "planet_view_sidebar_bg"				  #mod
-						spriteType = "GFX_tiles_frame"				  #mod
-					}												  #mod
-					iconType = {									  #mod
-						name = "planet_view_sidebar_icon"			  #mod
-						spriteType = "GFX_ffu_il_planet_view_sidebar" #mod
-						position = { x = 1 y = 1 }					  #mod
-					}												  #mod
-				}													  #mod
 			}
 		}
 

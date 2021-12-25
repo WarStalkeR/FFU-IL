@@ -199,6 +199,12 @@ spriteTypes = {
 		sprite_sheet_sprite_type = "GFX_planet_type"
 		default_frame = 33
 	}
+	spriteType = { 									 #temp!
+		name = "GFX_planet_type_f_g_star"			 #temp!
+		alwaystransparent = yes						 #temp!
+		sprite_sheet_sprite_type = "GFX_planet_type" #temp!
+		default_frame = 33							 #temp!
+	}												 #temp!
 	spriteType = { 
 		name = "GFX_planet_type_b_star"
 		alwaystransparent = yes
