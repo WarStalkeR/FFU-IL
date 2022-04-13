@@ -95,7 +95,7 @@ guiTypes = {
 			textureFile = ""
 			font = "cg_16b"
 			borderSize = {x = 0 y = 0}
-			text = "INFLUENCE_COST"
+			text = "UNITY_COST"
 			maxWidth = 344
 			maxHeight = 22
 			fixedSize = yes
@@ -103,12 +103,12 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "influence_cost"
+			name = "unity_cost"
 			position = { x = 0 y = 560 }
 			textureFile = ""
 			font = "cg_16b"
 			borderSize = {x = 0 y = 0}
-			text = "INFLUENCE_COST"
+			text = "UNITY_COST"
 			maxWidth = 344
 			maxHeight = 22
 			fixedSize = yes

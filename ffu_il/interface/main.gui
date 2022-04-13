@@ -72,18 +72,6 @@ guiTypes = {
 			oversound = no_sound
 		}
 
-		containerWindowType = {
-			name = "topbar_bar_res"
-			size = { width = 260 height = 25 }
-			position = { x = 26 y = 6 }
-
-			background = {
-				name = "topbar_bar_03"
-				spriteType = "GFX_topbar_bar_03"
-				pdx_tooltip = "MUSIC_PLAYER"
-			}
-		}
-
 		####################
 		# Music
 		####################

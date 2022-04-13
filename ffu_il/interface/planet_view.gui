@@ -1447,7 +1447,21 @@ guiTypes = {
 						name = "designation_name"
 						font = "cg_16b"
 						text = ""
-						position = { x = 49 y = -45 } #mod
+						position = { x = 49 y = -55 } #mod
+						maxWidth = 110 #mod
+						maxHeight = 40
+						fixedSize = yes
+						format = left
+						orientation = lower_left
+						vertical_alignment = center
+						alwaysTransparent = yes
+					}
+
+					instantTextBoxType = {
+						name = "ascension_tier"
+						font = "cg_16b"
+						text = ""
+						position = { x = 49 y = -35 } #mod
 						maxWidth = 110 #mod
 						maxHeight = 40
 						fixedSize = yes
@@ -1470,8 +1484,15 @@ guiTypes = {
 					}
 
 					buttonType = {
-						name = "automated_development_button"
+						name = "upgrade_ascension_tier_button"
 						position = { x = -80 y = -44 } #mod
+						quadTextureSprite = "GFX_button_upgrade_ascension_tier"
+						orientation = lower_right
+					}
+
+					buttonType = {
+						name = "automated_development_button"
+						position = { x = -44 y = -44 } #mod
 						quadTextureSprite = "GFX_button_automate"
 						pdx_tooltip = "SELECT_COLONY_AUTOMATIC_DEVELOPMENT"
 						orientation = lower_right
@@ -1479,25 +1500,9 @@ guiTypes = {
 
 					iconType = {
 						name = "automated_development_selected"
-						position = { x = -80 y = -44 } #mod
+						position = { x = -44 y = -44 } #mod
 						quadTextureSprite = "GFX_button_automate_selected"
 						pdx_tooltip = "COLONY_AUTOMATIC_DEVELOPMENT_SELECTED"
-						orientation = lower_right
-					}
-
-					buttonType = {
-						name = "manual_development_button"
-						position = { x = -44 y = -44 } #mod
-						quadTextureSprite = "GFX_button_manual"
-						pdx_tooltip = "SELECT_COLONY_MANUAL_DEVELOPMENT"
-						orientation = lower_right
-					}
-
-					iconType = {
-						name = "manual_development_selected"
-						position = { x = -44 y = -44 } #mod
-						quadTextureSprite = "GFX_button_manual_selected"
-						pdx_tooltip = "COLONY_MANUAL_DEVELOPMENT_SELECTED"
 						orientation = lower_right
 					}
 				}

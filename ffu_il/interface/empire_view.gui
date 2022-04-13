@@ -373,6 +373,30 @@ guiTypes = {
 			alwaysTransparent = yes
 			text_color_code = "E"
 		}
+		
+		instantTextBoxType = {
+			name = "char_upkeep_label"
+			font = "cg_16b"
+			text = "UPKEEP"
+			position = { x = -113 y = 43 }
+			maxWidth = 74
+			maxHeight = 20
+			orientation = "UPPER_RIGHT"
+			format = right
+		}
+		
+		instantTextBoxType = {
+			name = "leader_upkeep"
+			font = "cg_16b"
+			text = "-1"
+			position = { x = -62 y = 43 }
+			maxWidth = 50
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = "UPPER_RIGHT"
+			text_color_code = "H"
+		}
 
 		instantTextBoxType = {
 			name = "char_age_label"
