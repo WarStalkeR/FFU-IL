@@ -47,6 +47,7 @@ influence = {
 	ai_weight = { weight = 1 }
 }
 unity = {
+	deficit_modifier = unity_deficit
 	ai_weight = { weight = 1 }
 }
 

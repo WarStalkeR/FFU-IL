@@ -1343,6 +1343,11 @@
  ffu_il_requires_1_robotic_pop:0 "§RНа планете требуется как минимум §Y1 £pops£ Механическое Поселение§!, если вы играете за §YБиологическую§! расу.§!"
  ffu_il_requires_non_artificial_planet:0 "§RЭто здание может быть построено только на §Yнатуральных§! планетах или на §Yжилых§! сегментах мира кольца.§!"
  ffu_il_requires_robotic_interface:0 "§RТолько население с такими навыками как §Y$trait_machine_unit$§!, §Y$trait_mechanical$§!, §Y$trait_robotic_1$§!, §Y$trait_robotic_2$§!, §Y$trait_automaton$§! или §Y$trait_cybernetic$§! могут работать в этой структуре.§!"
+
+ ### CONDITIONS FAIL/SUCCESS TEXTS
+ FFU_IL_PURGE_NEEDS_UNIFIED_CONSCIOUSNESS:0 "Чтобы уничтожать население, ваша §Yформа правления§! должна быть $auth_hive_mind$ или $auth_machine_intelligence$."
+ FFU_IL_PURGE_NEEDS_HUNTDOWN_PROTOCOLS:0 "Ваш §Yпринцип§! не позволяет вам уничтожать население без технологии: $tech_huntdown_protocols$."
+ FFU_IL_PURGE_NEEDS_TOTAL_ANNIHILATION:0 "Ваш §Yпринцип§! не позволяет вам уничтожать население без технологий: $tech_huntdown_protocols$ и $tech_total_annihilation$."
  
  ### FIGHT FOR UNIVERSE DISTRICTS
  ffu_il_distict_limit_reached:0 "Планетарный лимит (15) районов этого типа достигнут"

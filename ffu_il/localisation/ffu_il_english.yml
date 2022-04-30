@@ -1345,6 +1345,11 @@
  ffu_il_requires_1_robotic_pop:0 "§RRequires at least §Y1 £pops£ Robotic Pop§! on the planet, if playing as §YOrganic§! species.§!"
  ffu_il_requires_non_artificial_planet:0 "§RCan be built only on the §Ynatural§! planets or on the §Yhabitable§! ringworld segments.§!"
  ffu_il_requires_robotic_interface:0 "§ROnly population with such traits as §Y$trait_machine_unit$§!, §Y$trait_mechanical$§!, §Y$trait_robotic_1$§!, §Y$trait_robotic_2$§!, §Y$trait_automaton$§! or §Y$trait_cybernetic$§! can work in this structure.§!"
+
+ ### CONDITIONS FAIL/SUCCESS TEXTS
+ FFU_IL_PURGE_NEEDS_UNIFIED_CONSCIOUSNESS:0 "Your §Yauthority§! must be $auth_hive_mind$ or $auth_machine_intelligence$ to purge population."
+ FFU_IL_PURGE_NEEDS_HUNTDOWN_PROTOCOLS:0 "Your §Yethics§! doesn't allow you to purge population without $tech_huntdown_protocols$ technology."
+ FFU_IL_PURGE_NEEDS_TOTAL_ANNIHILATION:0 "Your §Yethics§! doesn't allow you to purge population without $tech_huntdown_protocols$ and $tech_total_annihilation$ technologies."
  
  ### FIGHT FOR UNIVERSE DISTRICTS
  ffu_il_distict_limit_reached:0 "District Type Planetary Limit (15) Reached"
